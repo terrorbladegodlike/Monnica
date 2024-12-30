@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monnica</title>
+    <link rel="stylesheet" href="./assets/main.css" />
+    <link rel="stylesheet" href="./assets/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header__top">
+      <div class="wrapper">
+        <div class="header__info">
+          <p class="header__info-text">10% OFF WITH SMS OR EMAIL SIGN UP</p>
+
+          <div class="header__info-map">
+            <div class="header__info-inner">
+              <img
+                src="./assets/img/header/map.svg"
+                alt="map"
+                class="header__info-icon"
+              />
+
+              <div class="header__info-title">STORE LOCATOR</div>
+            </div>
+
+            <select class="header__language" name="select">
+              <option value="value1" selected>EN</option>
+              <option value="value2">RU</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header Section -->
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__inner">
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="#main" class="header__link">Home</a>
+              </li>
+              <li class="header__item header__item-dropdown">
+                <a href="#category" class="header__link">Shop</a>
+              </li>
+              <li class="header__item">
+                <a href="#sale" class="header__link">Sale</a>
+              </li>
+              <li class="header__item">
+                <a href="#about" class="header__link">About</a>
+              </li>
+              <li class="header__item">
+                <a href="#subscribe" class="header__link">Help</a>
+              </li>
+            </ul>
+          </nav>
+
+          <img src="./assets/img/logo.svg" alt="logo" class="header__logo" />
+
+          <nav class="header__options">
+            <ul class="header__options-list">
+              <li class="header__options-item">
+                <img src="./assets/img/header/search.svg" alt="search" />
+                <a class="header__options-link" href="#"> Search </a>
+              </li>
+              <li class="header__options-item">
+                <img src="./assets/img/header/bag.svg" alt="search" />
+                <a class="header__options-link" href="#"> Bag </a>
+              </li>
+              <li class="header__options-item">
+                <img src="./assets/img/header/like.svg" alt="search" />
+                <a class="header__options-link" href="#"> Like </a>
+              </li>
+              <li class="header__options-item">
+                <img src="./assets/img/header/user.svg" alt="search" />
+                <a class="header__options-link" href="#"> Log In </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="header__mob">
+          <img
+            src="./assets/img/header/search.svg"
+            alt="search"
+            class="header__mob-search"
+          />
+
+          <img
+            src="./assets/img/logo-nav.jpeg"
+            alt="logo"
+            class="header__mob-logo"
+          />
+
+          <div class="header__mob-box">
+            <img
+              src="./assets/img/header/bag.svg"
+              alt="bag"
+              class="header__mob-bag"
+            />
+
+            <img
+              src="./assets/img/burger.svg"
+              alt="burger"
+              class="header__burger"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- <div class="dropdown">
+        <div class="wrapper">
+          <div class="dropdown__inner">
+            <div class="dropdown__item">
+              <div class="dropdown__title">Shop by Category</div>
+
+              <div class="dropdown__list">
+                <div class="dropdown__list-item">
+                  <a href="#!">Earrings</a>
+                  <a href="#!">Rings</a>
+                  <a href="#!">Bracelets</a>
+                  <a href="#!">Necklaces</a>
+                  <a href="#!">Pendants</a>
+                </div>
+                <div class="dropdown__list-item">
+                  <a href="#!">Jewellery Sets</a>
+                  <a href="#!">Cuffs</a>
+                  <a href="#!">Anklets</a>
+                  <a href="#!">Piercing</a>
+                  <a href="#!">Hair accesories</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="dropdown__item">
+              <div class="dropdown__title">Featured</div>
+
+              <div class="dropdown__list-item">
+                <a href="#!">New Arrivals</a>
+                <a href="#!">Jewellery on sale</a>
+                <a href="#!">Best Selling</a>
+                <a href="#!">Wedding Edition</a>
+                <a href="#!">Valentines Day</a>
+              </div>
+            </div>
+
+            <div class="dropdown__item">
+              <div class="dropdown__title">Shop by material</div>
+
+              <div class="dropdown__list">
+                <div class="dropdown__list-item">
+                  <a href="#!">Biwa Pearls</a>
+                  <a href="#!">Akoya pearls</a>
+                  <a href="#!">Baroque Pearls</a>
+                  <a href="#!">Keshi pearls</a>
+                  <a href="#!">Freshwater Pearls</a>
+                </div>
+                <div class="dropdown__list-item">
+                  <a href="#!">Tahitian Pearls</a>
+                  <a href="#!">Golden South Sea Pearls</a>
+                  <a href="#!">White South Sea Pearls</a>
+                  <a href="#!">Coin Pearls</a>
+                  <a href="#!">Heart Pearls</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </header>
+
+    <!-- Main Seciotn -->
+    <main class="main" id="main">
+      <section class="intro" id="intro">
+        <div class="wrapper">
+          <section class="intro__inner">
+            <div class="intro__content">
+              <h1 class="intro__title">Pure Pearl Jewellery</h1>
+              <img src="./assets/img/main/bg-1.jpg" alt="main photo" />
+              <div class="slider-buttons">
+                <a href="#">
+                  <img
+                    class="slider-arrow-icon"
+                    src="./assets/img/left-arrow.svg"
+                    alt=""
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    class="slider-arrow-icon"
+                    src="./assets/img/right-arrow.svg"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <button class="intro__btn" type="submit">Shop Now</button>
+            </div>
+            <div class="intro__photo">
+              <img src="./assets/img/main/bg-2.jpg" alt="main photo 2" />
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="category" id="category">
+        <div class="wrapper">
+          <div class="category__inner">
+            <h1 class="catehory__title">Shop by Category</h1>
+
+            <div class="catogory__items">
+              <div class="category__item">
+                <img src="./assets/img/category/earrings.jpg" alt="earrings" />
+                <a href="#" class="catogory__items-tile">Earrings</a>
+              </div>
+              <div class="category__item">
+                <img src="./assets/img/category/rings.jpg" alt="earrings" />
+                <a href="#" class="catogory__items-tile">Rings</a>
+              </div>
+              <div class="category__item">
+                <img src="./assets/img/category/bracelets.jpg" alt="earrings" />
+                <a href="#" class="catogory__items-tile">Bracelets</a>
+              </div>
+              <div class="category__item">
+                <img src="./assets/img/category/necklaces.jpg" alt="earrings" />
+                <a href="#" class="catogory__items-tile">Necklaces</a>
+              </div>
+              <div class="category__item">
+                <img src="./assets/img/category/pendants.jpg" alt="earrings" />
+                <a href="#" class="catogory__items-tile">Pendants</a>
+              </div>
+              <div class="category__item">
+                <img
+                  src="./assets/img/category/jewellery-sets.jpg"
+                  alt="earrings"
+                />
+                <a href="#" class="catogory__items-tile">Jewellery Sets</a>
+              </div>
+            </div>
+
+            <div class="slider-buttons slider-buttons-category">
+              <a href="#">
+                <img
+                  class="slider-arrow-icon"
+                  src="./assets/img/left-arrow.svg"
+                  alt=""
+                />
+              </a>
+              <a href="#">
+                <img
+                  class="slider-arrow-icon"
+                  src="./assets/img/right-arrow.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="collection" id="collection">
+        <div class="wrapper">
+          <div class="collection__inner">
+            <h1 class="collection__title">New Arrivals</h1>
+
+            <p class="collection__text">
+              Discover our new collection of natural baroque pearl jewellery.
+              You will find the most original handmade pieces of jewellery.
+            </p>
+
+            <button class="collection__btn" type="submit">Shop Now</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="arrivals" id="arrivals">
+        <div class="wrapper">
+          <div class="arrivals__inner">
+            <h1 class="arrivals__title">New Arrivals</h1>
+            <div class="arrivals__items">
+              <div class="arrivals__item">
+                <div class="arrivals__items-block">
+                  <img
+                    src="./assets/img/arrivals/MIKIMOTO Ring with Akoya Pearls and Diamonds.jpeg"
+                    alt="MIKIMOTO Ring with Akoya Pearls and Diamonds"
+                    class="arrivals__img"
+                  />
+                  <div class="arrivals__new">NEW</div>
+                  <div class="arrivals__like">
+                    <img src="./assets/img/header/like.svg" alt="like" />
+                  </div>
+                  <div class="arrivals__shopnow">Shop Now</div>
+                </div>
+                <h3 class="arrivals__item-title">
+                  MIKIMOTO Ring with Akoya Pearls and Diamonds
+                </h3>
+                <p class="arrivals__price">$299</p>
+              </div>
+              <div class="arrivals__item">
+                <div class="arrivals__items-block">
+                  <img
+                    src="./assets/img/arrivals/MAUI DIVERS Akoya Pearls Earrings in Gold.jpeg"
+                    alt="MAUI DIVERS Akoya Pearls Earrings in Gold"
+                    class="arrivals__img"
+                  />
+                  <div class="arrivals__new">NEW</div>
+                  <div class="arrivals__like">
+                    <img src="./assets/img/header/like.svg" alt="like" />
+                  </div>
+                  <div class="arrivals__shopnow">Shop Now</div>
+                </div>
+                <h3 class="arrivals__item-title">
+                  MAUI DIVERS Akoya Pearls Earrings in Gold
+                </h3>
+                <p class="arrivals__price">$156</p>
+              </div>
+              <div class="arrivals__item">
+                <div class="arrivals__items-block">
+                  <img
+                    src="./assets/img/arrivals/PASPALEY Necklace with Baroque Pearls.jpeg"
+                    alt="PASPALEY Necklace with Baroque Pearls"
+                    class="arrivals__img"
+                  />
+                  <div class="arrivals__new">NEW</div>
+                  <div class="arrivals__like">
+                    <img src="./assets/img/header/like.svg" alt="like" />
+                  </div>
+                  <div class="arrivals__shopnow">Shop Now</div>
+                </div>
+                <h3 class="arrivals__item-title">
+                  PASPALEY Necklace with Baroque Pearls
+                </h3>
+                <p class="arrivals__price">$244</p>
+              </div>
+              <div class="arrivals__item">
+                <div class="arrivals__items-block">
+                  <img
+                    src="./assets/img/arrivals/Tiffany&Co. Silver Ring with Akoya Pearl.jpeg"
+                    alt="Tiffany&Co. Silver Ring with Akoya Pearl"
+                    class="arrivals__img"
+                  />
+                  <div class="arrivals__new">NEW</div>
+                  <div class="arrivals__like">
+                    <img src="./assets/img/header/like.svg" alt="like" />
+                  </div>
+                  <div class="arrivals__shopnow">Shop Now</div>
+                </div>
+                <h3 class="arrivals__item-title">
+                  Tiffany&Co. Silver Ring with Akoya Pearl
+                </h3>
+                <p class="arrivals__price">$99</p>
+              </div>
+              <div class="arrivals__item">
+                <div class="arrivals__items-block">
+                  <img
+                    src="./assets/img/arrivals/MEJURI Mini Pearl Pendant Necklace.jpeg"
+                    alt="MEJURI Mini Pearl Pendant Necklace"
+                    class="arrivals__img"
+                  />
+                  <div class="arrivals__new">NEW</div>
+                  <div class="arrivals__like">
+                    <img src="./assets/img/header/like.svg" alt="like" />
+                  </div>
+                  <div class="arrivals__shopnow">Shop Now</div>
+                </div>
+
+                <h3 class="arrivals__item-title">
+                  MEJURI Mini Pearl Pendant Necklace
+                </h3>
+                <p class="arrivals__price">$139</p>
+              </div>
+            </div>
+            <div class="slider-buttons slider-buttons-category">
+              <a href="#">
+                <img
+                  class="slider-arrow-icon"
+                  src="./assets/img/left-arrow.svg"
+                  alt=""
+                />
+              </a>
+              <a href="#">
+                <img
+                  class="slider-arrow-icon"
+                  src="./assets/img/right-arrow.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured" id="featured">
+        <div class="wrapper">
+          <div class="featured__inner">
+            <div class="featured__main">
+              <img
+                src="./assets/img/featured/wedding edition.jpeg"
+                alt="wedding edition"
+              />
+              <div class="featured__info">
+                <div class="featured__info-title">Wedding Edition</div>
+                <button class="featured__info-btn" type="submit">
+                  shop now
+                </button>
+              </div>
+            </div>
+
+            <div class="featured__items">
+              <div class="featured__item">
+                <img
+                  src="./assets/img/featured/biwa pearls.jpeg"
+                  alt="biwa pearls"
+                />
+
+                <div class="featured__item-info">
+                  Biwa Pearls
+                  <img src="./assets/img/right-arrow.svg" alt="" />
+                </div>
+              </div>
+              <div class="featured__item">
+                <img
+                  src="./assets/img/featured/akoya pearls.jpeg"
+                  alt="akoya pearls"
+                />
+
+                <div class="featured__item-info">
+                  Akoya pearl
+                  <img src="./assets/img/right-arrow.svg" alt="" />
+                </div>
+              </div>
+              <div class="featured__item">
+                <img
+                  src="./assets/img/featured/baroque pearls.jpeg"
+                  alt="baroque pearls"
+                />
+
+                <div class="featured__item-info">
+                  Baroque Pearls
+                  <img src="./assets/img/right-arrow.svg" alt="" />
+                </div>
+              </div>
+              <div class="featured__item">
+                <img
+                  src="./assets/img/featured/keshi pearls.jpeg"
+                  alt="keshi pearls"
+                />
+
+                <div class="featured__item-info">
+                  Keshi pearls
+                  <img src="./assets/img/right-arrow.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sale" id="sale">
+        <div class="wrapper">
+          <div class="sale__inner">
+            <div class="sale__title">Jewellery on sale</div>
+
+            <div class="sale__items">
+              <div class="sale__item">
+                <div class="sale__item-block">
+                  <img
+                    src="./assets/img/sale/MEJURI Pearl Charm Necklace.jpeg"
+                    alt=""
+                  />
+                  <div class="sale__new">NEW</div>
+                  <div class="sale__like">
+                    <img src="./assets/img/header/like.svg" alt="like" />
+                  </div>
+                </div>
+                <div class="sale__item-title">MEJURI Pearl Charm Necklace</div>
+
+                <div class="sale__prices">
+                  <div class="price__now">$213</div>
+                  <div class="price__old">$299</div>
+                </div>
+              </div>
+              <div class="sale__item">
+                <div class="sale__item-block">
+                  <img
+                    src="./assets/img/sale/PASPALEY Earrings with Baroque Pearls.jpeg"
+                    alt="PASPALEY Earrings with Baroque Pearls"
+                  />
+                  <div class="sale__new">NEW</div>
+                  <div class="sale__like">
+                    <img src="./assets/img/header/like.svg" alt="like" />
+                  </div>
+                </div>
+                <div class="sale__item-title">
+                  PASPALEY Earrings with Baroque Pearls
+                </div>
+
+                <div class="sale__prices">
+                  <div class="price__now">$213</div>
+                  <div class="price__old">$299</div>
+                </div>
+              </div>
+              <div class="sale__item">
+                <div class="sale__item-block">
+                  <img
+                    src="./assets/img/sale/Tiffany&Co. Silver Ring with Akoya Pearls.jpeg"
+                    alt="Tiffany&Co. Silver Ring with Akoya Pearls"
+                  />
+                  <div class="sale__new">NEW</div>
+                  <div class="sale__like">
+                    <img src="./assets/img/header/like.svg" alt="like" />
+                  </div>
+                </div>
+                <div class="sale__item-title">
+                  Tiffany&Co. Silver Ring with Akoya Pearls
+                </div>
+
+                <div class="sale__prices">
+                  <div class="price__now">$213</div>
+                  <div class="price__old">$299</div>
+                </div>
+              </div>
+              <div class="sale__item">
+                <div class="sale__item-block">
+                  <img
+                    src="./assets/img/sale/MATEO Ring with Akoya Pearl.jpeg"
+                    alt="MATEO Ring with Akoya Pearl"
+                  />
+                  <div class="sale__new">NEW</div>
+                  <div class="sale__like">
+                    <img src="./assets/img/header/like.svg" alt="like" />
+                  </div>
+                </div>
+                <div class="sale__item-title">MATEO Ring with Akoya Pearl</div>
+
+                <div class="sale__prices">
+                  <div class="price__now">$213</div>
+                  <div class="price__old">$299</div>
+                </div>
+              </div>
+              <div class="sale__item">
+                <div class="sale__item-block">
+                  <img
+                    src="./assets/img/sale/MAUI DIVERS Pendant with Baroque Pearls.jpeg"
+                    alt="MAUI DIVERS Pendant with Baroque Pearls"
+                  />
+                  <div class="sale__new">NEW</div>
+                  <div class="sale__like">
+                    <img src="./assets/img/header/like.svg" alt="like" />
+                  </div>
+                </div>
+                <div class="sale__item-title">
+                  MAUI DIVERS Pendant with Baroque Pearls
+                </div>
+
+                <div class="sale__prices">
+                  <div class="price__now">$213</div>
+                  <div class="price__old">$299</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider-buttons slider-buttons-category">
+              <a href="#">
+                <img
+                  class="slider-arrow-icon"
+                  src="./assets/img/left-arrow.svg"
+                  alt=""
+                />
+              </a>
+              <a href="#">
+                <img
+                  class="slider-arrow-icon"
+                  src="./assets/img/right-arrow.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="special" id="special">
+        <div class="wrapper">
+          <div class="special__inner">
+            <div class="special__item">
+              <img
+                src="./assets/img/special/elegant.jpeg"
+                alt="Elegant Piercing for full outfits"
+              />
+
+              <div class="special__box">
+                <h1 class="special__title">
+                  Elegant Piercing for Full Outfits
+                </h1>
+                <button type="submit" class="special__btn">Shop Now</button>
+              </div>
+            </div>
+
+            <div class="special__item">
+              <img
+                src="./assets/img/special/valentin.jpeg"
+                alt="Valentines Day Perfect Gift"
+              />
+
+              <div class="special__box">
+                <h1 class="special__title">Valentines Day Perfect Gift</h1>
+                <button type="submit" class="special__btn">Shop Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="selling" id="selling">
+        <div class="wrapper">
+          <div class="selling__inner">
+            <h2 class="selling__title">Best Selling</h2>
+
+            <div class="selling__items">
+              <div class="selling__item">
+                <img src="./assets/img/selling/mikimoto.jpeg" alt="mikimoto" />
+
+                <div class="selling__item-title">
+                  MIKIMOTO Necklace with Akoya Cultured Pearl
+                </div>
+
+                <div class="selling__price">$399</div>
+              </div>
+              <div class="selling__item">
+                <img
+                  src="./assets/img/selling/tiffany&co.jpeg"
+                  alt="tiffany&co"
+                />
+
+                <div class="selling__item-title">
+                  Tiffany&Co. Pearl Hoop Earrings in Sterling Silver
+                </div>
+
+                <div class="selling__price">$299</div>
+
+                <div class="selling__hot">Hot</div>
+              </div>
+              <div class="selling__item">
+                <img
+                  src="./assets/img/selling/mejuri-mini.jpeg"
+                  alt="mejuri-mini"
+                />
+
+                <div class="selling__item-title">
+                  MEJURI Mini Pearl Satellite Bracelet
+                </div>
+
+                <div class="selling__price">$299</div>
+
+                <div class="selling__hot">Hot</div>
+              </div>
+              <div class="selling__item">
+                <img src="./assets/img/selling/paspaley.jpeg" alt="paspaley" />
+
+                <div class="selling__item-title">
+                  PASPALEY Wild Pandanus Keshi Pearls Ring
+                </div>
+
+                <div class="selling__price">$299</div>
+              </div>
+              <div class="selling__item">
+                <img src="./assets/img/selling/maui.jpeg" alt="maui" />
+
+                <div class="selling__item-title">
+                  MAUI DIVERS Freshwater Pearl Necklace in Silver
+                </div>
+
+                <div class="selling__price">$299</div>
+              </div>
+            </div>
+
+            <div class="slider-buttons slider-buttons-category">
+              <a href="#">
+                <img
+                  class="slider-arrow-icon"
+                  src="./assets/img/left-arrow.svg"
+                  alt=""
+                />
+              </a>
+              <a href="#">
+                <img
+                  class="slider-arrow-icon"
+                  src="./assets/img/right-arrow.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="discover" id="discover">
+        <div class="wrapper">
+          <div class="discover__inner">
+            <h2 class="discover__title">
+              Discover our Hair Accessories Collection
+            </h2>
+            <div class="discover__text">
+              Discover our new collection of hai accessories with pearls. You
+              will find the most original handmade pieces of jewellery.
+            </div>
+
+            <button class="discover__btn">Shop Now</button>
+          </div>
+
+          <div class="discover__mobile">
+            <img src="./assets/img/discover/bg-mobile.png" alt="mobile" />
+          </div>
+        </div>
+      </section>
+
+      <section class="brand" id="brand">
+        <div class="wrapper">
+          <div class="brand__inner">
+            <h2 class="brand__title">Browse by Brand</h2>
+
+            <div class="brand__items">
+              <div class="brand__item">
+                <img src="./assets/img/brand/mikimoto.jpeg" alt="mikimoto" />
+              </div>
+              <div class="brand__item">
+                <img src="./assets/img/brand/paspaley.jpeg" alt="paspaley" />
+              </div>
+              <div class="brand__item">
+                <img src="./assets/img/brand/maui.jpeg" alt="maui" />
+              </div>
+              <div class="brand__item">
+                <img src="./assets/img/brand/mateo.jpeg" alt="mateo" />
+              </div>
+              <div class="brand__item">
+                <img
+                  src="./assets/img/brand/tiffany&co.jpeg"
+                  alt="tiffany&co"
+                />
+              </div>
+              <div class="brand__item">
+                <img src="./assets/img/brand/mejuri.jpeg" alt="mejuri" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews" id="reviews">
+        <div class="wrapper">
+          <div class="reviews__inner">
+            <div class="reviews__title">What Our Customers Say</div>
+
+            <div class="reviews__items">
+              <div class="reviews__item">
+                <div class="reviews__text">
+                  Lorem ipsum dolor sit amet consectetur. Iaculis in nascetur
+                  purus pharetra est at felis praesent. Ipsum quis nunc purus
+                  amet donec urna dictum.
+                </div>
+
+                <div class="reviews__profile">
+                  <img
+                    class="reviews__image"
+                    src="./assets/img/reviews/devon.jpeg"
+                    alt="profile photo"
+                  />
+                  <div class="reviews__profile-box">
+                    <div class="reviews__profile-name">Devon Lane</div>
+                    <div class="reviews__profile-data">8/15/24</div>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews__item">
+                <div class="reviews__text">
+                  Eget at augue lobortis risus magna ornare diam nulla
+                  tincidunt. Curabitur ut interdum odio in eget.
+                </div>
+
+                <div class="reviews__profile">
+                  <img
+                    class="reviews__image"
+                    src="./assets/img/reviews/ronald.jpeg"
+                    alt="profile photo"
+                  />
+                  <div class="reviews__profile-box">
+                    <div class="reviews__profile-name">Ronald Richards</div>
+                    <div class="reviews__profile-data">10/28/24</div>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews__item">
+                <div class="reviews__text">
+                  Lorem ipsum dolor sit amet consectetur. Iaculis in nascetur
+                  purus pharetra est at felis praesent. Ipsum quis nunc purus
+                  amet donec urna dictum.
+                </div>
+
+                <div class="reviews__profile">
+                  <img
+                    class="reviews__image"
+                    src="./assets/img/reviews/kristin.jpeg"
+                    alt="profile photo"
+                  />
+                  <div class="reviews__profile-box">
+                    <div class="reviews__profile-name">Kristin Watson</div>
+                    <div class="reviews__profile-data">9/18/24</div>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews__item">
+                <div class="reviews__text">
+                  Eget at augue lobortis risus magna ornare diam nulla
+                  tincidunt. Curabitur ut interdum odio in eget. Ipsum quis nunc
+                  purus amet.
+                </div>
+
+                <div class="reviews__profile">
+                  <img
+                    class="reviews__image"
+                    src="./assets/img/reviews/arlene.jpeg"
+                    alt="profile photo"
+                  />
+                  <div class="reviews__profile-box">
+                    <div class="reviews__profile-name">Arlene McCoy</div>
+                    <div class="reviews__profile-data">1/15/24</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider-buttons slider-buttons-category">
+              <a href="#">
+                <img
+                  class="slider-arrow-icon"
+                  src="./assets/img/left-arrow.svg"
+                  alt=""
+                />
+              </a>
+              <a href="#">
+                <img
+                  class="slider-arrow-icon"
+                  src="./assets/img/right-arrow.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="social" id="social">
+        <div class="wrapper">
+          <div class="social__inner">
+            <div class="social__title">Follow Us on Instagram</div>
+
+            <div class="social__subtitle">@monnica_jewellery</div>
+
+            <div class="social__items">
+              <div class="social__item">
+                <img
+                  src="./assets/img/social/photo-1.jpeg"
+                  alt="photo instagram"
+                />
+                <div class="social__icon">
+                  <img src="./assets/img/Instagram.svg" alt="instagram" />
+                </div>
+              </div>
+              <div class="social__item">
+                <img
+                  src="./assets/img/social/photo-2.jpeg"
+                  alt="photo instagram"
+                />
+                <div class="social__icon">
+                  <img src="./assets/img/Instagram.svg" alt="instagram" />
+                </div>
+              </div>
+              <div class="social__item">
+                <img
+                  src="./assets/img/social/photo-3.jpeg"
+                  alt="photo instagram"
+                />
+                <div class="social__icon">
+                  <img src="./assets/img/Instagram.svg" alt="instagram" />
+                </div>
+              </div>
+              <div class="social__item">
+                <img
+                  src="./assets/img/social/photo-4.jpeg"
+                  alt="photo instagram"
+                />
+                <div class="social__icon">
+                  <img src="./assets/img/Instagram.svg" alt="instagram" />
+                </div>
+              </div>
+              <div class="social__item">
+                <img
+                  src="./assets/img/social/photo-5.jpeg"
+                  alt="photo instagram"
+                />
+                <div class="social__icon">
+                  <img src="./assets/img/Instagram.svg" alt="instagram" />
+                </div>
+              </div>
+              <div class="social__item">
+                <img
+                  src="./assets/img/social/photo-6.jpeg"
+                  alt="photo instagram"
+                />
+                <div class="social__icon">
+                  <img src="./assets/img/Instagram.svg" alt="instagram" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="wrapper">
+          <h2 class="about__title">About Our Online Shop</h2>
+
+          <div class="about__text">
+            The Monnica online shop is a virtual platform where customers can
+            browse and purchase a wide range of Monnica products from the
+            comfort of their own homes. The online shop offers a variety of
+            sports clothing, footwear, and accessories for men, women, and
+            children. Customers can explore the latest collections, view
+            detailed product descriptions, and make secure online payments.
+          </div>
+          <div class="about__text option">
+            Additionally, the online shop may provide features such as customer
+            reviews, size guides, and personalized recommendations to enhance
+            the shopping experience. With convenient shipping options and easy
+            returns, the Porto online shop aims to provide a seamless and
+            enjoyable shopping experience for its customers.
+          </div>
+
+          <button class="about__btn">Read More</button>
+
+          <div class="about__items">
+            <div class="about__item">
+              <img
+                src="./assets/img/about/shipping.svg"
+                alt="shipping"
+                class="about__img"
+              />
+
+              <div class="about__item-box">
+                <h3 class="about__item-title">Free Shipping & Returns</h3>
+                <p class="about__item-text">
+                  Free shipping on all orders over 149$
+                </p>
+              </div>
+            </div>
+            <div class="about__item">
+              <img
+                src="./assets/img/about/dollar.svg"
+                alt="dollar"
+                class="about__img"
+              />
+
+              <div class="about__item-box">
+                <h3 class="about__item-title">Money Back Guarantee</h3>
+                <p class="about__item-text">100% money back guarantee</p>
+              </div>
+            </div>
+            <div class="about__item">
+              <img
+                src="./assets/img/about/certificate.svg"
+                alt="certificate"
+                class="about__img"
+              />
+
+              <div class="about__item-box">
+                <h3 class="about__item-title">Certificated shop</h3>
+                <p class="about__item-text">
+                  Available certificates of authenticity
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="subscribe" id="subscribe">
+        <div class="wrapper">
+          <div class="subscribe__inner">
+            <div class="subscribe__text">Subscribe to Newsletter</div>
+
+            <div class="subscribe__form">
+              <input
+                class="subscribe__input"
+                type="email"
+                placeholder="Enter your email here..."
+              />
+              <button type="submit" class="subscribe__btn">Submit</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__logo">
+          <img src="./assets/img/logo-footer.svg" alt="logo" />
+        </div>
+
+        <nav class="footer__nav">
+          <ul class="footer__list">
+            <li class="footer__list">
+              <a href="#main" class="footer__link">Home</a>
+            </li>
+            <li class="footer__list">
+              <a href="#category" class="footer__link">shop</a>
+            </li>
+            <li class="footer__list">
+              <a href="#sale" class="footer__link">Sale</a>
+            </li>
+            <li class="footer__list">
+              <a href="#about" class="footer__link">About</a>
+            </li>
+            <li class="footer__list">
+              <a href="#" class="footer__link">Help</a>
+            </li>
+            <li class="footer__list">
+              <a href="#!" class="footer__link">Contacts</a>
+            </li>
+            <li class="footer__list">
+              <a href="#!" class="footer__link">Privacy & Policy</a>
+            </li>
+          </ul>
+          <div class="footer__social">
+            <img
+              src="./assets/img/Facebook.svg"
+              alt="facebook"
+              class="footer__social-item"
+            />
+            <img
+              src="./assets/img/Instagram-footer.svg"
+              alt="instagram"
+              class="footer__social-item"
+            />
+            <img
+              src="./assets/img/Tiktok.svg"
+              alt="Tik tok"
+              class="footer__social-item"
+            />
+          </div>
+        </nav>
+
+        <div class="footer__copyright">
+          <div class="footer__text">© 2024 Monnica • All Rights Reserved</div>
+          <div class="footer__pay">
+            <img src="./assets/img/footer/mastercard.svg" alt="mastercard" />
+            <img src="./assets/img/footer/visa.svg" alt="visa" />
+            <img src="./assets/img/footer/paypal.svg" alt="paypal" />
+            <img
+              src="./assets/img/footer/americanexpress.svg"
+              alt="americanexpress"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/jquery-3.7.1.js"></script>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
