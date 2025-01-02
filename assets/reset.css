@@ -21,6 +21,7 @@
     line-height: 1;
     font-size: 14px;
     overflow-x: hidden;
+    overflow-y: auto;
     scroll-behavior: smooth;
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
