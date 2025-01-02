@@ -1488,6 +1488,7 @@ body {
 
 /* =========== SHOP PAGE STYLES =========== */
 
+
 .shop__pages {
     margin-bottom: 40px;
 }
@@ -1621,6 +1622,7 @@ body {
     line-height: 150%;
     letter-spacing: 2%;
     min-height: 92px;
+    display: inline-block;
 }
 
 .shop__product-price {
@@ -1787,6 +1789,309 @@ body {
 .shop__filters-btn:hover {
     background-color: rgb(13, 3, 0);
     color: white;
+}
+
+
+/* =========== SHOP PAGE STYLES =========== */
+
+.product__main {
+    margin: 40px 0 130px 0;
+}
+
+.product__pages-item-active {
+    color: rgb(58, 58, 58);
+}
+
+
+.product__pages-item {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 2%;
+    color: rgb(13, 3, 0);
+}
+
+.product__inner {
+    display: flex;
+    align-items: start;
+    gap: 30px;
+}
+
+.product__photo {
+    min-height: 700px;
+    min-width: 660px;
+}
+
+.product__photo-main {
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.product__photo-list {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product__photo-item {
+    cursor: pointer;
+}
+
+.product__title {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 120%;
+    color: rgb(13, 3, 0);
+    margin-bottom: 24px;
+}
+
+.product__stock {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 2%;
+    color: rgb(58, 58, 58);
+    margin-bottom: 40px;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.product__price {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.product__price-new {
+    font-family: 'Jost', sans-serif;
+    font-size: 24px;
+    line-height: 120%;
+    color: rgb(13, 3, 0);
+}
+
+.product__price-old {
+    font-size: 20px;
+    line-height: 120%;
+    color: rgb(204, 204, 204);
+    text-decoration: line-through;
+}
+
+.product__color {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.product__color-name {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    line-height: 2px;
+    letter-spacing: 2%;
+    color: rgb(13, 3, 0);
+}
+
+.product__color-variable {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.product__color-variable-item {
+    padding: 3.5px;
+    border: 2px solid rgb(204, 204, 204);
+    cursor: pointer;
+}
+
+.product__color-variable-item-active {
+    border: 2px solid #000;
+}
+
+.product__size {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.product__size-name {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    line-height: 2px;
+    letter-spacing: 2%;
+    color: rgb(13, 3, 0);
+}
+
+.product__size-variable {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.product__size-variable-item {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: rgb(13, 3, 0);
+    padding: 3px 8.5px;
+    border: 1px solid rgb(204, 204, 204);
+    cursor: pointer;
+}
+
+.product__size-variable-item-active {
+    border: 1px solid #000;
+}
+
+
+.product__size-variable-item-novailability {
+    color: rgb(204, 204, 204);
+    cursor: auto;
+}
+
+.product__quantity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.product__quantity-value {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 2%;
+    color: rgb(13, 3, 0);
+}
+
+.product__counter {
+    border: 1px solid rgb(204, 204, 204);
+    display: flex;
+    align-items: center;
+}
+
+.product__counter__value {
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 2%;
+    padding: 3px 8.5px;
+    font-weight: 700;
+}
+
+.product__counter__btn {
+    background-color: transparent;
+    padding: 8px 9px;
+    color: rgb(58, 58, 58);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.product__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 60px;
+}
+
+.product__btn {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 2%;
+    color: rgb(13, 3, 0);
+    padding: 12px 91px;
+    text-transform: uppercase;
+    width: 50%;
+    border: 1px solid #000;
+}
+
+.product__btn-wishlist {
+    background-color: #fff;
+    
+    transition: .3s all;
+}
+
+.product__btn-wishlist:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.product__btn-bag {
+    background-color: rgb(254, 220, 195);
+    
+    transition: .3s all;
+}
+
+.product__btn-bag:hover {
+    background-color: #000;
+    color: rgb(254, 220, 195);
+}
+
+.product__info-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #CCCCCC;
+    margin-bottom: 24px;
+    padding-bottom: 4px;
+}
+
+.product__info-nav-item {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    color: rgb(13, 3, 0);
+    padding: 0 20.5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.product__info-nav-item-active.product__info-nav-item:after {
+    opacity: 100%;
+}
+
+.product__info-nav-item:after {
+    content: '';
+    background-color: #000;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    opacity: 0%;
+    
+    transition: .3s all;
+}
+
+.product__info-textarea {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 2%;
+    color: rgb(58, 58, 58);
+    margin-bottom: 12px;
+}
+
+.product__info-list {
+    list-style-type: circle;
+}
+
+.product__info-list-item {
+    color: rgb(58, 58, 58);
+    font-size: 16px;
+    font-family: 'Quattrocento Sans', sans-serif;
+    letter-spacing: 2%;
+    line-height: 150%;
+    list-style: circle;
+    margin-left: 20px;
 }
 
 /* MOBILE VERSION */
