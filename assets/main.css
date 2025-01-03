@@ -2120,11 +2120,11 @@ body {
     margin-left: 20px;
 }
 
-/* Начальное состояние модального окна */
+
 .modal {
-    opacity: 0; /* Прозрачность 0 */
-    visibility: hidden; /* Невидимость */
-    transition: opacity 0.3s ease, visibility 0.3s ease; /* Плавные переходы */
+    opacity: 0; 
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease; 
     position: fixed;
     display: flex;
     z-index: 1000;
@@ -2135,15 +2135,13 @@ body {
     background-color: rgba(0, 0, 0, 0.8);
     justify-content: center;
     align-items: center;
-  }
-  
-  /* Видимое состояние модального окна */
-.modal.modal--visible {
-    opacity: 1; /* Полная непрозрачность */
-    visibility: visible; /* Делаем видимым */
 }
   
-  /* Контент модального окна */
+.modal.modal--visible {
+    opacity: 1; 
+    visibility: visible; 
+}
+
 .modal__content {
     position: relative;
     width: 90%;
@@ -2151,17 +2149,196 @@ body {
     background-color: transparent;
     border-radius: 8px;
     overflow: hidden;
-    transform: translateY(-20px); /* Начальное смещение вверх */
-    transition: transform 0.3s ease; /* Плавный переход */
+    transform: translateY(-20px); 
+    transition: transform 0.3s ease;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-  
-  /* Анимация для контента при видимом состоянии */
+
 .modal.modal--visible .modal__content {
-    transform: translateY(0); /* Возвращаем на место */
+    transform: translateY(0); 
 }
+
+/* =========== ABOUT PAGE STYLES =========== */
+
+.aboutpage__main {
+    margin-bottom: 130px;
+}
+
+.aboutpage__intro{
+    margin-bottom: 130px;
+}
+
+.aboutpage__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutpage__title-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.aboutpage__title {
+    font-family: 'Jost', sans-serif;
+    font-size: 60px;
+    line-height: 105%;
+    color: rgb(13, 3, 0);
+    text-align: center;
+    max-width: 976px;
+}
+
+.aboutpage__story {
+    margin-bottom: 130px;
+}
+
+.aboutpage__author {
+    font-family: 'Jost', sans-serif;
+    font-size: 24px;
+    line-height: 120%;
+    color: rgb(58, 58, 58);
+    margin-bottom: 40px;
+}
+
+.aboutpage__story-inner {
+    display: flex;
+    align-items: start;
+    gap: 30px;
+}
+
+.aboutpage__story-photo{
+    max-width: 660px;
+    width: 100%;
+}
+
+.aboutpage__story-photo-main {
+    min-width: 660px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.aboutpage__story-photo-inner {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.aboutpage__story-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 45px;
+    line-height: 130%;
+    color: rgb(13, 3, 0);
+    margin-bottom: 32px;
+}
+
+.aboutpage__story-subtitle {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 2%;
+    color: rgb(58, 58, 58);
+    margin-bottom: 34px;
+}
+
+.aboutpage__story-content-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    margin-bottom: 34px;
+}
+
+.aboutpage__story-content-item-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 35px;
+    line-height: 120%;
+    color: rgb(13, 3, 0);
+    margin-bottom: 16px;
+}
+
+.aboutpage__story-content-item-text {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 2%;
+    color: rgb(58, 58, 58);
+    max-width: 283px;
+}
+
+.aboutpage__story-content-signature-name {
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    line-height: 120%;
+    color: rgb(13, 3, 0);
+    margin-bottom: 28px;
+}
+
+.aboutpage__story-content-signature-item {
+    font-family: 'Cervanttis', sans-serif;
+    font-size: 50px;
+    line-height: 130%;
+    color: rgb(13, 3, 0);
+}
+
+.aboutpage__mission {
+    margin-bottom: 130px;
+    background-image: url('./img/about-page/mission-bg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.aboutpage__mission-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 700px;
+}
+
+.aboutpage__mission-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 45px;
+    line-height: 130%;
+    color: rgb(13, 3, 0);
+    margin-bottom: 32px;
+}
+
+.aboutpage__mission-subtitle {
+    display: inline-block;
+    max-width: 660px;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 2%;
+    color: rgb(58, 58, 58);
+    margin-bottom: 40px;
+}
+
+.aboutpage__mission-items {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.aboutpage__mission-itemp-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 24px;
+    line-height: 120%;
+    color: rgb(13, 3, 0);
+    margin-bottom: 12px;
+}
+
+.boutpage__mission-item-text {
+    max-width: 660px;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 2%;
+    color: rgb(58, 58, 58);
+}
+
 /* MOBILE VERSION */
 
 @media screen and (max-width: 1360px) {
