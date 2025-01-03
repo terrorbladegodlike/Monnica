@@ -186,6 +186,8 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelector('.product__info-description').style.display = 'block';
 });
 
+
+// Модальное окно
 document.addEventListener('DOMContentLoaded', () => {
   const modal = document.getElementById('photoModal');
   const modalContent = modal.querySelector('.modal__body');
