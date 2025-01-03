@@ -1,3 +1,15 @@
+/* font-family: 'Minerva Modern', sans-serif; */
+/* font-family: 'SF Proverbial Gothic', sans-serif;
+font-family: 'SF Proverbial Gothic Condensed', sans-serif;
+font-family: 'SF Proverbial Gothic Extended', sans-serif; */
+
+@font-face {
+    font-family: 'Cervanttis';
+    src: url('./fonts/Cervanttis.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .wrapper {
     max-width: 1350px;
     margin: 0 auto;
@@ -1792,7 +1804,7 @@ body {
 }
 
 
-/* =========== SHOP PAGE STYLES =========== */
+/* =========== PRODUCT PAGE STYLES =========== */
 
 .product__main {
     margin: 40px 0 130px 0;
@@ -1812,6 +1824,10 @@ body {
     color: rgb(13, 3, 0);
 }
 
+.product__intro {
+    margin-bottom: 130px;
+}
+
 .product__inner {
     display: flex;
     align-items: start;
@@ -1819,13 +1835,16 @@ body {
 }
 
 .product__photo {
-    min-height: 700px;
-    min-width: 660px;
+    max-width: 660px;
+    width: 100%;
 }
 
 .product__photo-main {
     margin-bottom: 30px;
     cursor: pointer;
+    width: 100%;
+    min-height: 700px;
+    cursor: zoom-in;
 }
 
 .product__photo-list {
@@ -2005,7 +2024,7 @@ body {
     line-height: 150%;
     letter-spacing: 2%;
     color: rgb(13, 3, 0);
-    padding: 12px 91px;
+    padding: 12px 0;
     text-transform: uppercase;
     width: 50%;
     border: 1px solid #000;
@@ -2080,6 +2099,14 @@ body {
     margin-bottom: 12px;
 }
 
+.product__info-size {
+    display: none;
+}
+
+.product__info-delivery {
+    display: none;
+}
+
 .product__info-list {
     list-style-type: circle;
 }
@@ -2094,6 +2121,48 @@ body {
     margin-left: 20px;
 }
 
+/* Начальное состояние модального окна */
+.modal {
+    opacity: 0; /* Прозрачность 0 */
+    visibility: hidden; /* Невидимость */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Плавные переходы */
+    position: fixed;
+    display: flex;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Видимое состояние модального окна */
+.modal.modal--visible {
+    opacity: 1; /* Полная непрозрачность */
+    visibility: visible; /* Делаем видимым */
+}
+  
+  /* Контент модального окна */
+.modal__content {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    background-color: transparent;
+    border-radius: 8px;
+    overflow: hidden;
+    transform: translateY(-20px); /* Начальное смещение вверх */
+    transition: transform 0.3s ease; /* Плавный переход */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+  /* Анимация для контента при видимом состоянии */
+.modal.modal--visible .modal__content {
+    transform: translateY(0); /* Возвращаем на место */
+}
 /* MOBILE VERSION */
 
 @media screen and (max-width: 1360px) {
@@ -2125,6 +2194,26 @@ body {
 
     .shop__main {
         padding: 0 15px;
+    }
+
+    /* =========== PRODUCT PAGE STYLES =========== */
+
+    .product__main {
+        padding: 0 15px;
+    }
+
+    .product__inner {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product__pages-item {
+        font-size: 14px;
+    }
+
+    .product__photo-main {
+        min-height: 424px;
     }
 }
 
@@ -2169,6 +2258,59 @@ body {
 
 @media screen and (max-width: 850px) {
 
+    /* =========== PRODUCT PAGE STYLES =========== */
+
+    .product__btn {
+        font-size: 14px;
+    }
+
+    .product__stock {
+        font-size: 14px;
+    }
+
+    .product__price-new {
+        font-size: 20px;
+    }
+
+    .product__price-old {
+        font-size: 18px;
+    }
+
+    .product__color-name {
+        font-size: 14px;
+    }
+
+    .product__size-name {
+        font-size: 14px;
+    }
+
+    .product__size-variable-item {
+        font-size: 12px;
+    }
+
+    .product__quantity-value {
+        font-size: 14px;
+    }
+
+    .product__counter__btn {
+        font-size: 14px;
+    }
+
+    .product__info-nav-item {
+        padding: 0 14px;
+        font-size: 18px;
+    }
+
+    .product__info-textarea {
+        font-size: 14px;
+    }
+
+    .product__info-list-item {
+        font-size: 14px;
+    }
+
+    /* =========== SHOP PAGE STYLES =========== */
+
     .shop__category-items {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -2212,6 +2354,16 @@ body {
 }
 
 @media screen and (max-width: 800px){
+
+
+    .product__title {
+        font-size: 24px;
+        line-height: 130%;
+    }
+
+    .product__content {
+        padding: 0 15px;
+    }
 
     .menu {
         top: 37px;
@@ -2572,5 +2724,9 @@ body {
 @media screen and (max-width: 450px) {
     .shop__category-items {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product__pages-item {
+        font-size: 10px;
     }
 }

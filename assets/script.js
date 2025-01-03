@@ -154,3 +154,60 @@ sizeItems.forEach(item => {
     });
 });
 
+// Показ определенного блок в product.html
+
+document.addEventListener('DOMContentLoaded', () => {
+  const navItems = document.querySelectorAll('.product__info-nav-item');
+  const infoBlocks = document.querySelectorAll('.product__info-description, .product__info-size, .product__info-delivery');
+
+  navItems.forEach((item, index) => {
+    item.addEventListener('click', () => {
+      // Удаляем активный класс у всех пунктов навигации
+      navItems.forEach(nav => nav.classList.remove('product__info-nav-item-active'));
+
+      // Добавляем активный класс к текущему пункту
+      item.classList.add('product__info-nav-item-active');
+
+      // Скрываем все блоки информации
+      infoBlocks.forEach(block => block.style.display = 'none');
+
+      // Показываем соответствующий блок информации
+      if (index === 0) {
+        document.querySelector('.product__info-description').style.display = 'block';
+      } else if (index === 1) {
+        document.querySelector('.product__info-size').style.display = 'block';
+      } else if (index === 2) {
+        document.querySelector('.product__info-delivery').style.display = 'block';
+      }
+    });
+  });
+
+  // Изначально показываем первый блок
+  document.querySelector('.product__info-description').style.display = 'block';
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const modal = document.getElementById('photoModal');
+  const modalContent = modal.querySelector('.modal__body');
+  const modalClose = modal.querySelector('.modal__close');
+  const productPhoto = document.querySelector('.product__photo');
+
+  // Открытие модального окна
+  productPhoto.addEventListener('click', () => {
+    modalContent.innerHTML = productPhoto.outerHTML; // Копируем HTML блока
+    modal.classList.add('modal--visible'); // Показываем окно
+  });
+
+  // Закрытие модального окна
+  modalClose.addEventListener('click', () => {
+    modal.classList.remove('modal--visible'); // Скрываем окно
+  });
+
+  // Закрытие при клике вне контента
+  modal.addEventListener('click', (event) => {
+    if (event.target === modal) {
+      modal.classList.remove('modal--visible');
+    }
+  });
+});
+

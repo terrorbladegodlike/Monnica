@@ -9,11 +9,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Murecho:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tenor+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/minerva-modern-font-family"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/sf-proverbial-gothic"
       rel="stylesheet"
     />
   </head>
@@ -378,6 +386,12 @@
       <div class="product__intro">
         <div class="wrapper">
           <div class="product__inner">
+            <div class="modal" id="photoModal">
+              <div class="modal__content">
+                <span class="modal__close">&times;</span>
+                <div class="modal__body"></div>
+              </div>
+            </div>
             <div class="product__photo">
               <img
                 class="product__photo-main"
@@ -512,7 +526,141 @@
                     </li>
                   </ul>
                 </div>
+                <div class="product__info-size">
+                  <div class="product__info-textarea">
+                    Choosing the perfect size ensures comfort and style. Our
+                    size guide helps you find the ideal fit for your jewelry,
+                    ensuring it complements your look effortlessly.
+                  </div>
+                  <ul class="product__info-list">
+                    <li class="product__info-list-item">
+                      Ring Size: Use a ring sizer or measure the inner diameter
+                      of a well-fitting ring.
+                    </li>
+                    <li class="product__info-list-item">
+                      Bracelet Length: Measure your wrist and add 1-2 cm for a
+                      comfortable fit.
+                    </li>
+                    <li class="product__info-list-item">
+                      Necklace Length: Choose a length that suits your neckline
+                      and personal style.
+                    </li>
+                    <li class="product__info-list-item">
+                      For detailed guidance, refer to our online size guide or
+                      contact customer support.
+                    </li>
+                  </ul>
+                </div>
+                <div class="product__info-delivery">
+                  <div class="product__info-textarea">
+                    We strive to deliver your order quickly and securely.
+                    Discover our flexible shipping options designed to suit your
+                    needs.
+                  </div>
+                  <ul class="product__info-list">
+                    <li class="product__info-list-item">
+                      Standard Shipping: Delivered within 5-7 business days.
+                    </li>
+                    <li class="product__info-list-item">
+                      Express Shipping: Get your order within 2-3 business days.
+                    </li>
+                    <li class="product__info-list-item">
+                      Free Shipping: Available on orders over $100.
+                    </li>
+                    <li class="product__info-list-item">
+                      International Delivery: Times and costs vary by
+                      destination.
+                    </li>
+                    <li class="product__info-list-item">
+                      Tracking: Track your order with a unique tracking number
+                      provided upon dispatch.
+                    </li>
+                  </ul>
+                </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="selling">
+        <div class="wrapper">
+          <div class="selling__inner">
+            <h2 class="selling__title">You May Also Like</h2>
+
+            <div class="selling__items">
+              <div class="selling__item">
+                <img src="./assets/img/selling/mikimoto.jpeg" alt="mikimoto" />
+
+                <div class="selling__item-title">
+                  MIKIMOTO Necklace with Akoya Cultured Pearl
+                </div>
+
+                <div class="selling__price">$399</div>
+              </div>
+              <div class="selling__item">
+                <img
+                  src="./assets/img/selling/tiffany&co.jpeg"
+                  alt="tiffany&co"
+                />
+
+                <div class="selling__item-title">
+                  Tiffany&Co. Pearl Hoop Earrings in Sterling Silver
+                </div>
+
+                <div class="selling__price">$299</div>
+
+                <div class="selling__hot">Hot</div>
+              </div>
+              <div class="selling__item">
+                <img
+                  src="./assets/img/selling/mejuri-mini.jpeg"
+                  alt="mejuri-mini"
+                />
+
+                <div class="selling__item-title">
+                  MEJURI Mini Pearl Satellite Bracelet
+                </div>
+
+                <div class="selling__price">$299</div>
+
+                <div class="selling__hot">Hot</div>
+              </div>
+              <div class="selling__item">
+                <img src="./assets/img/selling/paspaley.jpeg" alt="paspaley" />
+
+                <div class="selling__item-title">
+                  PASPALEY Wild Pandanus Keshi Pearls Ring
+                </div>
+
+                <div class="selling__price">$299</div>
+              </div>
+              <div class="selling__item">
+                <img src="./assets/img/selling/maui.jpeg" alt="maui" />
+
+                <div class="selling__item-title">
+                  MAUI DIVERS Freshwater Pearl Necklace in Silver
+                </div>
+
+                <div class="selling__price">$299</div>
+              </div>
+            </div>
+
+            <div class="slider-buttons slider-buttons-category">
+              <a href="#">
+                <img
+                  class="slider-arrow-icon"
+                  src="./assets/img/left-arrow.svg"
+                  alt=""
+                />
+              </a>
+              <a href="#">
+                <img
+                  class="slider-arrow-icon"
+                  src="./assets/img/right-arrow.svg"
+                  alt=""
+                />
+              </a>
             </div>
           </div>
         </div>
