@@ -1340,6 +1340,10 @@ body {
     display: block;
 }
 
+.shop__filters-box.show {
+    display: flex; /* Показываем блок как flex */
+}
+
 .about__items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

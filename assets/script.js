@@ -57,13 +57,32 @@ $(".menu__material-nav").click(function(){
 
 // Показ и закрытие меню фильтров
 
-$(".shop__nav-settings").click(function(){
-  $(".shop__filters-box ").toggle('show')
-})
+// $(".shop__nav-settings").click(function(){
+//   $(".shop__filters-box ").toggle('show')
+// })
 
-$(".shop__filters-close").click(function(){
-  $(".shop__filters-box ").toggle('option')
-})
+// $(".shop__filters-close").click(function(){
+//   $(".shop__filters-box ").toggle('option')
+// })
+
+// Фильтры (shop__nav-settings)
+$(".shop__nav-settings").click(function () {
+  $(".shop__filters-box").toggleClass("show"); // Добавляем/удаляем класс для отображения
+  $(".overlay").toggleClass("active"); // Затемняем фон
+});
+
+// Закрытие фильтров при клике на кнопку закрытия
+$(".shop__filters-close").click(function () {
+  $(".shop__filters-box").removeClass("show"); // Убираем класс отображения
+  $(".overlay").removeClass("active"); // Убираем затемнение
+});
+
+// Клик по overlay для закрытия
+$(".overlay").click(function () {
+  $(".shop__filters-box").removeClass("show"); // Закрываем фильтры
+  $(".close-menu").removeClass("show"); // Закрываем меню (если нужно)
+  $(this).removeClass("active"); // Убираем затемнение
+});
 
 // Выпадающее меню на главной странице
 
