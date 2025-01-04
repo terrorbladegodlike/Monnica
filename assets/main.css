@@ -2162,10 +2162,6 @@ body {
 
 /* =========== ABOUT PAGE STYLES =========== */
 
-.aboutpage__main {
-    margin-bottom: 130px;
-}
-
 .aboutpage__intro{
     margin-bottom: 130px;
 }
@@ -2332,6 +2328,309 @@ body {
 
 .boutpage__mission-item-text {
     max-width: 660px;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 2%;
+    color: rgb(58, 58, 58);
+}
+
+.aboutpage__pearls {
+    margin-bottom: 130px;
+}
+
+.aboutpage__pearls-intro {
+    display: flex;
+    align-items: start;
+    gap: 30px;
+}
+
+.aboutpage__pearls-photo {
+    display: flex;
+    gap: 30px;
+    min-width: 705px;
+}
+
+.aboutpage__pearls-photo-box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 40px;
+}
+
+.aboutpage__pearls-content {
+    padding-top: 80px;
+}
+
+.aboutpage__pearls-content-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 45px;
+    line-height: 130%;
+    color: rgb(13, 3, 0);
+    margin-bottom: 32px;
+}
+
+.aboutpage__pearls-content-subtitle {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 2%;
+    color: rgb(58, 58, 58);
+    margin-bottom: 40px;
+}
+
+.aboutpage__team {
+    margin-bottom: 130px;
+}
+
+.aboutpage__team-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutpage__team-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 45px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    color: rgb(13, 3, 0);
+    margin-bottom: 6px;
+}
+
+.aboutpage__team-subtitle {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 2%;
+    color: rgb(58, 58, 58);
+    margin-bottom: 60px;
+    max-width: 398px;
+    text-align: center;
+}
+
+.aboutpage__team-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    margin-bottom: 40px;
+}
+
+.aboutpage__team-item-photo {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.aboutpage__team-item-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 24px;
+    line-height: 120%;
+    color: rgb(13, 3, 0);
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.aboutpage__team-item-post {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 2%;
+    color: rgb(58, 58, 58);
+    display: flex;
+    justify-content: center;
+}
+
+.aboutpage__team-item {
+    position: relative;
+}
+
+.aboutpage__team-item:hover .aboutpage__team-item-social {
+    opacity: 100%;
+}
+
+.aboutpage__team-item-social {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    opacity: 0;
+
+    transition: .3s all;
+}
+
+.aboutpage__team-item-social-media {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+
+    transition: .3s all;
+}
+
+.aboutpage__team-item-social-media:hover {
+    transform: scale(1.1);
+}
+
+.aboutpage__values {
+    margin-bottom: 130px;
+}
+
+.aboutpage__values-intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aboutpage__values-content {
+    max-width: 640px;
+}
+
+.aboutpage__values-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 45px;
+    line-height: 130%;
+    color: rgb(13, 3, 0);
+    margin-bottom: 32px;
+}
+
+.aboutpage__values-subtitle {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 2%;
+    color: rgb(58, 58, 58);
+    margin-bottom: 60px;
+    max-width: 650px;
+}
+
+.aboutpage__values-items {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.aboutpage__values-item-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 24px;
+    line-height: 120%;
+    color: rgb(13, 3, 0);
+    margin-bottom: 12px;
+}
+
+.aboutpage__values-item-text {
+    font-family: 'Quattrocento Sans';
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 2%;
+    color: rgb(58, 58, 58);
+    max-width: 650px;
+}
+
+.aboutpage__values-photo {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.aboutpage__values-photo-box {
+    max-width: 315px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.aboutpage__brand {
+    margin-bottom: 130px;
+}
+
+.aboutpage__contact {
+    margin-bottom: 130px;
+}
+
+.aboutpage__contact-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aboutpage__contact-content {
+    max-width: 413px;
+}
+
+.aboutpage__contact-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 24px;
+    line-height: 120%;
+    color: rgb(13, 3, 0);
+    margin-bottom: 20px;
+}
+
+.aboutpage__contact-items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+.aboutpage__contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.aboutpage__contact-item-text {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2%;
+    line-height: 150%;
+    color: rgb(58, 58, 58);
+}
+
+.aboutpage__contact-days {
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.aboutpage__contact-day {
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutpage__contact-day-title {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 2%;
+    color: rgb(13, 3, 0);
+}
+
+.aboutpage__contact-day-hours {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 2%;
+    color: rgb(58, 58, 58);
+}
+
+.aboutpage__contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.aboutpage__contact-info-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.aboutpage__contact-info-text {
     font-family: 'Quattrocento Sans', sans-serif;
     font-size: 16px;
     line-height: 150%;
