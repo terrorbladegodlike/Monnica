@@ -6,13 +6,22 @@ $(".about__btn").click(function(){
 
 // Закрытие и показ бокового меню в мобильной версии
 
-$(".header__burger").click(function(){
-  $(".close-menu").toggle('show')
-})
+$(".header__burger").click(function () {
+  $(".close-menu").toggleClass('show'); // Открываем меню
+  $(".overlay").toggleClass('active'); // Затемняем фон
+});
 
-$(".menu__close").click(function(){
-  $(".close-menu").toggle('option')
-})
+$(".menu__close").click(function () {
+  $(".close-menu").toggleClass('show'); // Закрываем меню
+  $(".overlay").toggleClass('active'); // Убираем затемнение
+});
+
+// Клик по overlay, чтобы закрыть меню
+$(".overlay").click(function () {
+  $(".close-menu").removeClass('show'); // Закрываем меню
+  $(this).removeClass('active'); // Убираем затемнение
+});
+
 
 // Переход к категориям в мобильной версии меню
 

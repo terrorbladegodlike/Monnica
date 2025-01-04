@@ -28,6 +28,26 @@ body {
     color: #0D0300;
 }
 
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0); /* Прозрачный по умолчанию */
+    z-index: 1001; /* Над фоном, но под меню */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Отключаем клики */
+}
+
+/* Активное состояние затемнения */
+.overlay.active {
+    background: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+    opacity: 1;
+    pointer-events: all; /* Включаем клики */
+}
+
 /* MENU SECTION STYLES */
 
 .menu {
@@ -1701,6 +1721,7 @@ body {
 
 .shop__filters-box {
     min-width: 236px;
+    z-index: 2000;
     display: flex;
     flex-direction: column;
 }
@@ -2213,8 +2234,8 @@ body {
 }
 
 .aboutpage__story-photo-main {
-    min-width: 660px;
     width: 100%;
+    min-width: 660px;
     margin-bottom: 30px;
 }
 
@@ -2222,6 +2243,11 @@ body {
     display: flex;
     align-items: center;
     gap: 30px;
+    width: 100%;
+}
+
+.aboutpage__story-photo-inner img {
+    width: 50%;
 }
 
 .aboutpage__story-title {
@@ -2286,6 +2312,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .aboutpage__mission-inner {
     display: flex;
     flex-direction: column;
@@ -2326,7 +2353,7 @@ body {
     margin-bottom: 12px;
 }
 
-.boutpage__mission-item-text {
+.aboutpage__mission-item-text {
     max-width: 660px;
     font-family: 'Quattrocento Sans', sans-serif;
     font-size: 16px;
@@ -2354,6 +2381,7 @@ body {
 .aboutpage__pearls-photo-box {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 30px;
     padding-top: 40px;
 }
@@ -2418,7 +2446,7 @@ body {
 }
 
 .aboutpage__team-item-photo {
-    margin-bottom: 10px;
+    margin-bottom: 16px;
     cursor: pointer;
 }
 
@@ -2691,6 +2719,126 @@ body {
         min-height: 424px;
         min-width: 100px;
     }
+
+    /* =========== ABOUT PAGE STYLES =========== */
+
+    .aboutpage__main {
+        padding: 0 15px;
+    }
+
+    .aboutpage__title-block {
+        margin-bottom: 28px;
+    }
+
+    .aboutpage__title {
+        font-size: 40px;
+        line-height: 130%;
+    }
+
+    .aboutpage__author {
+        font-size: 20px;
+        line-height: 130%;
+    }
+
+    .aboutpage__intro{
+        margin-bottom: 60px;
+    }
+
+    .aboutpage__story {
+        margin-bottom: 60px;
+    }
+
+    .aboutpage__story-inner {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
+
+    .aboutpage__pearls-intro {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .aboutpage__pearls-content {
+        padding-top: 0;
+        max-width: 545px;
+    }
+
+    .aboutpage__pearls-photo {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .aboutpage__pearls-photo-box {
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        min-height: 220px;
+        min-width: 100px;
+        gap: 14px;
+        padding-top: 0px;
+    }
+
+    .aboutpage__pearls-photo-box img {
+        width: 48%;
+    }
+
+    .aboutpage__values-intro {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .aboutpage__values-title {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .aboutpage__values-subtitle {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .aboutpage__values-items {
+        gap: 15px;
+    }
+
+    .aboutpage__values-item-title {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .aboutpage__values-photo {
+        flex-direction: column;
+        max-width: 660px;
+    }
+
+    .aboutpage__values-photo-box {
+        flex-direction: row;
+        justify-content: center;
+        max-width: 660px;
+    }
+
+    .aboutpage__values-photo-box img {
+        width: 49%;
+    }
+
+    .aboutpage__brand {
+        margin-bottom: 60px;
+    }
+
+    .aboutpage__contact {
+        margin-bottom: 60px;
+    }
+
+    .aboutpage__contact-inner {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
 }
 
 @media screen and (max-width: 1250px) {
@@ -2733,6 +2881,154 @@ body {
 }
 
 @media screen and (max-width: 850px) {
+
+    .aboutpage__story-photo-main {
+        min-width: 100px;
+        margin-bottom: 14px;
+    }
+
+    .aboutpage__story-photo-inner {
+        min-width: 100px;
+        gap: 14px;
+    }
+
+    .aboutpage__mission-inner {
+        min-height: 400px;
+    }
+
+    
+    .aboutpage__story-title {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .aboutpage__story-subtitle {
+        font-size: 14px;
+        margin-bottom: 28px;
+    }
+
+    .aboutpage__story-content-item-title {
+        font-size: 24px;
+        line-height: 130%;
+    }
+
+    .aboutpage__story-content-item-text {
+        font-size: 14px;
+    }
+
+    .aboutpage__story-content-signature-name {
+        font-size: 18px;
+    }
+
+    .aboutpage__story-content-signature-item {
+        font-size: 40px;
+    }
+
+    .aboutpage__mission {
+        margin-bottom: 60px;
+    }
+
+    .aboutpage__mission-title {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .aboutpage__mission-subtitle {
+        font-size: 14px;
+    }
+
+    .aboutpage__mission-items {
+        gap: 20px;
+    }
+
+    .aboutpage__mission-item-text {
+        font-size: 14px;
+    }
+
+    .aboutpage__mission-itemp-title {
+        font-size: 20px;
+        line-height: 130%;
+    }
+
+    .aboutpage__pearls {
+        margin-bottom: 60px;
+    }
+
+    .aboutpage__pearls-photo {
+        min-width: 100px;
+    }
+
+    .aboutpage__team {
+        margin-bottom: 60px;
+    }
+
+    .aboutpage__team-title {
+        font-size: 32px;
+    }
+
+    .aboutpage__team-subtitle {
+        font-size: 14px;
+        margin-bottom: 28px;
+    }
+
+    .aboutpage__team-items {
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 28px;
+    }
+
+    .aboutpage__team-item-title {
+        font-size: 20px;
+        line-height: 130%;
+    }
+
+    .aboutpage__team-item-post {
+        font-size: 14px;
+    }
+
+    .aboutpage__values {
+        margin-bottom: 60px;
+    }
+
+    .aboutpage__values-photo-box {
+        gap: 5px;
+    }
+
+    .aboutpage__contact-title {
+        font-size: 20px;
+        line-height: 130%;
+    }
+
+    .aboutpage__contact-items {
+        margin-bottom: 24px;
+    }
+
+    .aboutpage__contact-item {
+        gap: 10px;
+    }
+
+    .aboutpage__contact-item-text {
+        font-size: 14px;
+    }
+
+    .aboutpage__contact-days {
+        margin-bottom: 24px;
+    }
+
+    .aboutpage__contact-day-title {
+        font-size: 14px;
+    }
+    
+    .aboutpage__contact-day-hours  {
+        font-size: 14px;
+    }
+
+    .aboutpage__contact-info-item {
+        gap: 10px;
+    }
+
+    .aboutpage__contact-info-text {
+        font-size: 14px;
+    }
 
     /* =========== PRODUCT PAGE STYLES =========== */
 
@@ -2801,7 +3097,7 @@ body {
         top: 0;
         left: 0;
         background-color: #fff;
-        z-index: 1000;
+        z-index: 2000;
         padding: 40px 77px 60px 32px;
         max-height: 100vh;
         width: 345px;
@@ -2831,6 +3127,10 @@ body {
 
 @media screen and (max-width: 800px){
 
+    .aboutpage__story-content-items {
+        grid-gap: 14px;
+        margin-bottom: 40px;
+    }
 
     .product__title {
         font-size: 24px;
@@ -3197,6 +3497,12 @@ body {
     }
 }
 
+@media screen and (max-width: 675px) {
+    .aboutpage__story-photo-inner img {
+        width: 49%;
+    }
+}
+
 @media screen and (max-width: 450px) {
     .shop__category-items {
         grid-template-columns: repeat(2, 1fr);
@@ -3204,5 +3510,13 @@ body {
 
     .product__pages-item {
         font-size: 10px;
+    }
+
+    .aboutpage__story-photo-inner img {
+        width: 48%;
+    }
+
+    .aboutpage__team-items {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
