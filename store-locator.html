@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monnica - Store Locator</title>
+    <link rel="stylesheet" href="./assets/main.css" />
+    <link rel="stylesheet" href="./assets/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Murecho:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tenor+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/minerva-modern-font-family"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/sf-proverbial-gothic"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="overlay"></div>
+
+    <!-- Header Top -->
+    <div class="header__top">
+      <div class="wrapper">
+        <div class="header__info">
+          <p class="header__info-text">10% OFF WITH SMS OR EMAIL SIGN UP</p>
+
+          <div class="header__info-map">
+            <div class="header__info-inner">
+              <img
+                src="./assets/img/header/map.svg"
+                alt="map"
+                class="header__info-icon"
+              />
+
+              <div class="header__info-title">STORE LOCATOR</div>
+            </div>
+
+            <select class="header__language" name="select">
+              <option value="value1" selected>EN</option>
+              <option value="value2">RU</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header Section -->
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__inner">
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="./index.html" class="header__link">Home</a>
+              </li>
+              <li class="header__item header__item-dropdown">
+                <a href="./shop.html" class="header__link">Shop</a>
+                <ul class="header__dropdown">
+                  <div class="wrapper">
+                    <div class="dropdown__inner">
+                      <div class="dropdown__item">
+                        <div class="dropdown__title">Shop by Category</div>
+
+                        <div class="dropdown__list">
+                          <div class="dropdown__list-item">
+                            <a href="#!">Earrings</a>
+                            <a href="#!">Rings</a>
+                            <a href="#!">Bracelets</a>
+                            <a href="#!">Necklaces</a>
+                            <a href="#!">Pendants</a>
+                          </div>
+                          <div class="dropdown__list-item">
+                            <a href="#!">Jewellery Sets</a>
+                            <a href="#!">Cuffs</a>
+                            <a href="#!">Anklets</a>
+                            <a href="#!">Piercing</a>
+                            <a href="#!">Hair accesories</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="dropdown__item">
+                        <div class="dropdown__title">Featured</div>
+
+                        <div class="dropdown__list-item">
+                          <a href="#!">New Arrivals</a>
+                          <a href="#!">Jewellery on sale</a>
+                          <a href="#!">Best Selling</a>
+                          <a href="#!">Wedding Edition</a>
+                          <a href="#!">Valentines Day</a>
+                        </div>
+                      </div>
+
+                      <div class="dropdown__item">
+                        <div class="dropdown__title">Shop by material</div>
+
+                        <div class="dropdown__list">
+                          <div class="dropdown__list-item">
+                            <a href="#!">Biwa Pearls</a>
+                            <a href="#!">Akoya pearls</a>
+                            <a href="#!">Baroque Pearls</a>
+                            <a href="#!">Keshi pearls</a>
+                            <a href="#!">Freshwater Pearls</a>
+                          </div>
+                          <div class="dropdown__list-item">
+                            <a href="#!">Tahitian Pearls</a>
+                            <a href="#!">Golden South Sea Pearls</a>
+                            <a href="#!">White South Sea Pearls</a>
+                            <a href="#!">Coin Pearls</a>
+                            <a href="#!">Heart Pearls</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+              <li class="header__item">
+                <a href="./sale.html" class="header__link">Sale</a>
+              </li>
+              <li class="header__item">
+                <a href="./about.html" class="header__link">About</a>
+              </li>
+              <li class="header__item">
+                <a href="./help.html" class="header__link">Help</a>
+              </li>
+            </ul>
+          </nav>
+
+          <img src="./assets/img/logo.svg" alt="logo" class="header__logo" />
+
+          <nav class="header__options">
+            <ul class="header__options-list">
+              <li class="header__options-item">
+                <img src="./assets/img/header/search.svg" alt="search" />
+                <a class="header__options-link" href="#"> Search </a>
+              </li>
+              <li class="header__options-item">
+                <img src="./assets/img/header/bag.svg" alt="search" />
+                <a class="header__options-link" href="#"> Bag </a>
+              </li>
+              <li class="header__options-item">
+                <img src="./assets/img/header/like.svg" alt="search" />
+                <a class="header__options-link" href="#"> Like </a>
+              </li>
+              <li class="header__options-item">
+                <img src="./assets/img/header/user.svg" alt="search" />
+                <a class="header__options-link" href="#"> Log In </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__mob">
+          <img
+            src="./assets/img/header/search.svg"
+            alt="search"
+            class="header__mob-search"
+          />
+
+          <img
+            src="./assets/img/logo-nav.jpeg"
+            alt="logo"
+            class="header__mob-logo"
+          />
+
+          <div class="header__mob-box">
+            <img
+              src="./assets/img/header/bag.svg"
+              alt="bag"
+              class="header__mob-bag"
+            />
+
+            <img
+              src="./assets/img/burger.svg"
+              alt="burger"
+              class="header__burger"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Header NavBar -->
+    <div class="menu close-menu">
+      <a href="#!" class="menu__close">
+        <img
+          src="./assets/img/close.svg"
+          alt="close icon"
+          class="menu__close-icon"
+        />
+      </a>
+      <div class="menu__main">
+        <div class="menu__inner">
+          <div class="menu__item">
+            <h3 class="menu__item-title menu__item-title-category">
+              Shop by Category
+            </h3>
+
+            <a href="#!">
+              <img
+                src="./assets/img/right-arrow.svg"
+                alt="arrow"
+                class="menu__item-icon"
+              />
+            </a>
+          </div>
+          <div class="menu__item">
+            <h3 class="menu__item-title menu__item-title-featured">Featured</h3>
+
+            <a href="#!">
+              <img
+                src="./assets/img/right-arrow.svg"
+                alt="arrow"
+                class="menu__item-icon"
+              />
+            </a>
+          </div>
+          <div class="menu__item">
+            <h3 class="menu__item-title menu__item-title-material">
+              Shop by material
+            </h3>
+
+            <a href="#!">
+              <img
+                src="./assets/img/right-arrow.svg"
+                alt="arrow"
+                class="menu__item-icon"
+              />
+            </a>
+          </div>
+          <div class="menu__item">
+            <h3 class="menu__item-title">Sale</h3>
+
+            <a href="#!">
+              <img
+                src="./assets/img/right-arrow.svg"
+                alt="arrow"
+                class="menu__item-icon"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="menu__list">
+          <div class="menu__list-item">
+            <img
+              class="menu__list-img"
+              src="./assets/img/mobile-menu/home.svg"
+              alt="home"
+            />
+
+            <a href="#intro" class="menu__list-title">Home</a>
+          </div>
+          <div class="menu__list-item">
+            <img
+              class="menu__list-img"
+              src="./assets/img/mobile-menu/about.svg"
+              alt="About"
+            />
+
+            <a href="#about" class="menu__list-title">About</a>
+          </div>
+          <div class="menu__list-item">
+            <img
+              class="menu__list-img"
+              src="./assets/img/mobile-menu/help.svg"
+              alt="Help"
+            />
+
+            <a href="#!" class="menu__list-title">Help</a>
+          </div>
+          <div class="menu__list-item">
+            <img
+              class="menu__list-img"
+              src="./assets/img/mobile-menu/like.svg"
+              alt="Wish list"
+            />
+
+            <a href="#!" class="menu__list-title">Wish list</a>
+          </div>
+          <div class="menu__list-item">
+            <img
+              class="menu__list-img"
+              src="./assets/img/mobile-menu/user.svg"
+              alt="Log in"
+            />
+
+            <a href="#!" class="menu__list-title">Log in</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu__category option">
+        <div class="menu__category-nav">
+          <img
+            class="menu__category-img"
+            src="./assets/img/left-arrow.svg"
+            alt="arrow"
+          />
+          <h3 class="menu__category-title">Shop by Category</h3>
+        </div>
+
+        <div class="menu__category-items">
+          <div class="menu__category-item">Earrings</div>
+          <div class="menu__category-item">Rings</div>
+          <div class="menu__category-item">Bracelets</div>
+          <div class="menu__category-item">Necklaces</div>
+          <div class="menu__category-item">Pendants</div>
+          <div class="menu__category-item">Jewellery Sets</div>
+          <div class="menu__category-item">Cuffs</div>
+          <div class="menu__category-item">Anklets</div>
+          <div class="menu__category-item">Piercing</div>
+          <div class="menu__category-item">Hair accesories</div>
+        </div>
+      </div>
+
+      <div class="menu__featured option">
+        <div class="menu__featured-nav">
+          <img
+            class="menu__featured-img"
+            src="./assets/img/left-arrow.svg"
+            alt="arrow"
+          />
+          <h3 class="menu__featured-title">Shop by featured</h3>
+        </div>
+
+        <div class="menu__featured-items">
+          <div class="menu__featured-item">New Arrivals</div>
+          <div class="menu__featured-item">Jewellery on sale</div>
+          <div class="menu__featured-item">Best Selling</div>
+          <div class="menu__featured-item">Wedding Edition</div>
+          <div class="menu__featured-item">Valentines Day</div>
+        </div>
+      </div>
+
+      <div class="menu__material option">
+        <div class="menu__material-nav">
+          <img
+            class="menu__material-img"
+            src="./assets/img/left-arrow.svg"
+            alt="arrow"
+          />
+          <h3 class="menu__material-title">Shop by material</h3>
+        </div>
+
+        <div class="menu__material-items">
+          <div class="menu__material-item">Biwa Pearls</div>
+          <div class="menu__material-item">Akoya pearls</div>
+          <div class="menu__material-item">Baroque Pearls</div>
+          <div class="menu__material-item">Keshi pearls</div>
+          <div class="menu__material-item">Freshwater Pearls</div>
+          <div class="menu__material-item">Tahitian Pearls</div>
+          <div class="menu__material-item">Golden South Sea Pearls</div>
+          <div class="menu__material-item">White South Sea Pearls</div>
+          <div class="menu__material-item">Coin Pearls</div>
+          <div class="menu__material-item">Heart Pearls</div>
+        </div>
+      </div>
+    </div>
+
+    <main class="store__main">
+      <div class="wrapper">
+        <div class="store__inner">
+          <div class="aboutpage__contact-content">
+            <div class="store__title">Contact us</div>
+            <h2 class="aboutpage__contact-title store">Location</h2>
+            <div class="aboutpage__contact-items">
+              <div class="aboutpage__contact-item">
+                <img
+                  src="./assets/img/about-page/map.svg"
+                  alt="map"
+                  class="aboutpage__contact-item-icon"
+                />
+                <p class="aboutpage__contact-item-text">
+                  1001 Bissonnet St, Houston, TX 77005, United States
+                </p>
+              </div>
+              <div class="aboutpage__contact-item">
+                <img
+                  src="./assets/img/about-page/map.svg"
+                  alt="map"
+                  class="aboutpage__contact-item-icon"
+                />
+                <p class="aboutpage__contact-item-text">
+                  4450 University Dr, Houston, TX 77204, United States
+                </p>
+              </div>
+              <div class="aboutpage__contact-item">
+                <img
+                  src="./assets/img/about-page/map.svg"
+                  alt="map"
+                  class="aboutpage__contact-item-icon"
+                />
+                <p class="aboutpage__contact-item-text">
+                  11839 Greenglen Dr, Houston, TX 77044, United States
+                </p>
+              </div>
+            </div>
+
+            <h2 class="aboutpage__contact-title store">Working hours</h2>
+            <div class="aboutpage__contact-days">
+              <div class="aboutpage__contact-day">
+                <p class="aboutpage__contact-day-title">Sunday to Saturday</p>
+                <p class="aboutpage__contact-day-hours">09:00 AM to 11:00 PM</p>
+              </div>
+              <div class="aboutpage__contact-day">
+                <p class="aboutpage__contact-day-title">Friday</p>
+                <p class="aboutpage__contact-day-hours">09:00 AM to 14:00 AM</p>
+              </div>
+            </div>
+
+            <h2 class="aboutpage__contact-title store">Contacts</h2>
+            <div class="aboutpage__contact-info">
+              <div class="aboutpage__contact-info-item">
+                <img
+                  src="./assets/img/about-page/mail.svg"
+                  alt="mail"
+                  class="aboutpage__contact-info-icon"
+                />
+                <p class="aboutpage__contact-info-text">
+                  customer.help@monnica.com
+                </p>
+              </div>
+              <div class="aboutpage__contact-info-item">
+                <img
+                  src="./assets/img/about-page/phone.svg"
+                  alt="phone"
+                  class="aboutpage__contact-info-icon"
+                />
+                <p class="aboutpage__contact-info-text">(603) 555-0123</p>
+              </div>
+            </div>
+          </div>
+          <div class="get__support-form-store">
+            <form method="get" id="form">
+              <h4 class="get__support-form-title">Send a message</h4>
+
+              <div class="get__support-form-box">
+                <label for="name" class="get__support-form-label"
+                  >Name<span>*</span></label
+                >
+                <input
+                  type="name"
+                  name="name"
+                  autocomplete="name"
+                  id="name"
+                  placeholder="Name*"
+                  class="get__support-form-input"
+                />
+              </div>
+
+              <div class="get__support-form-box">
+                <label for="email" class="get__support-form-label"
+                  >E-mail<span>*</span></label
+                >
+                <input
+                  type="email"
+                  name="email"
+                  autocomplete="email"
+                  id="email"
+                  placeholder="E-mail*"
+                  class="get__support-form-input"
+                />
+              </div>
+
+              <div class="get__support-form-box">
+                <label for="phone" class="get__support-form-label"
+                  >Phone<span>*</span></label
+                >
+                <input
+                  type="phone"
+                  name="phone"
+                  id="phone"
+                  autocomplete="phone"
+                  placeholder="Phone*"
+                  class="get__support-form-input"
+                />
+              </div>
+
+              <div class="get__support-form-box">
+                <label for="message" class="get__support-form-label"
+                  >Message</label
+                >
+
+                <textarea
+                  class="get__support-form-textarea"
+                  placeholder="Message"
+                  name="message"
+                  id="message"
+                  autocomplete="message"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="get__support-form-btn">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="subscribe" id="subscribe">
+      <div class="wrapper">
+        <div class="subscribe__inner">
+          <div class="subscribe__text">Subscribe to Newsletter</div>
+
+          <div class="subscribe__form">
+            <input
+              class="subscribe__input"
+              type="email"
+              placeholder="Enter your email here..."
+            />
+            <button type="submit" class="subscribe__btn">Submit</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__logo">
+          <img src="./assets/img/logo-footer.svg" alt="logo" />
+        </div>
+
+        <nav class="footer__nav">
+          <ul class="footer__list">
+            <li class="footer__list">
+              <a href="./index.html" class="footer__link">Home</a>
+            </li>
+            <li class="footer__list">
+              <a href="./shop.html" class="footer__link">shop</a>
+            </li>
+            <li class="footer__list">
+              <a href="./sale.html" class="footer__link">Sale</a>
+            </li>
+            <li class="footer__list">
+              <a href="./about.html" class="footer__link">About</a>
+            </li>
+            <li class="footer__list">
+              <a href="./help.html" class="footer__link">Help</a>
+            </li>
+            <li class="footer__list">
+              <a href="#!" class="footer__link">Contacts</a>
+            </li>
+            <li class="footer__list">
+              <a href="#!" class="footer__link">Privacy & Policy</a>
+            </li>
+          </ul>
+          <div class="footer__social">
+            <img
+              src="./assets/img/Facebook.svg"
+              alt="facebook"
+              class="footer__social-item"
+            />
+            <img
+              src="./assets/img/Instagram-footer.svg"
+              alt="instagram"
+              class="footer__social-item"
+            />
+            <img
+              src="./assets/img/Tiktok.svg"
+              alt="Tik tok"
+              class="footer__social-item"
+            />
+          </div>
+        </nav>
+
+        <div class="footer__copyright">
+          <div class="footer__text">© 2024 Monnica • All Rights Reserved</div>
+          <div class="footer__pay">
+            <img src="./assets/img/footer/mastercard.svg" alt="mastercard" />
+            <img src="./assets/img/footer/visa.svg" alt="visa" />
+            <img src="./assets/img/footer/paypal.svg" alt="paypal" />
+            <img
+              src="./assets/img/footer/americanexpress.svg"
+              alt="americanexpress"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/jquery-3.7.1.js"></script>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
