@@ -249,3 +249,18 @@ $(document).ready(function () {
     $(this).next(".help__faqs-box-text").slideToggle(300); // Плавное открытие/закрытие текста
   });
 });
+
+// Для поля поиска
+
+$(document).ready(function () {
+  // Открыть поиск при клике на .header__options-link
+  $(".header__options-link, .header__mob-search").on("click", function (event) {
+    event.preventDefault(); // Отключаем переход по ссылке
+    $(".header__search").addClass("header__search-active"); // Добавляем класс для отображения поиска
+  });
+
+  // Закрыть поиск при клике на .header__search-btn
+  $(".header__search-btn").on("click", function () {
+    $(".header__search").removeClass("header__search-active"); // Удаляем класс, скрывая поиск
+  });
+});
