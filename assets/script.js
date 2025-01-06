@@ -7,19 +7,19 @@ $(".about__btn").click(function(){
 // Закрытие и показ бокового меню в мобильной версии
 
 $(".header__burger").click(function () {
-  $(".close-menu").toggleClass('show'); // Открываем меню
-  $(".overlay").toggleClass('active'); // Затемняем фон
+  $(".close-menu").toggleClass('show'); 
+  $(".overlay").toggleClass('active'); 
 });
 
 $(".menu__close").click(function () {
-  $(".close-menu").toggleClass('show'); // Закрываем меню
-  $(".overlay").toggleClass('active'); // Убираем затемнение
+  $(".close-menu").toggleClass('show'); 
+  $(".overlay").toggleClass('active'); 
 });
 
-// Клик по overlay, чтобы закрыть меню
+
 $(".overlay").click(function () {
-  $(".close-menu").removeClass('show'); // Закрываем меню
-  $(this).removeClass('active'); // Убираем затемнение
+  $(".close-menu").removeClass('show'); 
+  $(this).removeClass('active'); 
 });
 
 
@@ -57,66 +57,56 @@ $(".menu__material-nav").click(function(){
 
 // Показ и закрытие меню фильтров
 
-// $(".shop__nav-settings").click(function(){
-//   $(".shop__filters-box ").toggle('show')
-// })
-
-// $(".shop__filters-close").click(function(){
-//   $(".shop__filters-box ").toggle('option')
-// })
-
-// Фильтры (shop__nav-settings)
 $(".shop__nav-settings").click(function () {
-  $(".shop__filters-box").toggleClass("show"); // Добавляем/удаляем класс для отображения
-  $(".overlay").toggleClass("active"); // Затемняем фон
+  $(".shop__filters-box").toggleClass("show"); 
+  $(".overlay").toggleClass("active"); 
 });
 
-// Закрытие фильтров при клике на кнопку закрытия
+
 $(".shop__filters-close").click(function () {
-  $(".shop__filters-box").removeClass("show"); // Убираем класс отображения
-  $(".overlay").removeClass("active"); // Убираем затемнение
+  $(".shop__filters-box").removeClass("show"); 
+  $(".overlay").removeClass("active"); 
 });
 
-// Клик по overlay для закрытия
 $(".overlay").click(function () {
-  $(".shop__filters-box").removeClass("show"); // Закрываем фильтры
-  $(".close-menu").removeClass("show"); // Закрываем меню (если нужно)
-  $(this).removeClass("active"); // Убираем затемнение
+  $(".shop__filters-box").removeClass("show"); 
+  $(".close-menu").removeClass("show"); 
+  $(this).removeClass("active"); 
 });
 
 // Выпадающее меню на главной странице
 
-const dropdownTrigger = document.querySelector('.header__item-dropdown'); // Кнопка Shop
-const dropdownMenu = document.querySelector('.header__dropdown'); // Выпадающее меню
+const dropdownTrigger = document.querySelector('.header__item-dropdown'); 
+const dropdownMenu = document.querySelector('.header__dropdown');
 
 let hideTimeout;
 
 dropdownTrigger.addEventListener('mouseenter', () => {
-  clearTimeout(hideTimeout); // Убираем таймер, если он активен
-  dropdownMenu.classList.add('show'); // Показываем меню
+  clearTimeout(hideTimeout); 
+  dropdownMenu.classList.add('show'); 
 });
 
 dropdownTrigger.addEventListener('mouseleave', () => {
   hideTimeout = setTimeout(() => {
-    dropdownMenu.classList.remove('show'); // Прячем меню после задержки
-  }, 300); // Задержка 300 мс
+    dropdownMenu.classList.remove('show'); 
+  }, 300); 
 });
 
 dropdownMenu.addEventListener('mouseenter', () => {
-  clearTimeout(hideTimeout); // Убираем таймер при наведении на меню
+  clearTimeout(hideTimeout); 
 });
 
 dropdownMenu.addEventListener('mouseleave', () => {
   hideTimeout = setTimeout(() => {
-    dropdownMenu.classList.remove('show'); // Прячем меню после задержки
-  }, 300); // Задержка 300 мс
+    dropdownMenu.classList.remove('show'); 
+  }, 300);
 });
 
 // Скрытие и показ фильтров на странице категорий 
 
 document.querySelectorAll('.filter__title').forEach((title) => {
   title.addEventListener('click', function () {
-    const list = this.nextElementSibling; // Следующий элемент (список фильтров)
+    const list = this.nextElementSibling; 
     if (list && list.classList.contains('filter__list')) {
       list.style.display = list.style.display === 'none' ? 'flex' : 'none';
     }
@@ -125,7 +115,7 @@ document.querySelectorAll('.filter__title').forEach((title) => {
 
 document.querySelectorAll('.filter__title').forEach((title) => {
   title.addEventListener('click', function () {
-    const img = this.querySelector('.filter__title-img'); // Ищем картинку внутри заголовка
+    const img = this.querySelector('.filter__title-img'); 
     if (img) {
       img.style.transform = img.style.transform === 'rotate(180deg)' ? 'rotate(0)' : 'rotate(180deg)';
     }
@@ -141,7 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   decrementBtn.addEventListener("click", () => {
     const currentValue = parseInt(counterValue.textContent, 10);
-    if (currentValue > 0) { // Значение не должно быть отрицательным
+    if (currentValue > 0) { 
       counterValue.textContent = currentValue - 1;
     }
   });
@@ -156,13 +146,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const colorItems = document.querySelectorAll('.product__color-variable-item');
 
-// Добавляем обработчик события "click" на каждый элемент
 colorItems.forEach(item => {
     item.addEventListener('click', () => {
-        // Убираем класс product__color-variable-item-active со всех элементов
         colorItems.forEach(el => el.classList.remove('product__color-variable-item-active'));
         
-        // Добавляем класс product__color-variable-item-active на кликнутый элемент
         item.classList.add('product__color-variable-item-active');
     });
 });
@@ -171,13 +158,12 @@ colorItems.forEach(item => {
 
 const sizeItems = document.querySelectorAll('.product__size-variable-item');
 
-// Добавляем обработчик события "click" для каждого элемента
 sizeItems.forEach(item => {
     item.addEventListener('click', () => {
-        // Удаляем класс product__size-variable-item-active у всех элементов
+        
         sizeItems.forEach(el => el.classList.remove('product__size-variable-item-active'));
         
-        // Добавляем класс product__size-variable-item-active к кликнутому элементу
+       
         item.classList.add('product__size-variable-item-active');
     });
 });
@@ -190,16 +176,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   navItems.forEach((item, index) => {
     item.addEventListener('click', () => {
-      // Удаляем активный класс у всех пунктов навигации
+
       navItems.forEach(nav => nav.classList.remove('product__info-nav-item-active'));
 
-      // Добавляем активный класс к текущему пункту
+
       item.classList.add('product__info-nav-item-active');
 
-      // Скрываем все блоки информации
+
       infoBlocks.forEach(block => block.style.display = 'none');
 
-      // Показываем соответствующий блок информации
+
       if (index === 0) {
         document.querySelector('.product__info-description').style.display = 'block';
       } else if (index === 1) {
@@ -210,7 +196,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Изначально показываем первый блок
+
   document.querySelector('.product__info-description').style.display = 'block';
 });
 
@@ -222,18 +208,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalClose = modal.querySelector('.modal__close');
   const productPhoto = document.querySelector('.product__photo');
 
-  // Открытие модального окна
+
   productPhoto.addEventListener('click', () => {
-    modalContent.innerHTML = productPhoto.outerHTML; // Копируем HTML блока
-    modal.classList.add('modal--visible'); // Показываем окно
+    modalContent.innerHTML = productPhoto.outerHTML; 
+    modal.classList.add('modal--visible'); 
   });
 
-  // Закрытие модального окна
+
   modalClose.addEventListener('click', () => {
-    modal.classList.remove('modal--visible'); // Скрываем окно
+    modal.classList.remove('modal--visible'); 
   });
 
-  // Закрытие при клике вне контента
   modal.addEventListener('click', (event) => {
     if (event.target === modal) {
       modal.classList.remove('modal--visible');
@@ -245,22 +230,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
 $(document).ready(function () {
   $(".help__faqs-box-title-box").on("click", function () {
-    $(this).toggleClass("help__faqs-box-title-box-active"); // Добавляем/убираем класс
-    $(this).next(".help__faqs-box-text").slideToggle(300); // Плавное открытие/закрытие текста
+    $(this).toggleClass("help__faqs-box-title-box-active"); 
+    $(this).next(".help__faqs-box-text").slideToggle(300); 
   });
 });
 
 // Для поля поиска
 
 $(document).ready(function () {
-  // Открыть поиск при клике на .header__options-link
   $(".header__options-link, .header__mob-search").on("click", function (event) {
-    event.preventDefault(); // Отключаем переход по ссылке
-    $(".header__search").addClass("header__search-active"); // Добавляем класс для отображения поиска
+    event.preventDefault();
+    $(".header__search").addClass("header__search-active"); 
   });
 
-  // Закрыть поиск при клике на .header__search-btn
   $(".header__search-btn").on("click", function () {
-    $(".header__search").removeClass("header__search-active"); // Удаляем класс, скрывая поиск
+    $(".header__search").removeClass("header__search-active"); 
+  });
+
+  $(document).on("click", function (event) {
+    if (
+      !$(event.target).closest(".header__search, .header__options-link, .header__mob-search").length
+    ) {
+      $(".header__search").removeClass("header__search-active"); 
+    }
   });
 });
