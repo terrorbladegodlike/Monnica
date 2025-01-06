@@ -241,3 +241,11 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// Для блока Help - появление блоков при нажатии
+
+$(document).ready(function () {
+  $(".help__faqs-box-title-box").on("click", function () {
+    $(this).toggleClass("help__faqs-box-title-box-active"); // Добавляем/убираем класс
+    $(this).next(".help__faqs-box-text").slideToggle(300); // Плавное открытие/закрытие текста
+  });
+});
