@@ -3924,6 +3924,14 @@ body {
     .get__support-form-store {
         min-width: 300px;
     }
+
+    .header__search-box {
+        min-width: 300px;
+    }
+
+    .header__search-input {
+        min-width: 300px;
+    }
 }
 
 @media screen and (max-width: 450px) {
