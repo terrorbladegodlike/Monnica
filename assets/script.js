@@ -296,23 +296,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Функция для обновления навигации
   function updatePagesNavigation(query) {
-    // Удаляем класс shop__pages-item-active у ссылки "Shop"
-    const shopLink = pagesInner.querySelector(".shop__pages-item-active");
-    if (shopLink) shopLink.classList.remove("shop__pages-item-active");
+    // Проверяем, есть ли уже ссылка с текстом "SEARCH - <query>"
+    const existingSearchLink = pagesInner.querySelector(
+      `.shop__pages-item-active[href="#!"]`
+    );
 
-    // Добавляем новый элемент: "SEARCH - RING"
-    const newSlash = document.createElement("div");
-    newSlash.className = "shop__pages-slash";
-    newSlash.textContent = "/";
+    if (!existingSearchLink) {
+      // Удаляем класс shop__pages-item-active у ссылки "Shop"
+      const shopLink = pagesInner.querySelector(".shop__pages-item-active");
+      if (shopLink) shopLink.classList.remove("shop__pages-item-active");
 
-    const newLink = document.createElement("a");
-    newLink.href = "#!";
-    newLink.className = "shop__pages-item shop__pages-item-active";
-    newLink.textContent = `SEARCH - ${query.toUpperCase()}`;
+      // Добавляем новый элемент: "SEARCH - RING"
+      const newSlash = document.createElement("div");
+      newSlash.className = "shop__pages-slash";
+      newSlash.textContent = "/";
 
-    // Добавляем новые элементы в DOM
-    pagesInner.appendChild(newSlash);
-    pagesInner.appendChild(newLink);
+      const newLink = document.createElement("a");
+      newLink.href = "#!";
+      newLink.className = "shop__pages-item shop__pages-item-active";
+      newLink.textContent = `SEARCH - ${query.toUpperCase()}`;
+
+      // Добавляем новые элементы в DOM
+      pagesInner.appendChild(newSlash);
+      pagesInner.appendChild(newLink);
+    }
   }
 
   // Функция для сброса навигации
