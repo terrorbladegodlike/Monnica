@@ -3247,6 +3247,10 @@ body {
     color: rgb(115, 115, 115);
 }
 
+.cart__item-img {
+    min-width: 124px;
+}
+
 /* MOBILE VERSION */
 
 @media screen and (max-width: 1360px) {
@@ -3506,6 +3510,10 @@ body {
 }
 
 @media screen and (max-width: 850px) {
+
+    .cart__item-main {
+        gap: 14px;
+    }
 
     .cart__item-main {
         min-width: 200px;
