@@ -238,14 +238,14 @@ $(document).ready(function () {
 // Для поля поиска
 
 $(document).ready(function () {
-  $(".header__options-link, .header__mob-search").on("click", function (event) {
+  $(".header__options-link-search, .header__mob-search").on("click", function (event) {
     event.preventDefault();
     $(".header__search").addClass("header__search-active"); 
   });
 
   $(document).on("click", function (event) {
     if (
-      !$(event.target).closest(".header__search, .header__options-link, .header__mob-search").length
+      !$(event.target).closest(".header__search, .header__options-link-search, .header__mob-search").length
     ) {
       $(".header__search").removeClass("header__search-active"); 
     }
