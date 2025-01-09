@@ -1805,6 +1805,7 @@ body {
 .shop__filters-box {
     min-width: 236px;
     z-index: 2000;
+    gap: 30px;
     display: flex;
     flex-direction: column;
 }
@@ -1847,10 +1848,10 @@ body {
     opacity: 0%;
     transition: .3s all;
 }
-
+/* 
 .shop__filters {
-    margin-bottom: 60px;
-}
+    margin-bottom: 40px;
+} */
 
 .shop__filters-close {
     margin-bottom: 40px;
@@ -1861,7 +1862,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
 }
 
 .filter__list {
@@ -1878,7 +1879,7 @@ body {
     letter-spacing: 2%;
     color: rgb(58, 58, 58);
     display: flex;
-    align-items: center;
+    align-items: start;
     gap: 12px;
 }
 
