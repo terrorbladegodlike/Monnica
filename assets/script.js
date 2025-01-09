@@ -25,7 +25,7 @@ $(".overlay").click(function () {
 
 // Переход к категориям в мобильной версии меню
 
-$(".menu__item-title-category").click(function(){
+$(".menu__item-category").click(function(){
   $(".menu__main").toggle('option')
   $(".menu__category").toggle('show')
 })
@@ -35,7 +35,7 @@ $(".menu__category-nav").click(function(){
   $(".menu__category").toggle('option')
 })
 
-$(".menu__item-title-featured").click(function(){
+$(".menu__item-featured").click(function(){
   $(".menu__main").toggle('option')
   $(".menu__featured").toggle('show')
 })
@@ -45,7 +45,7 @@ $(".menu__featured-nav").click(function(){
   $(".menu__featured").toggle('option')
 })
 
-$(".menu__item-title-material").click(function(){
+$(".menu__item-material").click(function(){
   $(".menu__main").toggle('option')
   $(".menu__material").toggle('show')
 })
@@ -255,3 +255,4 @@ $(document).ready(function () {
     }
   });
 });
+

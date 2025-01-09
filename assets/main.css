@@ -592,6 +592,7 @@ body {
 
 .catogory__items-tile{
     margin-top: 8px;
+    display: inline-block;
     font-size: 24px;
     line-height: 120%;
     color: #0D0300;
@@ -621,6 +622,9 @@ body {
 
 .slider-buttons-category {
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* COLLECTION SECTION SLYLES */
@@ -729,6 +733,14 @@ body {
 .arrivals__items-block {
     position: relative;
     cursor: pointer;
+}
+
+.arrivals__like {
+    transition: .3s all;
+}
+
+.arrivals__like:hover {
+    transform: scale(1.2);
 }
 
 .arrivals__new {
@@ -847,6 +859,7 @@ body {
 
 .featured__item {
     position: relative;
+    cursor: pointer;
 }
 
 .featured__item-info {
@@ -910,6 +923,7 @@ body {
     position: relative;
     margin-bottom: 12px;
     transition: .3s all;
+    cursor: pointer;
 }
 
 .sale__item-block:hover .sale__like {
@@ -948,6 +962,7 @@ body {
     color: rgb(58, 58, 58);
     text-transform: uppercase;
     min-height: 92px;
+    cursor: pointer;
 }
 
 .sale__prices{
@@ -1102,6 +1117,7 @@ body {
     letter-spacing: 2%;
     color: rgb(58, 58, 58);
     min-height: 92px;
+    cursor: pointer;
 }
 
 .selling__price {
