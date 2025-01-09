@@ -3251,9 +3251,34 @@ body {
     min-width: 124px;
 }
 
+.privacy__intro {
+    margin: 60px 0 130px 0;
+}
+
+.privacy__title {
+    margin-bottom: 60px;
+    font-family: 'Jost', sans-serif;
+    font-size: 45px;
+    line-height: 130%;
+    color: rgb(13, 3, 0);
+    text-align: center;
+}
+
+.privacy__text {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 2%;
+    color: rgb(58, 58, 58);
+}
+
 /* MOBILE VERSION */
 
 @media screen and (max-width: 1360px) {
+
+    .privacy__main {
+        padding: 0 15px;
+    }
 
     .cart__main {
         padding: 0 16px;
