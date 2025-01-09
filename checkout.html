@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Monnica - Product</title>
+    <title>Monnica - Checkout</title>
     <link rel="stylesheet" href="./assets/main.css" />
     <link rel="stylesheet" href="./assets/reset.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -389,301 +389,220 @@
       </div>
     </div>
 
-    <main class="product__main">
+    <main class="checkout__main">
       <div class="shop__pages">
         <div class="wrapper">
           <div class="shop__pages-inner">
             <a href="./index.html" class="shop__pages-item">Home</a>
             <div class="shop__pages-slash">/</div>
-            <a href="./shop.html" class="shop__pages-item">Shop</a>
+            <a href="./cart.html" class="shop__pages-item">Cart</a>
             <div class="shop__pages-slash">/</div>
             <a
-              href="./shop.html"
-              class="product__pages-item product__pages-item-active"
-              >Tiffany&Co. Silver Ring with Akoya Pearl</a
+              href="./checkout.html"
+              class="shop__pages-item shop__pages-item-active"
+              >Checkout</a
             >
           </div>
         </div>
       </div>
 
-      <div class="product__intro">
+      <div class="checkout__intro">
         <div class="wrapper">
-          <div class="product__inner">
-            <div class="modal" id="photoModal">
-              <div class="modal__content">
-                <span class="modal__close">&times;</span>
-                <div class="modal__body"></div>
-              </div>
+          <div class="checkout__title">Checkout</div>
+
+          <div class="checkout__inner">
+            <div class="checkout__form">
+              <div class="checkout__form-title">Billing details</div>
+
+              <form class="checkout__form-form" get="POST">
+                <div class="checkout__form-box">
+                  <label for="name" class="checkout__form-label"
+                    >First name<span>*</span></label
+                  >
+                  <input
+                    placeholder="First name*"
+                    type="text"
+                    class="checkout__form-input"
+                  />
+                </div>
+                <div class="checkout__form-box">
+                  <label for="lastname" class="checkout__form-label"
+                    >Last name<span>*</span></label
+                  >
+                  <input
+                    placeholder="Last name*"
+                    type="text"
+                    class="checkout__form-input"
+                  />
+                </div>
+                <div class="checkout__form-box">
+                  <label for="country" class="checkout__form-label"
+                    >Country / Region<span>*</span></label
+                  >
+                  <input
+                    placeholder="Country / Region*"
+                    type="text"
+                    class="checkout__form-input"
+                  />
+                </div>
+                <div class="checkout__form-box">
+                  <label for="city" class="checkout__form-label"
+                    >Town / City<span>*</span></label
+                  >
+                  <input
+                    placeholder="Town / City*"
+                    type="text"
+                    class="checkout__form-input"
+                  />
+                </div>
+                <div class="checkout__form-box">
+                  <label for="address" class="checkout__form-label"
+                    >Street address<span>*</span></label
+                  >
+                  <input
+                    placeholder="Street address*"
+                    type="text"
+                    class="checkout__form-input"
+                  />
+                </div>
+                <div class="checkout__form-box">
+                  <label for="house" class="checkout__form-label"
+                    >House number<span>*</span></label
+                  >
+                  <input
+                    placeholder="House number*"
+                    type="text"
+                    class="checkout__form-input"
+                  />
+                </div>
+                <div class="checkout__form-box">
+                  <label for="apartment" class="checkout__form-label"
+                    >Apartment</label
+                  >
+                  <input
+                    placeholder="Apartment"
+                    type="text"
+                    class="checkout__form-input"
+                  />
+                </div>
+                <div class="checkout__form-box">
+                  <label for="zip code" class="checkout__form-label"
+                    >Zip Code<span>*</span></label
+                  >
+                  <input
+                    placeholder="Zip Code*"
+                    type="text"
+                    class="checkout__form-input"
+                  />
+                </div>
+                <div class="checkout__form-box">
+                  <label for="phone" class="checkout__form-label"
+                    >Phone<span>*</span></label
+                  >
+                  <input
+                    placeholder="Phone*"
+                    type="text"
+                    class="checkout__form-input"
+                  />
+                </div>
+                <div class="checkout__form-box">
+                  <label for="email" class="checkout__form-label"
+                    >Email<span>*</span></label
+                  >
+                  <input
+                    placeholder="Email*"
+                    type="text"
+                    class="checkout__form-input"
+                  />
+                </div>
+                <div class="checkout__form-box">
+                  <label for="order notes" class="checkout__form-label"
+                    >Order notes (optional)</label
+                  >
+                  <textarea
+                    name="order note"
+                    placeholder="Order notes (optional)"
+                    id=""
+                    class="checkout__form-textarea"
+                  ></textarea>
+                </div>
+              </form>
             </div>
-            <div class="product__photo">
-              <img
-                class="product__photo-main"
-                src="./assets/img/product-page/bg.jpeg"
-                alt="bg"
-              />
-
-              <div class="product__photo-list">
-                <div class="product__photo-item">
-                  <img
-                    src="./assets/img/product-page/1.jpeg"
-                    alt="1 photo"
-                    class="product__photo-img"
-                  />
-                </div>
-                <div class="product__photo-item">
-                  <img
-                    src="./assets/img/product-page/2.jpeg"
-                    alt="2 photo"
-                    class="product__photo-img"
-                  />
-                </div>
-                <div class="product__photo-item">
-                  <img
-                    src="./assets/img/product-page/3.jpeg"
-                    alt="3 photo"
-                    class="product__photo-img"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div class="product__content">
-              <div class="product__title">
-                Tiffany&Co. Silver Ring with Akoya Pearl
-              </div>
-              <div class="product__stock">In stock</div>
-              <div class="product__price">
-                <div class="product__price-new">$99</div>
-                <div class="product__price-old">$198</div>
-              </div>
-              <div class="product__color">
-                <div class="product__color-name">Color: Silver</div>
-                <div class="product__color-variable">
-                  <img
-                    class="product__color-variable-item product__color-variable-item-active"
-                    src="./assets/img/product-page/gray.svg"
-                    alt="gray"
-                  />
-                  <img
-                    class="product__color-variable-item"
-                    src="./assets/img/product-page/aur.svg"
-                    alt="aur"
-                  />
-                </div>
-              </div>
-              <div class="product__size">
-                <div class="product__size-name">Size: 8</div>
-                <div class="product__size-variable">
-                  <div
-                    class="product__size-variable-item product__size-variable-item-novailability"
-                  >
-                    6
-                  </div>
-                  <div
-                    class="product__size-variable-item product__size-variable-item-novailability"
-                  >
-                    7
-                  </div>
-                  <div
-                    class="product__size-variable-item product__size-variable-item-active"
-                  >
-                    8
-                  </div>
-                  <div class="product__size-variable-item">9</div>
-                  <div class="product__size-variable-item">10</div>
-                </div>
-              </div>
-              <div class="product__quantity">
-                <div class="product__quantity-value">Quantity: 1</div>
-                <div class="product__counter">
-                  <button
-                    class="product__counter__btn product__counter__btn--decrement"
-                  >
-                    -
-                  </button>
-                  <span class="product__counter__value">1</span>
-                  <button
-                    class="product__counter__btn product__counter__btn--increment"
-                  >
-                    +
-                  </button>
-                </div>
-              </div>
-              <div class="product__buttons">
-                <button class="product__btn product__btn-wishlist">
-                  ADD TO WISHLIST
-                </button>
-                <button class="product__btn product__btn-bag">
-                  ADD TO bag
-                </button>
-              </div>
-              <div class="product__info">
-                <div class="product__info-nav">
-                  <div
-                    class="product__info-nav-item product__info-nav-item-active"
-                  >
-                    Description & Details
-                  </div>
-                  <div class="product__info-nav-item">Size Guide</div>
-                  <div class="product__info-nav-item">Delivery</div>
-                </div>
-                <div class="product__info-description">
-                  <div class="product__info-textarea">
-                    Tiffany HardWear is an expression of love’s transformative
-                    strength. Inspired by a quintessential bracelet from 1962
-                    found in the House’s archives, HardWear embodies enduring
-                    resilience and uninhibited spirit. Two bold bands of
-                    sterling silver exude modern sophistication in this double
-                    ring design.
-                  </div>
-                  <ul class="product__info-list">
-                    <li class="product__info-list-item">
-                      Sterling silver with a freshwater cultured pearl
-                    </li>
-                    <li class="product__info-list-item">Pearl, 9.5-10 mm</li>
-                    <li class="product__info-list-item">
-                      Designed to be comfortable and easy to wear
-                    </li>
-                    <li class="product__info-list-item">
-                      Product number:64048511
-                    </li>
-                  </ul>
-                </div>
-                <div class="product__info-size">
-                  <div class="product__info-textarea">
-                    Choosing the perfect size ensures comfort and style. Our
-                    size guide helps you find the ideal fit for your jewelry,
-                    ensuring it complements your look effortlessly.
-                  </div>
-                  <ul class="product__info-list">
-                    <li class="product__info-list-item">
-                      Ring Size: Use a ring sizer or measure the inner diameter
-                      of a well-fitting ring.
-                    </li>
-                    <li class="product__info-list-item">
-                      Bracelet Length: Measure your wrist and add 1-2 cm for a
-                      comfortable fit.
-                    </li>
-                    <li class="product__info-list-item">
-                      Necklace Length: Choose a length that suits your neckline
-                      and personal style.
-                    </li>
-                    <li class="product__info-list-item">
-                      For detailed guidance, refer to our online size guide or
-                      contact customer support.
-                    </li>
-                  </ul>
-                </div>
-                <div class="product__info-delivery">
-                  <div class="product__info-textarea">
-                    We strive to deliver your order quickly and securely.
-                    Discover our flexible shipping options designed to suit your
-                    needs.
-                  </div>
-                  <ul class="product__info-list">
-                    <li class="product__info-list-item">
-                      Standard Shipping: Delivered within 5-7 business days.
-                    </li>
-                    <li class="product__info-list-item">
-                      Express Shipping: Get your order within 2-3 business days.
-                    </li>
-                    <li class="product__info-list-item">
-                      Free Shipping: Available on orders over $100.
-                    </li>
-                    <li class="product__info-list-item">
-                      International Delivery: Times and costs vary by
-                      destination.
-                    </li>
-                    <li class="product__info-list-item">
-                      Tracking: Track your order with a unique tracking number
-                      provided upon dispatch.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="selling">
-        <div class="wrapper">
-          <div class="selling__inner">
-            <h2 class="selling__title">You May Also Like</h2>
-
-            <div class="selling__items">
-              <div class="selling__item">
-                <img src="./assets/img/selling/mikimoto.jpeg" alt="mikimoto" />
-
-                <div class="selling__item-title">
-                  MIKIMOTO Necklace with Akoya Cultured Pearl
-                </div>
-
-                <div class="selling__price">$399</div>
-              </div>
-              <div class="selling__item">
+            <div class="checkout__info">
+              <div class="checkout__info-title">Your order</div>
+              <div class="checkout__item">
                 <img
-                  src="./assets/img/selling/tiffany&co.jpeg"
-                  alt="tiffany&co"
+                  src="./assets/img/cart-page/mikimoto.jpeg"
+                  alt="mikimoto"
+                  class="checkout__item-img"
                 />
-
-                <div class="selling__item-title">
-                  Tiffany&Co. Pearl Hoop Earrings in Sterling Silver
+                <div class="checkout__item-info">
+                  <div class="checkout__item-title">
+                    MIKIMOTO Ring with Akoya Pearls and Diamonds
+                  </div>
+                  <div class="checkout__item-text">Metal: Gold 525</div>
+                  <div class="checkout__item-text">Pearl: Boho Pearl</div>
+                  <div class="checkout__item-text">Size: One size</div>
+                  <div class="checkout__item-price">$499</div>
                 </div>
 
-                <div class="selling__price">$299</div>
-
-                <div class="selling__hot">Hot</div>
+                <div class="checkout__item-amount">x1</div>
               </div>
-              <div class="selling__item">
+              <div class="checkout__item">
                 <img
-                  src="./assets/img/selling/mejuri-mini.jpeg"
-                  alt="mejuri-mini"
+                  src="./assets/img/cart-page/tiffany&co.jpeg"
+                  alt="mikimoto"
+                  class="checkout__item-img"
                 />
-
-                <div class="selling__item-title">
-                  MEJURI Mini Pearl Satellite Bracelet
+                <div class="checkout__item-info">
+                  <div class="checkout__item-title">
+                    Tiffany&Co. Pearl Hoop Earrings in Sterling Silver
+                  </div>
+                  <div class="checkout__item-text">Metal: Silver 825</div>
+                  <div class="checkout__item-text">Pearl: Akoya Pearl</div>
+                  <div class="checkout__item-text">Size: One size</div>
+                  <div class="checkout__item-price">$499</div>
                 </div>
 
-                <div class="selling__price">$299</div>
-
-                <div class="selling__hot">Hot</div>
+                <div class="checkout__item-amount">x1</div>
               </div>
-              <div class="selling__item">
-                <img src="./assets/img/selling/paspaley.jpeg" alt="paspaley" />
-
-                <div class="selling__item-title">
-                  PASPALEY Wild Pandanus Keshi Pearls Ring
-                </div>
-
-                <div class="selling__price">$299</div>
+              <div class="cart__info__box">
+                <div class="cart__info-box-title">Subtotal:</div>
+                <div class="cart__info-box-price">$1 396</div>
               </div>
-              <div class="selling__item">
-                <img src="./assets/img/selling/maui.jpeg" alt="maui" />
-
-                <div class="selling__item-title">
-                  MAUI DIVERS Freshwater Pearl Necklace in Silver
-                </div>
-
-                <div class="selling__price">$299</div>
+              <div class="cart__info__box">
+                <div class="cart__info-box-title">Discount:</div>
+                <div class="cart__info-box-price">$299</div>
               </div>
-            </div>
-
-            <div class="slider-buttons slider-buttons-category">
-              <a href="#">
-                <img
-                  class="slider-arrow-icon"
-                  src="./assets/img/left-arrow.svg"
-                  alt=""
-                />
-              </a>
-              <a href="#">
-                <img
-                  class="slider-arrow-icon"
-                  src="./assets/img/right-arrow.svg"
-                  alt=""
-                />
-              </a>
+              <div class="cart__info-total">
+                <div class="cart__info-total-title">Total:</div>
+                <div class="cart__info-total-price">$1 715</div>
+              </div>
+              <div class="checkout__info-title">Payment methods</div>
+              <div class="checkout__info-inner">
+                <label class="checkout__info-item">
+                  <input type="checkbox" class="checkout__info-item-input" />
+                  <h4 class="checkout__info-item-title">
+                    Online payment (Visa, Mastercard, American Express)
+                  </h4>
+                </label>
+                <label class="checkout__info-item">
+                  <input type="checkbox" class="checkout__info-item-input" />
+                  <h4 class="checkout__info-item-title">Card on delivery</h4>
+                </label>
+                <label class="checkout__info-item">
+                  <input type="checkbox" class="checkout__info-item-input" />
+                  <h4 class="checkout__info-item-title">Cash on delivery</h4>
+                </label>
+              </div>
+              <button type="button" class="cart__info-btn">place ORDER</button>
+              <label class="cart__info-item">
+                <input type="checkbox" class="cart__info-input" />
+                <a class="cart__info-input-text">
+                  I have read and agree to the shipping/receipt and
+                  return/cancellation terms and conditions.
+                </a>
+              </label>
             </div>
           </div>
         </div>
@@ -699,7 +618,6 @@
             <input
               class="subscribe__input"
               type="email"
-              name="subscribe"
               placeholder="Enter your email here..."
             />
             <button type="submit" class="subscribe__btn">Submit</button>
@@ -708,7 +626,6 @@
       </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
       <div class="wrapper">
         <div class="footer__logo">

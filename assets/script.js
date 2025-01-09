@@ -341,6 +341,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+// поиск при нажатии кнопки Enter
+
 searchInput.addEventListener("keypress", event => {
   if (event.key === "Enter") {
     searchButton.click();
