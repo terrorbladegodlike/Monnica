@@ -125,20 +125,23 @@ document.querySelectorAll('.filter__title').forEach((title) => {
 // Счетчик на сайты товара
 
 document.addEventListener("DOMContentLoaded", () => {
-  const decrementBtn = document.querySelector(".product__counter__btn--decrement");
-  const incrementBtn = document.querySelector(".product__counter__btn--increment");
-  const counterValue = document.querySelector(".product__counter__value");
-
-  decrementBtn.addEventListener("click", () => {
-    const currentValue = parseInt(counterValue.textContent, 10);
-    if (currentValue > 0) { 
-      counterValue.textContent = currentValue - 1;
+  document.addEventListener("click", (event) => {
+    // Проверяем, на какую кнопку кликнули
+    if (event.target.classList.contains("product__counter__btn--decrement")) {
+      const counterContainer = event.target.closest(".product__counter");
+      const counterValue = counterContainer.querySelector(".product__counter__value");
+      const currentValue = parseInt(counterValue.textContent, 10);
+      if (currentValue > 0) {
+        counterValue.textContent = currentValue - 1;
+      }
     }
-  });
 
-  incrementBtn.addEventListener("click", () => {
-    const currentValue = parseInt(counterValue.textContent, 10);
-    counterValue.textContent = currentValue + 1;
+    if (event.target.classList.contains("product__counter__btn--increment")) {
+      const counterContainer = event.target.closest(".product__counter");
+      const counterValue = counterContainer.querySelector(".product__counter__value");
+      const currentValue = parseInt(counterValue.textContent, 10);
+      counterValue.textContent = currentValue + 1;
+    }
   });
 });
 
@@ -251,6 +254,8 @@ $(document).ready(function () {
     }
   });
 });
+
+// Вывод нужных товаров при вводе в поле поиска
 
 // Ждём, пока DOM загрузится
 document.addEventListener("DOMContentLoaded", () => {
