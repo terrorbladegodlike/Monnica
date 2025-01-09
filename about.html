@@ -24,6 +24,10 @@
       href="https://fonts.cdnfonts.com/css/sf-proverbial-gothic"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
   </head>
   <body>
     <div class="overlay"></div>
@@ -914,11 +918,7 @@
               </div>
             </div>
 
-            <div class="aboutpage__contact-map">
-              <a href="./store-locator.html">
-                <img src="./assets/img/about-page/map.jpeg" alt="map" />
-              </a>
-            </div>
+            <div class="aboutpage__contact-map" id="map"></div>
           </div>
         </div>
       </section>
@@ -1005,6 +1005,31 @@
       </div>
     </footer>
 
+    <script>
+      // Карта для страницы about
+      const map = L.map("map").setView([29.7604, -95.3698], 10) // Координаты Houston, TX
+
+      // Добавление слоя карты
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 19,
+        attribution:
+          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      }).addTo(map)
+
+      // Добавление маркеров
+      const locations = [
+        { coords: [29.7604, -95.3698], popup: "Houston Center" },
+        { coords: [29.7943, -95.4973], popup: "Jersey Village" },
+        { coords: [30.026, -94.8821], popup: "Eastwood" },
+      ]
+
+      locations.forEach((location) => {
+        L.marker(location.coords)
+          .addTo(map)
+          .bindPopup(location.popup)
+          .openPopup()
+      })
+    </script>
     <script src="./assets/jquery-3.7.1.js"></script>
     <script src="./assets/script.js"></script>
   </body>

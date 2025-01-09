@@ -195,10 +195,11 @@
           <div class="header__search-box">
             <input
               type="text"
+              id="searchInput"
               class="header__search-input"
               placeholder="Search..."
             />
-            <button type="submit" class="header__search-btn">
+            <button type="button" class="header__search-btn" id="searchButton">
               <img src="./assets/img/header/search.svg" alt="search" />
             </button>
           </div>
@@ -843,6 +844,10 @@
 
             <div class="shop__content">
               <div class="shop__nav">
+                <div class="shop__search-result">
+                  On request "<span>ring</span>" found: 52 items
+                </div>
+
                 <div class="shop__nav-settings">
                   <img src="./assets/img/settings.svg" alt="settings" />
                 </div>
@@ -858,8 +863,8 @@
                 </div>
               </div>
 
-              <div class="shop__products">
-                <div class="shop__product">
+              <div class="shop__products" id="itemsContainer">
+                <div class="shop__product ring">
                   <img
                     src="./assets/img/shop-page/MIKIMOTO Ring with Akoya Pearls and Diamonds.jpeg"
                     alt="Mikimoto"
@@ -890,7 +895,7 @@
 
                   <div class="shop__sale">SALE</div>
                 </div>
-                <div class="shop__product">
+                <div class="shop__product ring">
                   <img
                     src="./assets/img/shop-page/PASPALEY Wild Pandanus Keshi Pearls Ring.jpeg"
                     alt="Mejuri"
@@ -918,7 +923,7 @@
 
                   <div class="shop__new">New</div>
                 </div>
-                <div class="shop__product">
+                <div class="shop__product ring">
                   <img
                     src="./assets/img/shop-page/MEJURI Pearl Charm Necklace.jpeg"
                     alt="Mejuri"
@@ -932,7 +937,7 @@
                     <div class="shop__product-old-price">$299</div>
                   </div>
                 </div>
-                <div class="shop__product">
+                <div class="shop__product ring">
                   <img
                     src="./assets/img/shop-page/MAUI DIVERS Freshwater Pearl Necklace in Silver.jpeg"
                     alt="Maui"
@@ -945,7 +950,7 @@
                     <div class="shop__product-now-price">$299</div>
                   </div>
                 </div>
-                <div class="shop__product">
+                <div class="shop__product ring">
                   <img
                     src="./assets/img/shop-page/Tiffany&Co. Pearl Hoop Earrings in Sterling Silver.jpeg"
                     alt="Tiffany&Co. Pearl Hoop Earrings in Sterling Silver"
@@ -960,7 +965,7 @@
 
                   <div class="shop__hot">HOT</div>
                 </div>
-                <div class="shop__product">
+                <div class="shop__product ring">
                   <img
                     src="./assets/img/shop-page/PASPALEY Earrings with Baroque Pearls.jpeg"
                     alt="PASPALEY Earrings with Baroque Pearls"
@@ -1004,7 +1009,7 @@
 
                   <div class="shop__hot">Hot</div>
                 </div>
-                <div class="shop__product">
+                <div class="shop__product ring">
                   <img
                     src="./assets/img/shop-page/Tiffany&Co. Silver Ring with Akoya Pearls.jpeg"
                     alt="Tiffany&Co. Silver Ring with Akoya Pearls"
@@ -1050,7 +1055,7 @@
 
                   <div class="shop__new">New</div>
                 </div>
-                <div class="shop__product">
+                <div class="shop__product ring">
                   <img
                     src="./assets/img/shop-page/MATEO Ring with Akoya Pearl.jpeg"
                     alt="MATEO Ring with Akoya Pearl"

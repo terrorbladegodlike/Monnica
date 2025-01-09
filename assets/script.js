@@ -243,10 +243,6 @@ $(document).ready(function () {
     $(".header__search").addClass("header__search-active"); 
   });
 
-  $(".header__search-btn").on("click", function () {
-    $(".header__search").removeClass("header__search-active"); 
-  });
-
   $(document).on("click", function (event) {
     if (
       !$(event.target).closest(".header__search, .header__options-link, .header__mob-search").length
@@ -256,3 +252,85 @@ $(document).ready(function () {
   });
 });
 
+// Ждём, пока DOM загрузится
+document.addEventListener("DOMContentLoaded", () => {
+  // Получаем ссылки на элементы
+  const searchInput = document.getElementById("searchInput"); // Поле ввода
+  const searchButton = document.getElementById("searchButton"); // Кнопка поиска
+  const products = document.querySelectorAll(".shop__product"); // Все продукты на странице
+  const categoryBlock = document.querySelector(".shop__category"); // Блок shop__category
+  const searchResultBlock = document.querySelector(".shop__search-result"); // Блок для отображения результатов поиска
+  const pagesInner = document.querySelector(".shop__pages-inner"); // Контейнер для навигации
+
+  // Обработчик клика по кнопке поиска
+  searchButton.addEventListener("click", () => {
+    const query = searchInput.value.trim().toLowerCase(); // Получаем текст из поля ввода
+
+    // Скрываем блок категории
+    categoryBlock.classList.add("hidden");
+
+    // Делаем блок результатов поиска видимым
+    searchResultBlock.style.display = "block";
+
+    // Если поле пустое, показываем все элементы, скрываем блок результатов и сбрасываем навигацию
+    if (query === "") {
+      products.forEach(product => product.classList.remove("hidden"));
+      categoryBlock.classList.remove("hidden"); // Показываем блок категорий
+      searchResultBlock.style.display = "none"; // Скрываем блок результатов поиска
+      resetPagesNavigation(); // Сбрасываем навигацию
+      return;
+    }
+
+    // Проверяем, если введённое значение "ring", скрываем всё, что не имеет класс "ring"
+    products.forEach(product => {
+      if (product.classList.contains(query)) {
+        product.classList.remove("hidden"); // Показываем продукт, если класс совпадает
+      } else {
+        product.classList.add("hidden"); // Скрываем продукт, если класс не совпадает
+      }
+    });
+
+    // Обновляем навигацию
+    updatePagesNavigation(query);
+  });
+
+  // Функция для обновления навигации
+  function updatePagesNavigation(query) {
+    // Удаляем класс shop__pages-item-active у ссылки "Shop"
+    const shopLink = pagesInner.querySelector(".shop__pages-item-active");
+    if (shopLink) shopLink.classList.remove("shop__pages-item-active");
+
+    // Добавляем новый элемент: "SEARCH - RING"
+    const newSlash = document.createElement("div");
+    newSlash.className = "shop__pages-slash";
+    newSlash.textContent = "/";
+
+    const newLink = document.createElement("a");
+    newLink.href = "#!";
+    newLink.className = "shop__pages-item shop__pages-item-active";
+    newLink.textContent = `SEARCH - ${query.toUpperCase()}`;
+
+    // Добавляем новые элементы в DOM
+    pagesInner.appendChild(newSlash);
+    pagesInner.appendChild(newLink);
+  }
+
+  // Функция для сброса навигации
+  function resetPagesNavigation() {
+    // Удаляем все дополнительные элементы навигации, кроме "Home" и "Shop"
+    const additionalElements = pagesInner.querySelectorAll(
+      ".shop__pages-slash:not(:first-child), .shop__pages-item:not(:first-child):not([href='./shop.html'])"
+    );
+    additionalElements.forEach(element => element.remove());
+
+    // Восстанавливаем класс shop__pages-item-active для "Shop"
+    const shopLink = pagesInner.querySelector("[href='./shop.html']");
+    if (shopLink) shopLink.classList.add("shop__pages-item-active");
+  }
+});
+
+searchInput.addEventListener("keypress", event => {
+  if (event.key === "Enter") {
+    searchButton.click();
+  }
+});
