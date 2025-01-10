@@ -202,6 +202,7 @@
           <div class="header__search-box">
             <input
               type="text"
+              id="searchInput"
               class="header__search-input"
               placeholder="Search..."
             />
@@ -436,7 +437,7 @@
                 <p class="log__inner-text">Remember me</p>
               </label>
 
-              <a href="#!" class="log__forgot">Forgot Password?</a>
+              <p class="log__forgot">Forgot Password?</p>
             </div>
 
             <button type="submit" class="log__btn">Login</button>
@@ -456,6 +457,23 @@
 
             <a href="#!" class="log__dont-account">Don't have an account?</a>
             <a href="#!" class="log__create-account">Create account</a>
+          </form>
+          <form method="post" class="log__form-reset-password">
+            <div class="log__title">Reset password</div>
+            <p class="log__subtitle">
+              If you have forgotten your password, Enter your email address and
+              click the Reset Password link.
+            </p>
+
+            <div class="log__box">
+              <label class="log__box-label" for="email"
+                >E-mail<span>*</span></label
+              >
+              <input placeholder="E-mail*" type="email" class="log__input" />
+            </div>
+            <button type="submit" class="log__btn">
+              <a href="./success-page-forgot-password">Reset password</a>
+            </button>
           </form>
         </div>
       </div>

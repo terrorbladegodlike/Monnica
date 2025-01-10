@@ -348,3 +348,25 @@ searchInput.addEventListener("keypress", event => {
     searchButton.click();
   }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Получаем ссылки на элементы
+  const forgotPasswordLink = document.querySelector(".log__forgot");
+  const loginForm = document.querySelector(".log__form");
+  const resetPasswordForm = document.querySelector(".log__form-reset-password");
+
+  // Проверяем существование всех элементов
+  if (!forgotPasswordLink || !loginForm || !resetPasswordForm) {
+    console.error("Один или несколько элементов не найдены!");
+    return;
+  }
+
+  // Добавляем обработчик события на клик
+  forgotPasswordLink.addEventListener("click", () => {
+    // Добавляем класс 'option' для формы входа
+    loginForm.classList.add("option");
+
+    // Добавляем класс 'show' для формы сброса пароля
+    resetPasswordForm.classList.add("show");
+  });
+});
