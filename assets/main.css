@@ -2232,7 +2232,7 @@ body {
     transition: opacity 0.3s ease, visibility 0.3s ease; 
     position: fixed;
     display: flex;
-    z-index: 1000;
+    z-index: 4000;
     left: 0;
     top: 0;
     width: 100%;
