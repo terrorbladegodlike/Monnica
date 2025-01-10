@@ -3658,10 +3658,66 @@ body {
     color: #fff;
 }
 
+/* =========== success page styles =========== */
+
+.success-forgot-password__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 150px;
+}
+
+.success-forgot-password__img {
+    margin-bottom: 40px;
+    margin-left: 35px;
+}
+
+.success-forgot-password__title {
+    font-family: 'Jost', sans-serif;
+    font-size: 60px;
+    line-height: 105%;
+    color: rgb(13, 3, 0);
+    margin-bottom: 32px;
+}
+
+.success-forgot-password__text {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    color: rgb(58, 58, 58);
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.success-forgot-password__btn {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: 'Quattrocento Sans', sans-serif;
+    line-height: 150%;
+    color: rgb(13, 3, 0);
+    padding: 12px 82px;
+    border: 1px solid rgb(13, 3, 0);
+    background-color: rgb(254, 220, 195);
+
+    transition: .3s all;
+}
+
+.success-forgot-password__btn a{
+    color: rgb(13, 3, 0);
+}
+
+.success-forgot-password__btn:hover {
+    background-color: rgb(245, 205, 176);
+}
 
 /* MOBILE VERSION */
 
 @media screen and (max-width: 1360px) {
+
+    .success-forgot-password {
+        padding: 0 15px;
+    }
 
     .log__main {
         padding: 0 15px;
@@ -4690,6 +4746,17 @@ body {
 }
 
 @media screen and (max-width: 675px) {
+
+    .success-forgot-password__text {
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+
+    .success-forgot-password__title {
+        font-size: 40px;
+        margin-bottom: 24px;
+    }
+
     .aboutpage__story-photo-inner img {
         width: 49%;
     }
