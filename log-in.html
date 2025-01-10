@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Monnica - Checkout</title>
+    <title>Monnica - Log-in</title>
     <link rel="stylesheet" href="./assets/main.css" />
     <link rel="stylesheet" href="./assets/reset.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -391,222 +391,72 @@
       </div>
     </div>
 
-    <main class="checkout__main">
+    <main class="log__main">
       <div class="shop__pages">
         <div class="wrapper">
           <div class="shop__pages-inner">
             <a href="./index.html" class="shop__pages-item">Home</a>
             <div class="shop__pages-slash">/</div>
-            <a href="./cart.html" class="shop__pages-item">Cart</a>
-            <div class="shop__pages-slash">/</div>
             <a
-              href="./checkout.html"
+              href="./log-in.html"
               class="shop__pages-item shop__pages-item-active"
-              >Checkout</a
+              >Log-in</a
             >
           </div>
         </div>
       </div>
 
-      <div class="checkout__intro">
+      <div class="log__intro">
         <div class="wrapper">
-          <div class="checkout__title">Checkout</div>
+          <h1 class="log__main-title">My account</h1>
 
-          <div class="checkout__inner">
-            <div class="checkout__form">
-              <div class="checkout__form-title">Billing details</div>
+          <form method="post" class="log__form">
+            <div class="log__title">Login</div>
 
-              <form class="checkout__form-form" get="POST">
-                <div class="checkout__form-box">
-                  <label for="name" class="checkout__form-label"
-                    >First name<span>*</span></label
-                  >
-                  <input
-                    placeholder="First name*"
-                    type="text"
-                    class="checkout__form-input"
-                  />
-                </div>
-                <div class="checkout__form-box">
-                  <label for="lastname" class="checkout__form-label"
-                    >Last name<span>*</span></label
-                  >
-                  <input
-                    placeholder="Last name*"
-                    type="text"
-                    class="checkout__form-input"
-                  />
-                </div>
-                <div class="checkout__form-box">
-                  <label for="country" class="checkout__form-label"
-                    >Country / Region<span>*</span></label
-                  >
-                  <input
-                    placeholder="Country / Region*"
-                    type="text"
-                    class="checkout__form-input"
-                  />
-                </div>
-                <div class="checkout__form-box">
-                  <label for="city" class="checkout__form-label"
-                    >Town / City<span>*</span></label
-                  >
-                  <input
-                    placeholder="Town / City*"
-                    type="text"
-                    class="checkout__form-input"
-                  />
-                </div>
-                <div class="checkout__form-box">
-                  <label for="address" class="checkout__form-label"
-                    >Street address<span>*</span></label
-                  >
-                  <input
-                    placeholder="Street address*"
-                    type="text"
-                    class="checkout__form-input"
-                  />
-                </div>
-                <div class="checkout__form-box">
-                  <label for="house" class="checkout__form-label"
-                    >House number<span>*</span></label
-                  >
-                  <input
-                    placeholder="House number*"
-                    type="text"
-                    class="checkout__form-input"
-                  />
-                </div>
-                <div class="checkout__form-box">
-                  <label for="apartment" class="checkout__form-label"
-                    >Apartment</label
-                  >
-                  <input
-                    placeholder="Apartment"
-                    type="text"
-                    class="checkout__form-input"
-                  />
-                </div>
-                <div class="checkout__form-box">
-                  <label for="zip code" class="checkout__form-label"
-                    >Zip Code<span>*</span></label
-                  >
-                  <input
-                    placeholder="Zip Code*"
-                    type="text"
-                    class="checkout__form-input"
-                  />
-                </div>
-                <div class="checkout__form-box">
-                  <label for="phone" class="checkout__form-label"
-                    >Phone<span>*</span></label
-                  >
-                  <input
-                    placeholder="Phone*"
-                    type="text"
-                    class="checkout__form-input"
-                  />
-                </div>
-                <div class="checkout__form-box">
-                  <label for="email" class="checkout__form-label"
-                    >Email<span>*</span></label
-                  >
-                  <input
-                    placeholder="Email*"
-                    type="text"
-                    class="checkout__form-input"
-                  />
-                </div>
-                <div class="checkout__form-box">
-                  <label for="order notes" class="checkout__form-label"
-                    >Order notes (optional)</label
-                  >
-                  <textarea
-                    name="order note"
-                    placeholder="Order notes (optional)"
-                    id=""
-                    class="checkout__form-textarea"
-                  ></textarea>
-                </div>
-              </form>
+            <div class="log__box">
+              <label class="log__box-label" for="email"
+                >E-mail<span>*</span></label
+              >
+              <input placeholder="E-mail*" type="email" class="log__input" />
             </div>
-            <div class="checkout__info">
-              <div class="checkout__info-title">Your order</div>
-              <div class="checkout__item">
-                <img
-                  src="./assets/img/cart-page/mikimoto.jpeg"
-                  alt="mikimoto"
-                  class="checkout__item-img"
-                />
-                <div class="checkout__item-info">
-                  <div class="checkout__item-title">
-                    MIKIMOTO Ring with Akoya Pearls and Diamonds
-                  </div>
-                  <div class="checkout__item-text">Metal: Gold 525</div>
-                  <div class="checkout__item-text">Pearl: Boho Pearl</div>
-                  <div class="checkout__item-text">Size: One size</div>
-                  <div class="checkout__item-price">$499</div>
-                </div>
+            <div class="log__box">
+              <label class="log__box-label" for="password"
+                >Password<span>*</span></label
+              >
+              <input
+                placeholder="Password*"
+                type="password"
+                class="log__input"
+              />
+            </div>
 
-                <div class="checkout__item-amount">x1</div>
-              </div>
-              <div class="checkout__item">
-                <img
-                  src="./assets/img/cart-page/tiffany&co.jpeg"
-                  alt="mikimoto"
-                  class="checkout__item-img"
-                />
-                <div class="checkout__item-info">
-                  <div class="checkout__item-title">
-                    Tiffany&Co. Pearl Hoop Earrings in Sterling Silver
-                  </div>
-                  <div class="checkout__item-text">Metal: Silver 825</div>
-                  <div class="checkout__item-text">Pearl: Akoya Pearl</div>
-                  <div class="checkout__item-text">Size: One size</div>
-                  <div class="checkout__item-price">$499</div>
-                </div>
-
-                <div class="checkout__item-amount">x1</div>
-              </div>
-              <div class="cart__info__box">
-                <div class="cart__info-box-title">Subtotal:</div>
-                <div class="cart__info-box-price">$1 396</div>
-              </div>
-              <div class="cart__info__box">
-                <div class="cart__info-box-title">Discount:</div>
-                <div class="cart__info-box-price">$299</div>
-              </div>
-              <div class="cart__info-total">
-                <div class="cart__info-total-title">Total:</div>
-                <div class="cart__info-total-price">$1 715</div>
-              </div>
-              <div class="checkout__info-title">Payment methods</div>
-              <div class="checkout__info-inner">
-                <label class="checkout__info-item">
-                  <input type="checkbox" class="checkout__info-item-input" />
-                  <h4 class="checkout__info-item-title">
-                    Online payment (Visa, Mastercard, American Express)
-                  </h4>
-                </label>
-                <label class="checkout__info-item">
-                  <input type="checkbox" class="checkout__info-item-input" />
-                  <h4 class="checkout__info-item-title">Card on delivery</h4>
-                </label>
-                <label class="checkout__info-item">
-                  <input type="checkbox" class="checkout__info-item-input" />
-                  <h4 class="checkout__info-item-title">Cash on delivery</h4>
-                </label>
-              </div>
-              <button type="button" class="cart__info-btn">place ORDER</button>
-              <label class="cart__info-item">
-                <input type="checkbox" class="cart__info-input" />
-                <a class="cart__info-input-text">
-                  I have read and agree to the shipping/receipt and
-                  return/cancellation terms and conditions.
-                </a>
+            <div class="log__inner">
+              <label class="log__inner-box">
+                <input type="checkbox" class="log__inner-input" />
+                <p class="log__inner-text">Remember me</p>
               </label>
+
+              <a href="#!" class="log__forgot">Forgot Password?</a>
             </div>
-          </div>
+
+            <button type="submit" class="log__btn">Login</button>
+
+            <div class="log__divider">
+              <span class="log__divider-text">Or</span>
+            </div>
+
+            <button class="log__btn-google">
+              LOG in with google
+              <img
+                class="log__btn-google-img"
+                src="./assets/img/google.svg"
+                alt="google"
+              />
+            </button>
+
+            <a href="#!" class="log__dont-account">Don't have an account?</a>
+            <a href="#!" class="log__create-account">Create account</a>
+          </form>
         </div>
       </div>
     </main>

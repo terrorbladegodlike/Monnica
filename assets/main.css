@@ -3417,9 +3417,227 @@ body {
     height: 20px;
 }
 
+/* =========== LOGIN PAGE STYLES =========== */
+
+.log__intro {
+    margin: 60px 0 130px 0;
+}
+
+.log__main-title {
+    display: flex;
+    justify-content: center;
+    font-family: 'Jost', sans-serif;
+    margin-bottom: 60px;
+    font-size: 45px;
+    line-height: 130%;
+    color: rgb(13, 3, 0);
+}
+
+.log__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 444px;
+    margin: 0 auto;
+}
+
+.log__title {
+    font-family: 'Jost', sans-serif;
+    margin-bottom: 32px;
+    font-size: 35px;
+    line-height: 120%;
+    color: rgb(13, 3, 0);
+}
+
+.log__box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.log__box-label {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 2%;
+    color: rgb(58, 58, 58);
+}
+
+.log__box-label span {
+    color: red;
+}
+
+.log__input {
+    padding: 12px 16px;
+    border: 1px solid rgb(115, 115, 115);
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 2%;
+    color: rgb(115, 115, 115);
+}
+
+.log__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.log__inner-box {
+    display: flex;
+    align-items: start;
+    gap: 8px;    
+}
+
+.log__inner-input {
+    width: 20px;
+    height: 20px;
+}
+
+.log__inner-text {
+    font-family: 'HK Grotesk', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    color: rgb(115, 115, 115);
+
+    transition: .1s all;
+}
+
+.log__forgot {
+    text-transform: uppercase;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 2%;
+    color: rgb(58, 58, 58);
+}
+
+.log__forgot:hover {
+    color: rgb(13, 3, 0);
+}
+
+.log__btn {
+    width: 100%;
+    padding: 12px 0;
+    text-transform: uppercase;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    color: rgb(13, 3, 0);
+    margin-bottom: 32px;
+    border: 1px solid rgb(13, 3, 0);
+    background-color: rgb(254, 220, 195);
+
+    transition: .3s all;
+}
+
+.log__btn:hover {
+    background-color: rgb(229, 189, 160);
+}
+
+.log__divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    margin-bottom: 32px;
+  }
+  
+.log__divider-text {
+    font-size: 20px;
+    color: rgb(115, 115, 115);
+    line-height: 120%;
+    font-family: 'Jost', sans-serif;
+    background-color: #fff;
+    z-index: 100;
+    padding: 0 18px;
+}
+
+.log__divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%, 0);
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background: #000;
+}
+
+.log__btn-google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 2%;
+    color: rgb(13, 3, 0);
+    padding: 12px 0;
+    width: 100%;
+    border: 1px solid rgb(13, 3, 0);
+    position: relative;
+    margin-bottom: 32px;
+
+    transition: .3s all;
+}
+
+.log__btn-google:hover {
+    background-color: rgb(13, 3, 0);
+    color: #FFF;
+}
+
+.log__dont-account {
+    display: flex;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    color: rgb(58, 58, 58);
+    margin-bottom: 8px;
+    
+    transition: .2s all;
+}
+
+.log__dont-account:hover {
+    color: #000;
+}
+
+.log__create-account {
+    font-family: 'HK Grotesk', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    color: rgb(58, 58, 58);
+    border: 1px solid transparent;
+    border-bottom: 1px solid #000;
+    padding: 5px;
+
+    transition: .3s all;
+}
+
+.log__create-account:hover {
+    border: 1px solid #000;
+    background-color: #000;
+    color: #fff;
+}
+
 /* MOBILE VERSION */
 
 @media screen and (max-width: 1360px) {
+
+    .log__main {
+        padding: 0 15px;
+    }
 
     .checkout__main {
         padding: 0 15px;
@@ -4466,6 +4684,59 @@ body {
 }
 
 @media screen and (max-width: 450px) {
+
+    .log__create-account {
+        font-size: 14px;
+        padding: 3px;
+    }
+
+    .log__dont-account {
+        font-size: 14px;
+    }
+
+    .log__btn-google {
+        font-size: 14px;
+        padding: 16px 0;
+    }
+
+    .log__divider-text {
+        font-size: 18px;
+    }
+
+    .log__btn {
+        font-size: 14px;
+    }
+
+    .log__forgot {
+        font-size: 14px;
+    }
+
+    .log__inner-text {
+        font-size: 14px;
+    }
+
+    .log__input {
+        padding: 16px;
+        font-size: 14px;
+    }
+
+    .log__box-label {
+        font-size: 14px;
+    }
+
+    .log__title {
+        font-size: 24px;
+        line-height: 130%;
+    }
+
+    .log__main-title {
+        margin-bottom: 28px;
+        font-size: 32px;
+    }
+
+    .log__intro {
+        margin: 28px 0 60px 0;
+    }
 
     .checkout__form-form {
         min-width: 320px;
