@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Monnica - Log-in</title>
+    <title>Monnica - Register</title>
     <link rel="stylesheet" href="./assets/main.css" />
     <link rel="stylesheet" href="./assets/reset.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -412,7 +412,7 @@
           <h1 class="log__main-title">My account</h1>
 
           <form method="post" class="log__form">
-            <div class="log__title">Login</div>
+            <div class="log__title">Register</div>
 
             <div class="log__box">
               <label class="log__box-label" for="email"
@@ -426,6 +426,16 @@
               >
               <input
                 placeholder="Password*"
+                type="password"
+                class="log__input"
+              />
+            </div>
+            <div class="log__box">
+              <label class="log__box-label" for="password"
+                >Confirm password<span>*</span></label
+              >
+              <input
+                placeholder="Confirm password*"
                 type="password"
                 class="log__input"
               />
@@ -455,12 +465,10 @@
               />
             </button>
 
-            <a href="./register.html" class="log__dont-account"
-              >Don't have an account?</a
+            <a href="./log-in.html" class="log__dont-account"
+              >Have an account?</a
             >
-            <a href="./register.html" class="log__create-account"
-              >Create account</a
-            >
+            <a href="./log-in.html" class="log__create-account">Log in</a>
           </form>
           <form method="post" class="log__form-reset-password">
             <div class="log__title">Reset password</div>
