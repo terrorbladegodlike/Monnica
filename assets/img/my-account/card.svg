@@ -1,0 +1,16 @@
+<svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip202_6497">
+			<rect id="fi-rs-credit-card" rx="0.000000" width="23.000000" height="23.000000" transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="fi-rs-credit-card" rx="0.000000" width="23.000000" height="23.000000" transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip202_6497)">
+		<rect id="Rectangle 39036" x="1.000000" y="4.000000" width="22.000000" height="16.000000" stroke="#3A3A3A" stroke-opacity="1.000000" stroke-width="2.000000"/>
+		<path id="Vector 6" d="M1 9L23 9" stroke="#3A3A3A" stroke-opacity="1.000000" stroke-width="2.000000"/>
+		<circle id="Ellipse 9" cx="5.500000" cy="15.500000" r="1.500000" fill="#0D0300" fill-opacity="1.000000"/>
+	</g>
+</svg>

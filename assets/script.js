@@ -370,3 +370,57 @@ document.addEventListener("DOMContentLoaded", () => {
     resetPasswordForm.classList.add("show");
   });
 });
+
+// My Account
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Получаем все элементы с классом account__sidebar-item
+  const sidebarItems = document.querySelectorAll(".account__sidebar-item");
+
+  // Добавляем обработчик события для каждого элемента
+  sidebarItems.forEach(item => {
+    item.addEventListener("click", () => {
+      // Удаляем класс 'account__sidebar-item-active' у всех элементов
+      sidebarItems.forEach(el => el.classList.remove("account__sidebar-item-active"));
+
+      // Добавляем класс 'account__sidebar-item-active' к текущему элементу
+      item.classList.add("account__sidebar-item-active");
+    });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Получаем все элементы с классом account__item
+  const accountItems = document.querySelectorAll(".account__item");
+
+  accountItems.forEach(item => {
+    const changeButton = item.querySelector(".account__item-change"); // Кнопка редактирования
+    const saveButton = item.querySelector(".account__item-btn"); // Кнопка сохранения
+    const itemBox = item.querySelector(".account__item-box"); // Блок с текстом
+    const itemForm = item.querySelector(".account__item-form"); // Блок с формой
+
+    // Проверяем, что все элементы существуют
+    if (changeButton && saveButton && itemBox && itemForm) {
+      // Обработчик для кнопки редактирования
+      changeButton.addEventListener("click", () => {
+        itemBox.style.display = "none"; // Скрываем блок с текстом
+        itemForm.style.display = "flex"; // Показываем форму
+      });
+
+      // Обработчик для кнопки сохранения
+      saveButton.addEventListener("click", (event) => {
+        event.preventDefault(); // Предотвращаем отправку формы
+
+        itemForm.style.display = "none"; // Скрываем форму
+        itemBox.style.display = "flex"; // Показываем блок с текстом
+
+        // Обновляем текст в блоке с текстом
+        const input = item.querySelector(".account__item-input");
+        const text = item.querySelector(".account__item-text");
+        if (input && text) {
+          text.textContent = input.value; // Устанавливаем новое значение
+        }
+      });
+    }
+  });
+});

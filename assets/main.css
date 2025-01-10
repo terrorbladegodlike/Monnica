@@ -3711,9 +3711,364 @@ body {
     background-color: rgb(245, 205, 176);
 }
 
+/* ============ MY ACCOUNT PAGE STYLES ============ */
+
+.account__intro {
+    margin: 60px 0 130px 0;
+}
+
+.account__inner {
+    display: flex;
+    align-items: start;
+    gap: 100px;
+}
+
+.account__sidebar {
+    border: 1px solid rgb(13, 3, 0);
+}
+
+.account__sidebar-item {
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-bottom: 1px solid rgb(13, 3, 0);
+    cursor: pointer;
+}
+
+.account__sidebar-item-active {
+    background-color: rgb(254, 220, 195);
+}
+
+.account__sidebar-item:last-child {
+    border-bottom: none;
+}
+
+.account__sidebar-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    color: rgb(58, 58, 58);
+}
+
+.account__content {
+    max-width: 1005px;
+    width: 100%;
+    display: none;
+}
+
+.account__title {
+    font-family: 'Jost', sans-serif;
+    font-size: 45px;
+    line-height: 130%;
+    color: rgb(13, 3, 0);
+    margin-bottom: 60px;
+}
+
+.account__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 145px;
+    grid-row-gap: 40px;
+}
+
+.account__item-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    line-height: 120%;
+    color: rgb(13, 3, 0);
+    margin-bottom: 16px;
+}
+
+.account__item-box {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.account__item-box, .account__item-form {
+    min-height: 48px;
+}
+
+.account__item-text {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 2%;
+    color: rgb(58, 58, 58);
+}
+
+.account__item-change {
+    cursor: pointer;
+
+    transition: .3s all;
+}
+
+.account__item-change:hover {
+    transform: scale(1.1);
+}
+
+.account__item-form {
+    display: flex;
+    align-items: center;
+    display: none;
+}
+
+.account__item-input {
+    padding: 12px 16px;
+    border: 1px solid rgb(115, 115, 115);
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    color: rgb(115, 115, 115);
+    width: 100%;
+}
+
+.account__item-btn {
+    border: 1px solid rgb(13, 3, 0);
+    padding: 12px 40px;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: rgb(13, 3, 0);
+}
+
+.account__payment {
+    max-width: 535px;
+    width: 100%;
+    display: none;
+}
+
+.account__payment-title {
+    margin-bottom: 40px;
+    font-family: 'Jost', sans-serif;
+    font-size: 24px;
+    line-height: 120%;
+    color: rgb(13, 3, 0);
+}
+
+.account__payment-items {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    width: 100%;
+}
+
+.account__payment-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.account__payment-item-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.account__payment-item-number {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 2%;
+    color: rgb(13, 3, 0);
+}
+
+.account__payment-item-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.account__payment-item-data {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    color: rgb(58, 58, 58);
+}
+
+.account__payment-item-nav {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.account__payment-item-icon {
+    cursor: pointer;
+
+    transition: .3s all;
+}
+
+.account__payment-item-icon:hover {
+    transform: scale(1.1);
+}
+
+.account__order {
+    max-width: 1005px;
+    width: 100%;
+}
+
+.account__order-items {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.account__order-item-name-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+
+.account__order-item-name {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.account__order-item-name-title {
+    font-family: 'Jost', sans-serif;
+    font-weight: 24px;
+    color: rgb(58, 58, 58);
+}
+
+.account__order-item-name-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.account__order-item-name-status-text {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+}
+
+.confirmed {
+    color: rgb(98, 185, 89);
+}
+
+.deliver {
+    color: rgb(255, 123, 27);
+}
+
+.arrived {
+    color: rgb(29, 174, 239);
+}
+
+.canceled {
+    color: rgb(239, 99, 99);
+}
+
+.returned {
+    color: rgb(182, 89, 22);
+}
+
+.account__order-item-way {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.account__order-item-way-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.account__order-item-way-box-title {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    color: rgb(58, 58, 58);
+    text-transform: uppercase;
+}
+
+.account__order-item-way-data {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    color: rgb(58, 58, 58);
+    letter-spacing: 2%;
+}
+
+.account__order-item-way-country {
+    font-family: 'Quattrocento Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: rgb(58, 58, 58);
+    letter-spacing: 2%;
+}
+
+.account__order-item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.account__order-item-info-item {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    max-width: 682px;
+    width: 100%;
+}
+
+.account__order-item-info-item-inner {
+    display: flex;
+    gap: 32px;
+}
+
+.account__order-item-info-item-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.account__order-item-info-item-box-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.account__order-item-info-item-box {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    color: rgb(58, 58, 58);
+    margin-bottom: 8px;
+}
+
+.account__order-item-info-item-box-price {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.account__order-item-info-item-box-price-new {
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    color: rgb(13, 3, 0);
+}
+
+.account__order-item-info-item-box-price-old {
+    font-family: 'HK Grotesk', sans-serif;
+    font-size: 16px;
+    color: rgb(204, 204, 204);
+}
+
+.account__order-item-info-item-amount {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    color: rgb(115, 115, 115);
+}
+
 /* MOBILE VERSION */
 
 @media screen and (max-width: 1360px) {
+
+    .account__main {
+        padding: 0 15px;
+    }
 
     .success-forgot-password {
         padding: 0 15px;
@@ -3996,6 +4351,24 @@ body {
 }
 
 @media screen and (max-width: 850px) {
+
+    .account__main {
+        margin: 28px 0 60px 0;
+    }
+
+    .account__inner {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .account__title {
+        font-size: 32px;
+        margin-bottom: 32px;
+    }
+
+    .account__sidebar {
+        width: 100%;
+    }
 
     .checkout__info-inner {
         gap: 12px;
@@ -4746,6 +5119,10 @@ body {
 }
 
 @media screen and (max-width: 675px) {
+
+    .account__items {
+        grid-template-columns: repeat(1, 1fr);
+    }
 
     .success-forgot-password__text {
         font-size: 16px;
