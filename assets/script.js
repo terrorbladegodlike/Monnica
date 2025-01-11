@@ -189,38 +189,6 @@ sizeItems.forEach(item => {
     });
 });
 
-// Показ определенного блок в product.html
-
-document.addEventListener('DOMContentLoaded', () => {
-  const navItems = document.querySelectorAll('.product__info-nav-item');
-  const infoBlocks = document.querySelectorAll('.product__info-description, .product__info-size, .product__info-delivery');
-
-  navItems.forEach((item, index) => {
-    item.addEventListener('click', () => {
-
-      navItems.forEach(nav => nav.classList.remove('product__info-nav-item-active'));
-
-
-      item.classList.add('product__info-nav-item-active');
-
-
-      infoBlocks.forEach(block => block.style.display = 'none');
-
-
-      if (index === 0) {
-        document.querySelector('.product__info-description').style.display = 'block';
-      } else if (index === 1) {
-        document.querySelector('.product__info-size').style.display = 'block';
-      } else if (index === 2) {
-        document.querySelector('.product__info-delivery').style.display = 'block';
-      }
-    });
-  });
-
-
-  document.querySelector('.product__info-description').style.display = 'block';
-});
-
 
 // Модальное окно
 document.addEventListener('DOMContentLoaded', () => {

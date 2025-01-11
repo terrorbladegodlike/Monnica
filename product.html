@@ -206,6 +206,7 @@
               type="text"
               class="header__search-input"
               placeholder="Search..."
+              id="searchInput"
             />
             <button type="submit" class="header__search-btn">
               <img src="./assets/img/header/search.svg" alt="search" />
@@ -777,6 +778,41 @@
       </div>
     </footer>
 
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const navItems = document.querySelectorAll(".product__info-nav-item")
+        const infoBlocks = document.querySelectorAll(
+          ".product__info-description, .product__info-size, .product__info-delivery"
+        )
+
+        navItems.forEach((item, index) => {
+          item.addEventListener("click", () => {
+            navItems.forEach((nav) =>
+              nav.classList.remove("product__info-nav-item-active")
+            )
+
+            item.classList.add("product__info-nav-item-active")
+
+            infoBlocks.forEach((block) => (block.style.display = "none"))
+
+            if (index === 0) {
+              document.querySelector(
+                ".product__info-description"
+              ).style.display = "block"
+            } else if (index === 1) {
+              document.querySelector(".product__info-size").style.display =
+                "block"
+            } else if (index === 2) {
+              document.querySelector(".product__info-delivery").style.display =
+                "block"
+            }
+          })
+        })
+
+        document.querySelector(".product__info-description").style.display =
+          "block"
+      })
+    </script>
     <script src="./assets/jquery-3.7.1.js"></script>
     <script src="./assets/script.js"></script>
   </body>
