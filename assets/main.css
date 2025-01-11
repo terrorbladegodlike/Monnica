@@ -3673,6 +3673,10 @@ body {
     margin-left: 35px;
 }
 
+.success-error__img {
+    margin-bottom: 40px;
+}
+
 .success-forgot-password__title {
     font-family: 'Jost', sans-serif;
     font-size: 60px;
