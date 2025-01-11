@@ -3725,6 +3725,7 @@ body {
 
 .account__sidebar {
     border: 1px solid rgb(13, 3, 0);
+    min-width: 246px;
 }
 
 .account__sidebar-item {
@@ -4062,6 +4063,170 @@ body {
     color: rgb(115, 115, 115);
 }
 
+.account__order {
+    display: none;
+}
+
+.account__favorite-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr );
+    grid-column-gap: 60px;
+    grid-row-gap: 30px;
+}
+
+.account__favorite-item {
+    cursor: pointer;
+    position: relative;
+}
+
+.account__favorite-item-img {
+    margin-bottom: 12px;
+}
+
+.account__favorite-item-title {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2%;
+    color: rgb(58, 58, 58);
+    min-height: 92px;
+    text-transform: uppercase;
+}
+
+.account__favorite-item-price {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.account__favorite-item-price-new {
+    font-family: 'Jost', sans-serif;
+    font-size: 24px;
+    line-height: 120%;
+    color: rgb(13, 3, 0);
+}
+
+.account__favorite-item-price-old {
+    font-family: 'HK Grotesk', sans-serif;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 2%;
+    color: rgb(204, 204, 204);
+}
+
+.account__favorite-item-new {
+    font-family: 'HK Grotesk', sans-serif;
+    font-size: 10px;
+    line-height: 150%;
+    letter-spacing: 2%;
+    color: #fff;
+    padding: 2.5px 8px;
+    background-color: rgb(255, 123, 27);
+    text-transform: uppercase;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+.account__favorite-item-sale {
+    font-family: 'HK Grotesk', sans-serif;
+    font-size: 10px;
+    line-height: 150%;
+    letter-spacing: 2%;
+    color: #fff;
+    padding: 2.5px 8px;
+    background-color: rgb(239, 99, 99);
+    text-transform: uppercase;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+.account__favorite-item-hot {
+    font-family: 'HK Grotesk', sans-serif;
+    font-size: 10px;
+    line-height: 150%;
+    letter-spacing: 2%;
+    color: #fff;
+    padding: 2.5px 8px;
+    background-color: rgb(98, 185, 89);
+    text-transform: uppercase;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+.account__favorite-item-like {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    transition: .3s all;
+}
+
+.account__favorite-item-like:hover {
+    transform: scale(1.1);
+}
+
+.account__favorite {
+    display: none;
+}
+
+.account__password {
+    max-width: 1005px;
+    width: 100%;
+    display: none;
+}
+
+.account__password-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-bottom: 60px;
+}
+
+.account__password-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.account__password-label {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 2%;
+    color: rgb(13, 3, 0);
+}
+
+.account__password-input {
+    max-width: 100%;
+    border: 1px solid rgb(115, 115, 115);
+    padding: 16px;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 2%;
+    color: rgb(115, 115, 115);
+}
+
+.account__password-btn {
+    text-transform: uppercase;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    color: rgb(13, 3, 0);
+    letter-spacing: 2%;
+    padding: 12px 73px;
+    border: 1px solid rgb(13, 3, 0);
+    background-color: rgb(254, 220, 195);
+
+    transition: .3s all;
+}
+
+.account__password-btn:hover {
+    background-color: rgb(243, 197, 164);
+}
+
 /* MOBILE VERSION */
 
 @media screen and (max-width: 1360px) {
@@ -4266,6 +4431,15 @@ body {
 }
 
 @media screen and (max-width: 1250px) {
+
+    .account__password-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .account__favorite-items {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     .intro__inner {
         justify-content: center;
     }
@@ -4299,6 +4473,10 @@ body {
 }
 
 @media screen and (max-width: 1185px) {
+
+    .account__favorite-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
     .checkout__intro  {
         margin: 28px 0 60px 0;
@@ -4351,6 +4529,10 @@ body {
 }
 
 @media screen and (max-width: 850px) {
+
+    .account__password-items {
+        grid-template-columns: repeat(1, 1fr);
+    }
 
     .account__main {
         margin: 28px 0 60px 0;
@@ -5119,6 +5301,32 @@ body {
 }
 
 @media screen and (max-width: 675px) {
+
+    .account__favorite-items {
+        grid-column-gap: 14px;
+    }
+    
+    .account__favorite-item-title {
+        font-size: 14px;
+        margin-bottom: 8px;
+        min-height: 53px;
+    }
+
+    .account__order-item-way {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .account__order-item-way-line-one {
+        transform: rotate(90deg);
+        max-width: 60px;
+    }
+
+    .account__order-item-way-line-two {
+        transform: rotate(90deg);
+        max-width: 60px;
+    }
 
     .account__items {
         grid-template-columns: repeat(1, 1fr);
