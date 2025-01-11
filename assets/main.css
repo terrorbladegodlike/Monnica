@@ -746,10 +746,6 @@ body {
     cursor: pointer;
 }
 
-.arrivals__like {
-    transition: .3s all;
-}
-
 .arrivals__like:hover {
     transform: scale(1.2);
 }
@@ -775,7 +771,19 @@ body {
     top: 0;
     right: 0;
     margin: 8px 0 0 8px;
+    transition: .3s all;
 }
+
+.arrivals__like-add {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 8px 0 0 8px;
+    transition: .3s all;
+    z-index: 100;
+}
+
 
 .arrivals__icon:hover{
     fill: #0D0300;  
@@ -958,6 +966,15 @@ body {
 
 .sale__like {
     opacity: 0%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 8px 0 0 8px;
+    cursor: pointer;
+}
+
+.sale__like-add {
+    display: none;
     position: absolute;
     top: 0;
     right: 0;

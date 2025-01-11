@@ -1,3 +1,42 @@
+// Клик на сердце
+
+$(document).ready(function () {
+  // Обработчик клика на .arrivals__like
+  $(".arrivals__like").click(function () {
+      const likeAdd = $(this).siblings(".arrivals__like-add");
+
+      // Переключение видимости
+      if (likeAdd.css("display") === "none") {
+          likeAdd.css("display", "block");
+      } else {
+          likeAdd.css("display", "none");
+      }
+  });
+
+  // Обработчик клика на .arrivals__like-add
+  $(".arrivals__like-add").click(function () {
+      $(this).css("display", "none");
+  });
+
+  // Обработчик клика на .sale__like
+  $(".sale__like").click(function () {
+      const likeAdd = $(this).siblings(".sale__like-add");
+
+      // Переключение видимости
+      if (likeAdd.css("display") === "none") {
+          likeAdd.css("display", "block");
+      } else {
+          likeAdd.css("display", "none");
+      }
+  });
+
+  // Обработчик клика на .sale__like-add
+  $(".sale__like-add").click(function () {
+      $(this).css("display", "none");
+  });
+});
+
+
 // Активный item в навигации
 
 $(document).ready(function () {
