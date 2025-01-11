@@ -3754,7 +3754,6 @@ body {
 .account__content {
     max-width: 1005px;
     width: 100%;
-    display: none;
 }
 
 .account__title {

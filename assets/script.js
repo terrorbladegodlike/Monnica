@@ -424,3 +424,41 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+// Переключение блоков на странице "My-Account"
+
+$(document).ready(function () {
+  // Изначально показываем первый блок контента, скрываем остальные
+  $(".account__content, .account__payment, .account__order, .account__favorite, .account__password").hide();
+  $(".account__content").show();
+
+  // Добавляем обработчик кликов для пунктов меню
+  $(".account__sidebar-item").click(function () {
+      // Удаляем активный класс у всех пунктов меню
+      $(".account__sidebar-item").removeClass("account__sidebar-item-active");
+
+      // Добавляем активный класс к текущему пункту меню
+      $(this).addClass("account__sidebar-item-active");
+
+      // Определяем индекс выбранного пункта меню
+      const index = $(".account__sidebar-item").index(this);
+
+      // Скрываем все блоки контента
+      $(".account__content, .account__payment, .account__order, .account__favorite, .account__password").hide();
+
+      // Показываем блок контента, соответствующий выбранному пункту меню
+      $(".account__content, .account__payment, .account__order, .account__favorite, .account__password").eq(index).show();
+  });
+});
+
+$(document).ready(function () {
+  // Добавляем обработчик клика для элемента с текстом "Log out"
+  $(".account__sidebar-item").each(function () {
+      const title = $(this).find(".account__sidebar-title").text().trim();
+      if (title === "Log out") {
+          $(this).click(function () {
+              window.location.href = "index.html";
+          });
+      }
+  });
+});
