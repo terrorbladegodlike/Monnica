@@ -4222,6 +4222,15 @@ body {
     transition: .3s all;
 }
 
+.success-error__text {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 60px;
+    max-width: 618px;
+    text-align: center;
+}
+
 .account__password-btn:hover {
     background-color: rgb(243, 197, 164);
 }
