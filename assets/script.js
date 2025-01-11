@@ -1,3 +1,21 @@
+// Активный item в навигации
+
+$(document).ready(function () {
+  // Проверяем текущий URL и устанавливаем активный элемент
+  $(".header__link").each(function () {
+      if (this.href === window.location.href) {
+          $(this).addClass("header__link-active");
+      }
+  });
+
+  // Добавляем обработчик клика
+  $(".header__link").click(function (e) {
+      $(".header__link").removeClass("header__link-active");
+      $(this).addClass("header__link-active");
+  });
+});
+
+
 // Показ и закрытие блока с текстом
 
 $(".about__btn").click(function(){
