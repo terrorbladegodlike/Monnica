@@ -400,7 +400,17 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
+    cursor: pointer;
 }
+
+.header__options-item img {
+    transition: .3s all;
+}
+
+.header__options-item:hover.header__options-item img {
+    transform: scale(1.2);
+}
+
 .header__options-link {
     text-transform: uppercase;
     font-size: 16px;
