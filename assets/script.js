@@ -254,6 +254,59 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// Увеличение изображения при клике
+
+$(document).ready(function () {
+  const $modal = $("#photoModal");
+  const $modalContent = $modal.find(".modal__body");
+  const $modalClose = $modal.find(".modal__close");
+
+  // Открытие модального окна
+  $(".product__photo").on("click", function () {
+    // Вставляем содержимое в модальное окно
+    $modalContent.html($(this).html());
+    $modal.show();
+
+    // Обработчик зума для основного изображения
+    const $modalImage = $modalContent.find(".product__photo-main");
+    let isZoomed = false;
+
+    $modalImage.on("click", function () {
+      if (!isZoomed) {
+        // Увеличение изображения
+        $(this).css({
+          transform: "scale(2)", // Зум
+          transformOrigin: "center", // Центр зума
+          transition: "transform 0.3s ease", // Плавный зум
+          cursor: "zoom-out",
+        });
+        isZoomed = true;
+      } else {
+        // Сброс зума
+        $(this).css({
+          transform: "scale(1)", // Сброс масштаба
+          cursor: "zoom-in",
+        });
+        isZoomed = false;
+      }
+    });
+  });
+
+  // Закрытие модального окна
+  $modalClose.on("click", function () {
+    $modal.hide();
+    $modalContent.empty(); // Удаляем содержимое модального окна
+  });
+
+  // Закрытие модального окна при клике на фон
+  $modal.on("click", function (e) {
+    if ($(e.target).is($modal)) {
+      $modal.hide();
+      $modalContent.empty(); // Удаляем содержимое модального окна
+    }
+  });
+});
+
 // Для блока Help - появление блоков при нажатии
 
 $(document).ready(function () {
