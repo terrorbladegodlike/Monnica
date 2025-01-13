@@ -650,3 +650,28 @@ const swiperReviews = new Swiper('.swiper-reviews', {
    prevEl: '.swiper-button-prev',
  },
 });
+
+const swiperTeam = new Swiper('.swiper-team', {
+  loop: true,
+  slidesPerView: 4,
+  spaceBetween: 30,
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    120: {
+      slidesPerView: 2,
+    },
+    713: {
+      slidesPerView: 3,
+    },
+    // when window width is >= 480px
+    1200: {
+      slidesPerView: 4,
+    },
+  },
+  // Navigation arrows
+  navigation: {
+   nextEl: '.swiper-button-next',
+   prevEl: '.swiper-button-prev',
+ },
+});

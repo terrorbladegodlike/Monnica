@@ -28,6 +28,11 @@
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     />
+    <!-- Swiper JS Library -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <div class="overlay"></div>
@@ -604,15 +609,15 @@
 
       <section class="aboutpage__team">
         <div class="wrapper">
-          <div class="aboutpage__team-inner">
+          <div class="aboutpage__team-inner swiper-team">
             <div class="aboutpage__team-title">Meet the Team</div>
             <p class="aboutpage__team-subtitle">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius
               sed pharetra dictum neque massa congue
             </p>
 
-            <div class="aboutpage__team-items">
-              <div class="aboutpage__team-item">
+            <div class="aboutpage__team-items swiper-wrapper">
+              <div class="aboutpage__team-item swiper-slide">
                 <img
                   src="./assets/img/about-page/grace.jpeg"
                   alt="grace"
@@ -640,7 +645,7 @@
                   />
                 </div>
               </div>
-              <div class="aboutpage__team-item">
+              <div class="aboutpage__team-item swiper-slide">
                 <img
                   src="./assets/img/about-page/brooklyn.jpeg"
                   alt="brooklyn"
@@ -670,7 +675,7 @@
                   />
                 </div>
               </div>
-              <div class="aboutpage__team-item">
+              <div class="aboutpage__team-item swiper-slide">
                 <img
                   src="./assets/img/about-page/devon.jpeg"
                   alt="devon"
@@ -698,7 +703,121 @@
                   />
                 </div>
               </div>
-              <div class="aboutpage__team-item">
+              <div class="aboutpage__team-item swiper-slide">
+                <img
+                  src="./assets/img/about-page/bessie.jpeg"
+                  alt="bessie"
+                  class="aboutpage__team-item-photo"
+                />
+
+                <h3 class="aboutpage__team-item-title">Bessie Cooper</h3>
+                <p class="aboutpage__team-item-post">HR Manager</p>
+
+                <div class="aboutpage__team-item-social">
+                  <img
+                    src="./assets/img/about-page/Facebook.svg"
+                    alt="Facebook"
+                    class="aboutpage__team-item-social-media"
+                  />
+                  <img
+                    src="./assets/img/about-page/Instagram.svg"
+                    alt="Instagram"
+                    class="aboutpage__team-item-social-media"
+                  />
+                  <img
+                    src="./assets/img/about-page/Tiktok.svg"
+                    alt="Tiktok"
+                    class="aboutpage__team-item-social-media"
+                  />
+                </div>
+              </div>
+              <div class="aboutpage__team-item swiper-slide">
+                <img
+                  src="./assets/img/about-page/grace.jpeg"
+                  alt="grace"
+                  class="aboutpage__team-item-photo"
+                />
+
+                <h3 class="aboutpage__team-item-title">Grace Kelly</h3>
+                <p class="aboutpage__team-item-post">Founder & CEO</p>
+
+                <div class="aboutpage__team-item-social">
+                  <img
+                    src="./assets/img/about-page/Facebook.svg"
+                    alt="Facebook"
+                    class="aboutpage__team-item-social-media"
+                  />
+                  <img
+                    src="./assets/img/about-page/Instagram.svg"
+                    alt="Instagram"
+                    class="aboutpage__team-item-social-media"
+                  />
+                  <img
+                    src="./assets/img/about-page/Tiktok.svg"
+                    alt="Tiktok"
+                    class="aboutpage__team-item-social-media"
+                  />
+                </div>
+              </div>
+              <div class="aboutpage__team-item swiper-slide">
+                <img
+                  src="./assets/img/about-page/brooklyn.jpeg"
+                  alt="brooklyn"
+                  class="aboutpage__team-item-photo"
+                />
+
+                <h3 class="aboutpage__team-item-title">Brooklyn Simmons</h3>
+                <p class="aboutpage__team-item-post">
+                  Customer Service Manager
+                </p>
+
+                <div class="aboutpage__team-item-social">
+                  <img
+                    src="./assets/img/about-page/Facebook.svg"
+                    alt="Facebook"
+                    class="aboutpage__team-item-social-media"
+                  />
+                  <img
+                    src="./assets/img/about-page/Instagram.svg"
+                    alt="Instagram"
+                    class="aboutpage__team-item-social-media"
+                  />
+                  <img
+                    src="./assets/img/about-page/Tiktok.svg"
+                    alt="Tiktok"
+                    class="aboutpage__team-item-social-media"
+                  />
+                </div>
+              </div>
+              <div class="aboutpage__team-item swiper-slide">
+                <img
+                  src="./assets/img/about-page/devon.jpeg"
+                  alt="devon"
+                  class="aboutpage__team-item-photo"
+                />
+
+                <h3 class="aboutpage__team-item-title">Devon Lane</h3>
+                <p class="aboutpage__team-item-post">Head Designer</p>
+
+                <div class="aboutpage__team-item-social">
+                  <img
+                    src="./assets/img/about-page/Facebook.svg"
+                    alt="Facebook"
+                    class="aboutpage__team-item-social-media"
+                  />
+                  <img
+                    src="./assets/img/about-page/Instagram.svg"
+                    alt="Instagram"
+                    class="aboutpage__team-item-social-media"
+                  />
+                  <img
+                    src="./assets/img/about-page/Tiktok.svg"
+                    alt="Tiktok"
+                    class="aboutpage__team-item-social-media"
+                  />
+                </div>
+              </div>
+              <div class="aboutpage__team-item swiper-slide">
                 <img
                   src="./assets/img/about-page/bessie.jpeg"
                   alt="bessie"
@@ -728,21 +847,11 @@
               </div>
             </div>
 
-            <div class="slider-buttons slider-buttons-category">
-              <a href="#">
-                <img
-                  class="slider-arrow-icon"
-                  src="./assets/img/left-arrow.svg"
-                  alt=""
-                />
-              </a>
-              <a href="#">
-                <img
-                  class="slider-arrow-icon"
-                  src="./assets/img/right-arrow.svg"
-                  alt=""
-                />
-              </a>
+            <div
+              class="slider-buttons slider-buttons-swiper slider-buttons-category"
+            >
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
             </div>
           </div>
         </div>
@@ -1042,6 +1151,7 @@
         })
       })
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="./assets/jquery-3.7.1.js"></script>
     <script src="./assets/script.js"></script>

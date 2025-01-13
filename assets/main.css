@@ -70,6 +70,17 @@ body {
     display: block;
 }
 
+.swiper-team {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+}
+
 .swiper-reviews {
     margin-left: auto;
     margin-right: auto;
@@ -2609,9 +2620,6 @@ body {
 }
 
 .aboutpage__team-items {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 30px;
     margin-bottom: 40px;
 }
 
@@ -4854,11 +4862,6 @@ body {
         margin-bottom: 28px;
     }
 
-    .aboutpage__team-items {
-        grid-template-columns: repeat(2, 1fr);
-        margin-bottom: 28px;
-    }
-
     .aboutpage__team-item-title {
         font-size: 20px;
         line-height: 130%;
@@ -5558,10 +5561,6 @@ body {
 
     .aboutpage__story-photo-inner img {
         width: 48%;
-    }
-
-    .aboutpage__team-items {
-        grid-template-columns: repeat(1, 1fr);
     }
 
     .get__support-form {
