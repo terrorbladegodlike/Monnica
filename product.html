@@ -24,6 +24,11 @@
       href="https://fonts.cdnfonts.com/css/sf-proverbial-gothic"
       rel="stylesheet"
     />
+    <!-- Swiper JS Library -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <div class="overlay"></div>
@@ -611,13 +616,12 @@
         </div>
       </div>
 
-      <div class="selling">
+      <section class="selling" id="selling">
         <div class="wrapper">
-          <div class="selling__inner">
-            <h2 class="selling__title">You May Also Like</h2>
-
-            <div class="selling__items">
-              <div class="selling__item">
+          <div class="selling__inner swiper-selling">
+            <h2 class="selling__title">Best Selling</h2>
+            <div class="selling__items swiper-wrapper">
+              <div class="selling__item swiper-slide">
                 <img src="./assets/img/selling/mikimoto.jpeg" alt="mikimoto" />
 
                 <div class="selling__item-title">
@@ -626,7 +630,7 @@
 
                 <div class="selling__price">$399</div>
               </div>
-              <div class="selling__item">
+              <div class="selling__item swiper-slide">
                 <img
                   src="./assets/img/selling/tiffany&co.jpeg"
                   alt="tiffany&co"
@@ -640,7 +644,7 @@
 
                 <div class="selling__hot">Hot</div>
               </div>
-              <div class="selling__item">
+              <div class="selling__item swiper-slide">
                 <img
                   src="./assets/img/selling/mejuri-mini.jpeg"
                   alt="mejuri-mini"
@@ -654,7 +658,7 @@
 
                 <div class="selling__hot">Hot</div>
               </div>
-              <div class="selling__item">
+              <div class="selling__item swiper-slide">
                 <img src="./assets/img/selling/paspaley.jpeg" alt="paspaley" />
 
                 <div class="selling__item-title">
@@ -663,7 +667,62 @@
 
                 <div class="selling__price">$299</div>
               </div>
-              <div class="selling__item">
+              <div class="selling__item swiper-slide">
+                <img src="./assets/img/selling/maui.jpeg" alt="maui" />
+
+                <div class="selling__item-title">
+                  MAUI DIVERS Freshwater Pearl Necklace in Silver
+                </div>
+
+                <div class="selling__price">$299</div>
+              </div>
+              <div class="selling__item swiper-slide">
+                <img src="./assets/img/selling/mikimoto.jpeg" alt="mikimoto" />
+
+                <div class="selling__item-title">
+                  MIKIMOTO Necklace with Akoya Cultured Pearl
+                </div>
+
+                <div class="selling__price">$399</div>
+              </div>
+              <div class="selling__item swiper-slide">
+                <img
+                  src="./assets/img/selling/tiffany&co.jpeg"
+                  alt="tiffany&co"
+                />
+
+                <div class="selling__item-title">
+                  Tiffany&Co. Pearl Hoop Earrings in Sterling Silver
+                </div>
+
+                <div class="selling__price">$299</div>
+
+                <div class="selling__hot">Hot</div>
+              </div>
+              <div class="selling__item swiper-slide">
+                <img
+                  src="./assets/img/selling/mejuri-mini.jpeg"
+                  alt="mejuri-mini"
+                />
+
+                <div class="selling__item-title">
+                  MEJURI Mini Pearl Satellite Bracelet
+                </div>
+
+                <div class="selling__price">$299</div>
+
+                <div class="selling__hot">Hot</div>
+              </div>
+              <div class="selling__item swiper-slide">
+                <img src="./assets/img/selling/paspaley.jpeg" alt="paspaley" />
+
+                <div class="selling__item-title">
+                  PASPALEY Wild Pandanus Keshi Pearls Ring
+                </div>
+
+                <div class="selling__price">$299</div>
+              </div>
+              <div class="selling__item swiper-slide">
                 <img src="./assets/img/selling/maui.jpeg" alt="maui" />
 
                 <div class="selling__item-title">
@@ -673,26 +732,15 @@
                 <div class="selling__price">$299</div>
               </div>
             </div>
-
-            <div class="slider-buttons slider-buttons-category">
-              <a href="#">
-                <img
-                  class="slider-arrow-icon"
-                  src="./assets/img/left-arrow.svg"
-                  alt=""
-                />
-              </a>
-              <a href="#">
-                <img
-                  class="slider-arrow-icon"
-                  src="./assets/img/right-arrow.svg"
-                  alt=""
-                />
-              </a>
+            <div
+              class="slider-buttons slider-buttons-swiper slider-buttons-category"
+            >
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </main>
 
     <section class="subscribe" id="subscribe">
@@ -813,6 +861,7 @@
           "block"
       })
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/jquery-3.7.1.js"></script>
     <script src="./assets/script.js"></script>
   </body>
