@@ -70,6 +70,17 @@ body {
     display: block;
 }
 
+.swiper-reviews {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+}
+
 .slider-buttons-swiper {
     position: absolute;
     bottom: 15px;
@@ -1330,12 +1341,6 @@ body {
     font-size: 45px;
     line-height: 130%;
     color: rgb(13, 3, 0);
-}
-
-.reviews__items {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 30px;
 }
 
 .reviews__text {
@@ -4326,6 +4331,10 @@ body {
 
 @media screen and (max-width: 1360px) {
 
+    .reviews {
+        padding: 0 15px;
+    }
+
     .sale {
         padding: 0 15px;
     }
@@ -5003,6 +5012,14 @@ body {
 
 @media screen and (max-width: 800px){
 
+    .reviews__text {
+
+    }
+
+    .reviews__items {
+        margin-bottom: 25px;
+    }
+
     .cart__info-btn {
         font-size: 14px;
         margin-bottom: 12px;
@@ -5314,14 +5331,8 @@ body {
         line-height: 130%;
     }
 
-    .reviews__items {
-        grid-template-columns: repeat(2, 1fr);
-        padding: 0 14px;
-        grid-gap: 20px;
-    }
-
     .reviews__text {
-        height: 126px;
+        min-height: 110px;
         margin-bottom: 12px;
         font-size: 14px;
         line-height: 150%;

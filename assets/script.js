@@ -629,3 +629,28 @@ const swiperSelling = new Swiper('.swiper-selling', {
    prevEl: '.swiper-button-prev',
  },
 });
+
+const swiperReviews = new Swiper('.swiper-reviews', {
+  loop: true,
+  slidesPerView: 4,
+  spaceBetween: 30,
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    120: {
+      slidesPerView: 2,
+    },
+    713: {
+      slidesPerView: 3,
+    },
+    // when window width is >= 480px
+    1200: {
+      slidesPerView: 4,
+    },
+  },
+  // Navigation arrows
+  navigation: {
+   nextEl: '.swiper-button-next',
+   prevEl: '.swiper-button-prev',
+ },
+});
