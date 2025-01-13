@@ -540,3 +540,92 @@ $(document).ready(function () {
       }
   });
 });
+
+
+const swiper = new Swiper('.swiper', {
+  loop: true,
+  slidesPerView: 6,
+  spaceBetween: 30,
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    250: {
+      slidesPerView: 2,
+    },
+    475: {
+      slidesPerView: 3,
+    },
+    713: {
+      slidesPerView: 4,
+    },
+    950: {
+      slidesPerView: 5,
+    },
+    // when window width is >= 480px
+    1200: {
+      slidesPerView: 6,
+    },
+  },
+  // Navigation arrows
+  navigation: {
+   nextEl: '.swiper-button-next',
+   prevEl: '.swiper-button-prev',
+ },
+});
+
+
+const swiperMain = new Swiper('.swiper-main', {
+  loop: true,
+  slidesPerView: 5,
+  spaceBetween: 30,
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    120: {
+      slidesPerView: 2,
+    },
+    713: {
+      slidesPerView: 3,
+    },
+    950: {
+      slidesPerView: 4,
+    },
+    // when window width is >= 480px
+    1200: {
+      slidesPerView: 5,
+    },
+  },
+  // Navigation arrows
+  navigation: {
+   nextEl: '.swiper-button-next',
+   prevEl: '.swiper-button-prev',
+ },
+});
+
+const swiperSelling = new Swiper('.swiper-selling', {
+  loop: true,
+  slidesPerView: 5,
+  spaceBetween: 30,
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    120: {
+      slidesPerView: 2,
+    },
+    713: {
+      slidesPerView: 3,
+    },
+    950: {
+      slidesPerView: 4,
+    },
+    // when window width is >= 480px
+    1200: {
+      slidesPerView: 5,
+    },
+  },
+  // Navigation arrows
+  navigation: {
+   nextEl: '.swiper-button-next',
+   prevEl: '.swiper-button-prev',
+ },
+});
