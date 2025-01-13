@@ -1713,13 +1713,7 @@ body {
 }
 
 .shop__category {
-    margin-bottom: 60px;
-}
-
-.shop__category-items {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-gap: 30px;
+    margin-bottom: 20px;
 }
 
 .shop__category-item {
@@ -1735,6 +1729,10 @@ body {
     font-size: 24px;
     letter-spacing: 0%;
     color: rgb(58, 58, 58);
+}
+
+.shop__category-items {
+    margin-bottom: 50px;
 }
 
 .shop__search-result{
@@ -4968,10 +4966,6 @@ body {
 
     /* =========== SHOP PAGE STYLES =========== */
 
-    .shop__category-items {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
     .shop__products {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -5011,11 +5005,6 @@ body {
 }
 
 @media screen and (max-width: 800px){
-
-    .reviews__text {
-
-    }
-
     .reviews__items {
         margin-bottom: 25px;
     }

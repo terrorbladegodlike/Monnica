@@ -546,9 +546,7 @@ const swiper = new Swiper('.swiper', {
   loop: true,
   slidesPerView: 6,
   spaceBetween: 30,
-  // Responsive breakpoints
   breakpoints: {
-    // when window width is >= 320px
     250: {
       slidesPerView: 2,
     },
@@ -561,12 +559,10 @@ const swiper = new Swiper('.swiper', {
     950: {
       slidesPerView: 5,
     },
-    // when window width is >= 480px
     1200: {
       slidesPerView: 6,
     },
   },
-  // Navigation arrows
   navigation: {
    nextEl: '.swiper-button-next',
    prevEl: '.swiper-button-prev',
