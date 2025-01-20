@@ -419,7 +419,7 @@
             <div class="checkout__form">
               <div class="checkout__form-title">Billing details</div>
 
-              <form class="checkout__form-form" get="POST">
+              <form class="checkout__form-form" method="POST" action="#!">
                 <div class="checkout__form-box">
                   <label for="name" class="checkout__form-label"
                     >First name<span>*</span></label
@@ -438,6 +438,7 @@
                   <input
                     placeholder="Last name*"
                     type="text"
+                    id="lastname"
                     class="checkout__form-input"
                   >
                 </div>
@@ -448,6 +449,7 @@
                   <input
                     placeholder="Country / Region*"
                     type="text"
+                    id="country"
                     class="checkout__form-input"
                   >
                 </div>
@@ -458,6 +460,7 @@
                   <input
                     placeholder="Town / City*"
                     type="text"
+                    id="city"
                     class="checkout__form-input"
                   >
                 </div>
@@ -468,6 +471,7 @@
                   <input
                     placeholder="Street address*"
                     type="text"
+                    id="address"
                     class="checkout__form-input"
                   >
                 </div>
@@ -478,6 +482,7 @@
                   <input
                     placeholder="House number*"
                     type="text"
+                    id="house"
                     class="checkout__form-input"
                   >
                 </div>
@@ -488,6 +493,7 @@
                   <input
                     placeholder="Apartment"
                     type="text"
+                    id="apartment"
                     class="checkout__form-input"
                   >
                 </div>
@@ -498,6 +504,7 @@
                   <input
                     placeholder="Zip Code*"
                     type="text"
+                    id="zip-code"
                     class="checkout__form-input"
                   >
                 </div>
@@ -508,6 +515,7 @@
                   <input
                     placeholder="Phone*"
                     type="text"
+                    id="phone"
                     class="checkout__form-input"
                   >
                 </div>
@@ -517,7 +525,8 @@
                   >
                   <input
                     placeholder="Email*"
-                    type="text"
+                    type="email"
+                    id="email"
                     class="checkout__form-input"
                   >
                 </div>
@@ -618,7 +627,7 @@
     <section class="subscribe" id="subscribe">
       <div class="wrapper">
         <div class="subscribe__inner">
-          <h2 class="subscribe__text">Subscribe to Newsletter</div>
+          <h2 class="subscribe__text">Subscribe to Newsletter</h2>
 
           <div class="subscribe__form">
             <input
