@@ -223,7 +223,7 @@
           src="./assets/img/close.svg"
           alt="close icon"
           class="menu__close-icon"
-        />
+        >
       </a>
       <div class="menu__main">
         <div class="menu__inner">
@@ -427,6 +427,7 @@
                   <input
                     placeholder="First name*"
                     type="text"
+                    id="name"
                     class="checkout__form-input"
                   >
                 </div>
@@ -491,7 +492,7 @@
                   >
                 </div>
                 <div class="checkout__form-box">
-                  <label for="zip code" class="checkout__form-label"
+                  <label for="zip-code" class="checkout__form-label"
                     >Zip Code<span>*</span></label
                   >
                   <input
@@ -521,7 +522,7 @@
                   >
                 </div>
                 <div class="checkout__form-box">
-                  <label for="order notes" class="checkout__form-label"
+                  <label for="order-notes" class="checkout__form-label"
                     >Order notes (optional)</label
                   >
                   <textarea
@@ -587,17 +588,17 @@
               <div class="checkout__info-inner">
                 <label class="checkout__info-item">
                   <input type="checkbox" class="checkout__info-item-input" >
-                  <h4 class="checkout__info-item-title">
+                  <span class="checkout__info-item-title">
                     Online payment (Visa, Mastercard, American Express)
-                  </h4>
+                  </span>
                 </label>
                 <label class="checkout__info-item">
                   <input type="checkbox" class="checkout__info-item-input" >
-                  <h4 class="checkout__info-item-title">Card on delivery</h4>
+                  <span class="checkout__info-item-title">Card on delivery</span>
                 </label>
                 <label class="checkout__info-item">
                   <input type="checkbox" class="checkout__info-item-input" >
-                  <h4 class="checkout__info-item-title">Cash on delivery</h4>
+                  <span class="checkout__info-item-title">Cash on delivery</span>
                 </label>
               </div>
               <button type="button" class="cart__info-btn">place ORDER</button>
@@ -617,7 +618,7 @@
     <section class="subscribe" id="subscribe">
       <div class="wrapper">
         <div class="subscribe__inner">
-          <div class="subscribe__text">Subscribe to Newsletter</div>
+          <h2 class="subscribe__text">Subscribe to Newsletter</div>
 
           <div class="subscribe__form">
             <input
