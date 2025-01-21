@@ -101,13 +101,13 @@ body {
 }
 
 .swiper-button-prev {
-    background-image: url('./img/left-arrow.svg');
+    background-image: url('../img/left-arrow.svg');
     background-size: cover;
     background-repeat: no-repeat;
     transform: rotate(180deg);
 }
 .swiper-button-next {
-    background-image: url('./img/left-arrow.svg');
+    background-image: url('../img/left-arrow.svg');
     background-size: cover;
     background-repeat: no-repeat;
     /* transform: rotate(180deg); */
@@ -708,7 +708,7 @@ body {
     right: -20px;
     top: 50%;
     transform: translate(0, -35%);
-    background-image: url('./img/right-arrow.svg');
+    background-image: url('../img/right-arrow.svg');
     background-size: contain; /* или нужный размер */
     background-repeat: no-repeat;
     background-position: center;
@@ -727,7 +727,7 @@ body {
 
 .collection {
     min-height: 700px;
-    background: url('./img/collection/bg.jpeg');
+    background: url('../img/collection/bg.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 130px;
@@ -1237,7 +1237,7 @@ body {
 
 .discover {
     min-height: 700px;
-    background: url('./img/discover/bg.jpeg');
+    background: url('../img/discover/bg.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 130px;
@@ -1938,7 +1938,7 @@ body {
     right: -20px;
     top: 50%;
     transform: translate(0, -35%);
-    background-image: url('./img/right-arrow.svg');
+    background-image: url('../img/right-arrow.svg');
     background-size: contain; /* или нужный размер */
     background-repeat: no-repeat;
     background-position: center;
@@ -2489,7 +2489,7 @@ body {
 
 .aboutpage__mission {
     margin-bottom: 130px;
-    background-image: url('./img/about-page/mission-bg.jpeg');
+    background-image: url('../img/about-page/mission-bg.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -3131,7 +3131,7 @@ body {
 }
 
 .store__main {
-    background-image: url('./img/help-page/bg-help.jpeg');
+    background-image: url('../img/help-page/bg-help.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
