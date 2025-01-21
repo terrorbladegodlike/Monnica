@@ -3,8 +3,6 @@
 font-family: 'SF Proverbial Gothic Condensed', sans-serif;
 font-family: 'SF Proverbial Gothic Extended', sans-serif; */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Murecho:wght@100..900&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
 @font-face {
     font-family: 'SF Proverbial Gothic';
     font-style: normal;
@@ -701,6 +699,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: start;
+}
+
+.intro__content img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .intro__title {
