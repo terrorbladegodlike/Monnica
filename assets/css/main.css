@@ -3,6 +3,90 @@
 font-family: 'SF Proverbial Gothic Condensed', sans-serif;
 font-family: 'SF Proverbial Gothic Extended', sans-serif; */
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Murecho:wght@100..900&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'SF Proverbial Gothic';
+    font-style: normal;
+    font-weight: 400;
+    src: local('SF Proverbial Gothic'), url('https://fonts.cdnfonts.com/s/6828/SF Proverbial Gothic.woff') format('woff');
+}
+@font-face {
+    font-family: 'SF Proverbial Gothic';
+    font-style: italic;
+    font-weight: 400;
+    src: local('SF Proverbial Gothic'), url('https://fonts.cdnfonts.com/s/6828/SF Proverbial Gothic Oblique.woff') format('woff');
+}
+@font-face {
+    font-family: 'SF Proverbial Gothic';
+    font-style: normal;
+    font-weight: 700;
+    src: local('SF Proverbial Gothic'), url('https://fonts.cdnfonts.com/s/6828/SF Proverbial Gothic Bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'SF Proverbial Gothic';
+    font-style: italic;
+    font-weight: 700;
+    src: local('SF Proverbial Gothic'), url('https://fonts.cdnfonts.com/s/6828/SF Proverbial Gothic Bold Oblique.woff') format('woff');
+}
+@font-face {
+    font-family: 'SF Proverbial Gothic Condensed';
+    font-style: normal;
+    font-weight: 400;
+    src: local('SF Proverbial Gothic Condensed'), url('https://fonts.cdnfonts.com/s/6828/SF Proverbial Gothic Condensed.woff') format('woff');
+}
+@font-face {
+    font-family: 'SF Proverbial Gothic Extended';
+    font-style: normal;
+    font-weight: 400;
+    src: local('SF Proverbial Gothic Extended'), url('https://fonts.cdnfonts.com/s/6828/SF Proverbial Gothic Extended.woff') format('woff');
+}
+@font-face {
+    font-family: 'SF Proverbial Gothic Condensed';
+    font-style: italic;
+    font-weight: 400;
+    src: local('SF Proverbial Gothic Condensed'), url('https://fonts.cdnfonts.com/s/6828/SF Proverbial Gothic Condensed Oblique.woff') format('woff');
+}
+@font-face {
+    font-family: 'SF Proverbial Gothic Extended';
+    font-style: italic;
+    font-weight: 400;
+    src: local('SF Proverbial Gothic Extended'), url('https://fonts.cdnfonts.com/s/6828/SF Proverbial Gothic Extended Oblique.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Minerva Modern';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Minerva Modern'), url('https://fonts.cdnfonts.com/s/91020/MinervaModern Black.woff') format('woff');
+}
+@font-face {
+    font-family: 'Minerva Modern';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Minerva Modern'), url('https://fonts.cdnfonts.com/s/91020/MinervaModern BlackItalic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Minerva Modern';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Minerva Modern'), url('https://fonts.cdnfonts.com/s/91020/MinervaModern Bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Minerva Modern';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Minerva Modern'), url('https://fonts.cdnfonts.com/s/91020/MinervaModern BoldItalic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Minerva Modern';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Minerva Modern'), url('https://fonts.cdnfonts.com/s/91020/MinervaModern Italic.woff') format('woff');
+}
+
+
+
 @font-face {
     font-family: 'Cervanttis';
     src: url('./fonts/Cervanttis.ttf');
