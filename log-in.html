@@ -420,7 +420,7 @@
               <label class="log__box-label" for="email"
                 >E-mail<span>*</span></label
               >
-              <input placeholder="E-mail*" type="email" class="log__input" >
+              <input placeholder="E-mail*" type="email" id="email" class="log__input" >
             </div>
             <div class="log__box">
               <label class="log__box-label" for="password"
@@ -429,6 +429,7 @@
               <input
                 placeholder="Password*"
                 type="password"
+                id="password"
                 class="log__input"
               >
             </div>
@@ -436,15 +437,15 @@
             <div class="log__inner">
               <label class="log__inner-box">
                 <input type="checkbox" class="log__inner-input" >
-                <p class="log__inner-text">Remember me</p>
+                <span class="log__inner-text">Remember me</span>
               </label>
 
               <p class="log__forgot">Forgot Password?</p>
             </div>
 
-            <button type="submit" class="log__btn">
-              <a href="./my-account.html">Login</a>
-            </button>
+            <a href="./my-account.html" type="submit" class="log__btn">
+              Login
+            </a>
 
             <div class="log__divider">
               <span class="log__divider-text">Or</span>
@@ -477,11 +478,11 @@
               <label class="log__box-label" for="email"
                 >E-mail<span>*</span></label
               >
-              <input placeholder="E-mail*" type="email" class="log__input" >
+              <input placeholder="E-mail*" type="email" id="email" class="log__input" >
             </div>
-            <button class="log__btn">
-              <a href="./success-page-forgot-password.html">Reset password</a>
-            </button>
+            <a href="./success-page-forgot-password.html" class="log__btn">
+              Reset Password
+            </a>
           </form>
         </div>
       </div>

@@ -3645,6 +3645,7 @@ body {
 }
 
 .log__btn {
+    text-align: center;
     width: 100%;
     padding: 12px 0;
     text-transform: uppercase;
