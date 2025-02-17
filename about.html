@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Monnica - About</title>
-    <link rel="stylesheet" href="./assets/css/main.css" >
-    <link rel="stylesheet" href="./assets/css/reset.css" >
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
     <link
       rel="preload"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
-    >
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
     <noscript>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      />
     </noscript>
-
   </head>
   <body>
     <div class="overlay"></div>
@@ -32,7 +38,7 @@
                 src="./assets/img/header/map.svg"
                 alt="map"
                 class="header__info-icon"
-              >
+              />
 
               <div class="header__info-title">STORE LOCATOR</div>
             </div>
@@ -130,13 +136,13 @@
           </nav>
 
           <a href="./index.html">
-            <img src="./assets/img/logo.svg" alt="logo" class="header__logo" >
+            <img src="./assets/img/logo.svg" alt="logo" class="header__logo" />
           </a>
 
           <nav class="header__options">
             <ul class="header__options-list">
               <li class="header__options-item">
-                <img src="./assets/img/header/search.svg" alt="search" >
+                <img src="./assets/img/header/search.svg" alt="search" />
                 <a
                   class="header__options-link header__options-link-search"
                   href="#"
@@ -145,17 +151,17 @@
                 </a>
               </li>
               <li class="header__options-item">
-                <img src="./assets/img/header/bag.svg" alt="search" >
+                <img src="./assets/img/header/bag.svg" alt="search" />
                 <a class="header__options-link" href="./cart.html"> Bag </a>
               </li>
               <li class="header__options-item">
-                <img src="./assets/img/header/like.svg" alt="search" >
+                <img src="./assets/img/header/like.svg" alt="search" />
                 <a class="header__options-link" href="./my-account.html"
                   >Wish List</a
                 >
               </li>
               <li class="header__options-item">
-                <img src="./assets/img/header/user.svg" alt="search" >
+                <img src="./assets/img/header/user.svg" alt="search" />
                 <a class="header__options-link" href="./log-in.html">
                   Log In
                 </a>
@@ -168,14 +174,14 @@
             src="./assets/img/header/search.svg"
             alt="search"
             class="header__mob-search"
-          >
+          />
 
           <a href="./index.html">
             <img
               src="./assets/img/logo-nav.jpeg"
               alt="logo"
               class="header__mob-logo"
-            >
+            />
           </a>
 
           <div class="header__mob-box">
@@ -183,13 +189,13 @@
               src="./assets/img/header/bag.svg"
               alt="bag"
               class="header__mob-bag"
-            >
+            />
 
             <img
               src="./assets/img/burger.svg"
               alt="burger"
               class="header__burger"
-            >
+            />
           </div>
         </div>
         <div class="header__search">
@@ -199,9 +205,9 @@
               class="header__search-input"
               placeholder="Search..."
               id="searchInput"
-            >
+            />
             <button type="submit" class="header__search-btn">
-              <img src="./assets/img/header/search.svg" alt="search" >
+              <img src="./assets/img/header/search.svg" alt="search" />
             </button>
           </div>
         </div>
@@ -215,7 +221,7 @@
           src="./assets/img/close.svg"
           alt="close-icon"
           class="menu__close-icon"
-        >
+        />
       </a>
       <div class="menu__main">
         <div class="menu__inner">
@@ -229,7 +235,7 @@
                 src="./assets/img/right-arrow.svg"
                 alt="arrow"
                 class="menu__item-icon"
-              >
+              />
             </a>
           </div>
           <div class="menu__item menu__item-featured">
@@ -240,7 +246,7 @@
                 src="./assets/img/right-arrow.svg"
                 alt="arrow"
                 class="menu__item-icon"
-              >
+              />
             </a>
           </div>
           <div class="menu__item menu__item-material">
@@ -253,7 +259,7 @@
                 src="./assets/img/right-arrow.svg"
                 alt="arrow"
                 class="menu__item-icon"
-              >
+              />
             </a>
           </div>
           <div class="menu__item">
@@ -264,7 +270,7 @@
                 src="./assets/img/right-arrow.svg"
                 alt="arrow"
                 class="menu__item-icon"
-              >
+              />
             </a>
           </div>
         </div>
@@ -275,7 +281,7 @@
               class="menu__list-img"
               src="./assets/img/mobile-menu/home.svg"
               alt="home"
-            >
+            />
 
             <a href="./index.html" class="menu__list-title">Home</a>
           </div>
@@ -284,7 +290,7 @@
               class="menu__list-img"
               src="./assets/img/mobile-menu/about.svg"
               alt="About"
-            >
+            />
 
             <a href="./about.html" class="menu__list-title">About</a>
           </div>
@@ -293,7 +299,7 @@
               class="menu__list-img"
               src="./assets/img/mobile-menu/help.svg"
               alt="Help"
-            >
+            />
 
             <a href="./help.html" class="menu__list-title">Help</a>
           </div>
@@ -302,7 +308,7 @@
               class="menu__list-img"
               src="./assets/img/mobile-menu/like.svg"
               alt="Wish-list"
-            >
+            />
 
             <a href="./my-account.html" class="menu__list-title">Wish list</a>
           </div>
@@ -311,7 +317,7 @@
               class="menu__list-img"
               src="./assets/img/mobile-menu/user.svg"
               alt="Log-in"
-            >
+            />
 
             <a href="./my-account.html" class="menu__list-title">Log in</a>
           </div>
@@ -324,7 +330,7 @@
             class="menu__category-img"
             src="./assets/img/left-arrow.svg"
             alt="arrow"
-          >
+          />
           <h3 class="menu__category-title">Shop by Category</h3>
         </div>
 
@@ -348,7 +354,7 @@
             class="menu__featured-img"
             src="./assets/img/left-arrow.svg"
             alt="arrow"
-          >
+          />
           <h3 class="menu__featured-title">Shop by featured</h3>
         </div>
 
@@ -367,7 +373,7 @@
             class="menu__material-img"
             src="./assets/img/left-arrow.svg"
             alt="arrow"
-          >
+          />
           <h3 class="menu__material-title">Shop by material</h3>
         </div>
 
@@ -416,7 +422,7 @@
               class="aboutpage__inner-img"
               src="./assets/img/about-page/inner-photo.jpeg"
               alt="kelly"
-            >
+            />
           </div>
         </div>
       </section>
@@ -429,19 +435,19 @@
                 src="./assets/img/about-page/story-main.jpeg"
                 alt="main-photo"
                 class="aboutpage__story-photo-main"
-              >
+              />
 
               <div class="aboutpage__story-photo-inner">
                 <img
                   src="./assets/img/about-page/story-item-1.jpeg"
                   alt="item-photo-1"
                   class="aboutpage__story-photo-item"
-                >
+                />
                 <img
                   src="./assets/img/about-page/story-item-2.jpeg"
                   alt="item-photo-2"
                   class="aboutpage__story-photo-item"
-                >
+                />
               </div>
             </div>
 
@@ -554,19 +560,19 @@
                 <img
                   src="./assets/img/about-page/pearls-main.jpeg"
                   alt="main-photo"
-                >
+                />
               </div>
 
               <div class="aboutpage__pearls-photo-box">
                 <img
                   src="./assets/img/about-page/pearls-1.jpeg"
                   alt="pearls-1"
-                >
+                />
 
                 <img
                   src="./assets/img/about-page/pearls-2.jpeg"
                   alt="pearls-2"
-                >
+                />
               </div>
             </div>
 
@@ -584,7 +590,7 @@
                 src="./assets/img/about-page/pearls-content.jpeg"
                 alt="pearls-content"
                 class="aboutpage__pearls-content-photo"
-              >
+              />
             </div>
           </div>
         </div>
@@ -605,7 +611,7 @@
                   src="./assets/img/about-page/grace.jpeg"
                   alt="grace"
                   class="aboutpage__team-item-photo"
-                >
+                />
 
                 <h3 class="aboutpage__team-item-title">Grace Kelly</h3>
                 <p class="aboutpage__team-item-post">Founder & CEO</p>
@@ -615,17 +621,17 @@
                     src="./assets/img/about-page/Facebook.svg"
                     alt="Facebook"
                     class="aboutpage__team-item-social-media"
-                  >
+                  />
                   <img
                     src="./assets/img/about-page/Instagram.svg"
                     alt="Instagram"
                     class="aboutpage__team-item-social-media"
-                  >
+                  />
                   <img
                     src="./assets/img/about-page/Tiktok.svg"
                     alt="Tiktok"
                     class="aboutpage__team-item-social-media"
-                  >
+                  />
                 </div>
               </div>
               <div class="aboutpage__team-item swiper-slide">
@@ -633,7 +639,7 @@
                   src="./assets/img/about-page/brooklyn.jpeg"
                   alt="brooklyn"
                   class="aboutpage__team-item-photo"
-                >
+                />
 
                 <h3 class="aboutpage__team-item-title">Brooklyn Simmons</h3>
                 <p class="aboutpage__team-item-post">
@@ -645,17 +651,17 @@
                     src="./assets/img/about-page/Facebook.svg"
                     alt="Facebook"
                     class="aboutpage__team-item-social-media"
-                  >
+                  />
                   <img
                     src="./assets/img/about-page/Instagram.svg"
                     alt="Instagram"
                     class="aboutpage__team-item-social-media"
-                  >
+                  />
                   <img
                     src="./assets/img/about-page/Tiktok.svg"
                     alt="Tiktok"
                     class="aboutpage__team-item-social-media"
-                >
+                  />
                 </div>
               </div>
               <div class="aboutpage__team-item swiper-slide">
@@ -663,7 +669,7 @@
                   src="./assets/img/about-page/devon.jpeg"
                   alt="devon"
                   class="aboutpage__team-item-photo"
-                >
+                />
 
                 <h3 class="aboutpage__team-item-title">Devon Lane</h3>
                 <p class="aboutpage__team-item-post">Head Designer</p>
@@ -673,17 +679,17 @@
                     src="./assets/img/about-page/Facebook.svg"
                     alt="Facebook"
                     class="aboutpage__team-item-social-media"
-                  >
+                  />
                   <img
                     src="./assets/img/about-page/Instagram.svg"
                     alt="Instagram"
                     class="aboutpage__team-item-social-media"
-                  >
+                  />
                   <img
                     src="./assets/img/about-page/Tiktok.svg"
                     alt="Tiktok"
                     class="aboutpage__team-item-social-media"
-                  >
+                  />
                 </div>
               </div>
               <div class="aboutpage__team-item swiper-slide">
@@ -691,7 +697,7 @@
                   src="./assets/img/about-page/bessie.jpeg"
                   alt="bessie"
                   class="aboutpage__team-item-photo"
-                >
+                />
 
                 <h3 class="aboutpage__team-item-title">Bessie Cooper</h3>
                 <p class="aboutpage__team-item-post">HR Manager</p>
@@ -701,17 +707,17 @@
                     src="./assets/img/about-page/Facebook.svg"
                     alt="Facebook"
                     class="aboutpage__team-item-social-media"
-                  >
+                  />
                   <img
                     src="./assets/img/about-page/Instagram.svg"
                     alt="Instagram"
                     class="aboutpage__team-item-social-media"
-                  >
+                  />
                   <img
                     src="./assets/img/about-page/Tiktok.svg"
                     alt="Tiktok"
                     class="aboutpage__team-item-social-media"
-                  >
+                  />
                 </div>
               </div>
               <div class="aboutpage__team-item swiper-slide">
@@ -719,7 +725,7 @@
                   src="./assets/img/about-page/grace.jpeg"
                   alt="grace"
                   class="aboutpage__team-item-photo"
-                >
+                />
 
                 <h3 class="aboutpage__team-item-title">Grace Kelly</h3>
                 <p class="aboutpage__team-item-post">Founder & CEO</p>
@@ -729,17 +735,17 @@
                     src="./assets/img/about-page/Facebook.svg"
                     alt="Facebook"
                     class="aboutpage__team-item-social-media"
-                  >
+                  />
                   <img
                     src="./assets/img/about-page/Instagram.svg"
                     alt="Instagram"
                     class="aboutpage__team-item-social-media"
-                  >
+                  />
                   <img
                     src="./assets/img/about-page/Tiktok.svg"
                     alt="Tiktok"
                     class="aboutpage__team-item-social-media"
-                  >
+                  />
                 </div>
               </div>
               <div class="aboutpage__team-item swiper-slide">
@@ -747,7 +753,7 @@
                   src="./assets/img/about-page/brooklyn.jpeg"
                   alt="brooklyn"
                   class="aboutpage__team-item-photo"
-                >
+                />
 
                 <h3 class="aboutpage__team-item-title">Brooklyn Simmons</h3>
                 <p class="aboutpage__team-item-post">
@@ -759,17 +765,17 @@
                     src="./assets/img/about-page/Facebook.svg"
                     alt="Facebook"
                     class="aboutpage__team-item-social-media"
-                  >
+                  />
                   <img
                     src="./assets/img/about-page/Instagram.svg"
                     alt="Instagram"
                     class="aboutpage__team-item-social-media"
-                  >
+                  />
                   <img
                     src="./assets/img/about-page/Tiktok.svg"
                     alt="Tiktok"
                     class="aboutpage__team-item-social-media"
-                  >
+                  />
                 </div>
               </div>
               <div class="aboutpage__team-item swiper-slide">
@@ -777,7 +783,7 @@
                   src="./assets/img/about-page/devon.jpeg"
                   alt="devon"
                   class="aboutpage__team-item-photo"
-                >
+                />
 
                 <h3 class="aboutpage__team-item-title">Devon Lane</h3>
                 <p class="aboutpage__team-item-post">Head Designer</p>
@@ -787,17 +793,17 @@
                     src="./assets/img/about-page/Facebook.svg"
                     alt="Facebook"
                     class="aboutpage__team-item-social-media"
-                  >
+                  />
                   <img
                     src="./assets/img/about-page/Instagram.svg"
                     alt="Instagram"
                     class="aboutpage__team-item-social-media"
-                  >
+                  />
                   <img
                     src="./assets/img/about-page/Tiktok.svg"
                     alt="Tiktok"
                     class="aboutpage__team-item-social-media"
-                  >
+                  />
                 </div>
               </div>
               <div class="aboutpage__team-item swiper-slide">
@@ -805,7 +811,7 @@
                   src="./assets/img/about-page/bessie.jpeg"
                   alt="bessie"
                   class="aboutpage__team-item-photo"
-                >
+                />
 
                 <h3 class="aboutpage__team-item-title">Bessie Cooper</h3>
                 <p class="aboutpage__team-item-post">HR Manager</p>
@@ -815,17 +821,17 @@
                     src="./assets/img/about-page/Facebook.svg"
                     alt="Facebook"
                     class="aboutpage__team-item-social-media"
-                  >
+                  />
                   <img
                     src="./assets/img/about-page/Instagram.svg"
                     alt="Instagram"
                     class="aboutpage__team-item-social-media"
-                  >
+                  />
                   <img
                     src="./assets/img/about-page/Tiktok.svg"
                     alt="Tiktok"
                     class="aboutpage__team-item-social-media"
-                  >
+                  />
                 </div>
               </div>
             </div>
@@ -892,19 +898,19 @@
                   class="aboutpage__values-photo-img"
                   src="./assets/img/about-page/values-1.jpeg"
                   alt="values-1"
-                >
+                />
                 <img
                   class="aboutpage__values-photo-img"
                   src="./assets/img/about-page/values-2.jpeg"
                   alt="values-2"
-                >
+                />
               </div>
               <div class="aboutpage__values-photo-main">
                 <img
                   class="aboutpage__values-photo-main-img"
                   src="./assets/img/about-page/values-main.png"
                   alt="values-main"
-                >
+                />
               </div>
             </div>
           </div>
@@ -918,25 +924,25 @@
 
             <div class="brand__items">
               <div class="brand__item">
-                <img src="./assets/img/brand/mikimoto.jpeg" alt="mikimoto" >
+                <img src="./assets/img/brand/mikimoto.jpeg" alt="mikimoto" />
               </div>
               <div class="brand__item">
-                <img src="./assets/img/brand/paspaley.jpeg" alt="paspaley" >
+                <img src="./assets/img/brand/paspaley.jpeg" alt="paspaley" />
               </div>
               <div class="brand__item">
-                <img src="./assets/img/brand/maui.jpeg" alt="maui" >
+                <img src="./assets/img/brand/maui.jpeg" alt="maui" />
               </div>
               <div class="brand__item">
-                <img src="./assets/img/brand/mateo.jpeg" alt="mateo" >
+                <img src="./assets/img/brand/mateo.jpeg" alt="mateo" />
               </div>
               <div class="brand__item">
                 <img
                   src="./assets/img/brand/tiffany&co.jpeg"
                   alt="tiffany&co"
-                >
+                />
               </div>
               <div class="brand__item">
-                <img src="./assets/img/brand/mejuri.jpeg" alt="mejuri" >
+                <img src="./assets/img/brand/mejuri.jpeg" alt="mejuri" />
               </div>
             </div>
           </div>
@@ -954,7 +960,7 @@
                     src="./assets/img/about-page/map.svg"
                     alt="map"
                     class="aboutpage__contact-item-icon"
-                  >
+                  />
                   <p class="aboutpage__contact-item-text">
                     1001 Bissonnet St, Houston, TX 77005, United States
                   </p>
@@ -964,7 +970,7 @@
                     src="./assets/img/about-page/map.svg"
                     alt="map"
                     class="aboutpage__contact-item-icon"
-                  >
+                  />
                   <p class="aboutpage__contact-item-text">
                     4450 University Dr, Houston, TX 77204, United States
                   </p>
@@ -974,7 +980,7 @@
                     src="./assets/img/about-page/map.svg"
                     alt="map"
                     class="aboutpage__contact-item-icon"
-                  >
+                  />
                   <p class="aboutpage__contact-item-text">
                     11839 Greenglen Dr, Houston, TX 77044, United States
                   </p>
@@ -1004,7 +1010,7 @@
                     src="./assets/img/about-page/mail.svg"
                     alt="mail"
                     class="aboutpage__contact-info-icon"
-                  >
+                  />
                   <p class="aboutpage__contact-info-text">
                     customer.help@monnica.com
                   </p>
@@ -1014,7 +1020,7 @@
                     src="./assets/img/about-page/phone.svg"
                     alt="phone"
                     class="aboutpage__contact-info-icon"
-                  >
+                  />
                   <p class="aboutpage__contact-info-text">(603) 555-0123</p>
                 </div>
               </div>
@@ -1036,7 +1042,7 @@
               class="subscribe__input"
               type="email"
               placeholder="Enter your email here..."
-            >
+            />
             <button type="submit" class="subscribe__btn">Submit</button>
           </div>
         </div>
@@ -1046,7 +1052,7 @@
     <footer class="footer">
       <div class="wrapper">
         <div class="footer__logo">
-          <img src="./assets/img/logo-footer.svg" alt="logo" >
+          <img src="./assets/img/logo-footer.svg" alt="logo" />
         </div>
 
         <nav class="footer__nav">
@@ -1078,30 +1084,30 @@
               src="./assets/img/Facebook.svg"
               alt="facebook"
               class="footer__social-item"
-            >
+            />
             <img
               src="./assets/img/Instagram-footer.svg"
               alt="instagram"
               class="footer__social-item"
-            >
+            />
             <img
               src="./assets/img/Tiktok.svg"
               alt="Tik-tok"
               class="footer__social-item"
-            >
+            />
           </div>
         </nav>
 
         <div class="footer__copyright">
           <div class="footer__text">© 2024 Monnica • All Rights Reserved</div>
           <div class="footer__pay">
-            <img src="./assets/img/footer/mastercard.svg" alt="mastercard" >
-            <img src="./assets/img/footer/visa.svg" alt="visa" >
-            <img src="./assets/img/footer/paypal.svg" alt="paypal" >
+            <img src="./assets/img/footer/mastercard.svg" alt="mastercard" />
+            <img src="./assets/img/footer/visa.svg" alt="visa" />
+            <img src="./assets/img/footer/paypal.svg" alt="paypal" />
             <img
               src="./assets/img/footer/americanexpress.svg"
               alt="americanexpress"
-            >
+            />
           </div>
         </div>
       </div>
@@ -1125,6 +1131,13 @@
           { coords: [29.7943, -95.4973], popup: "Jersey Village" },
           { coords: [30.026, -94.8821], popup: "Eastwood" },
         ]
+
+        L.Marker.prototype.options.icon = L.icon({
+          iconUrl:
+            "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
+          shadowUrl:
+            "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
+        })
 
         locations.forEach((location) => {
           L.marker(location.coords)
